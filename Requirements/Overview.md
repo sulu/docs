@@ -1,3 +1,5 @@
-# Requirements
+# System Requirements
 
-![Overview system processes] (/images/system-processes01.png)
+## System Processes
+
+![Overview system processes] (https://raw.github.com/massiveart/sulu-docs/master/Requirements/images/system-processes_01.png)
