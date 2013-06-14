@@ -1,6 +1,6 @@
 [Overview](https://github.com/massiveart/sulu-docs/blob/master/system-requirements/overview.md)
 
-[label_100]: https://github.com/massiveart/sulu-docs/blob/master/system-requirements/overview.md  "100 Basic"
+[label_100]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic  "100 Basic"
 
 [link_]: https://github.com/massiveart/sulu-docs/blob/master/system-requirements/overview.md  "100 Basic"
 
