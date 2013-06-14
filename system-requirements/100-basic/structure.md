@@ -1,6 +1,10 @@
-[<--Overview](https://github.com/massiveart/sulu-docs/blob/master/system-requirements/overview.md)
+[Overview](https://github.com/massiveart/sulu-docs/blob/master/system-requirements/overview.md)
 
-> 100 Basic
+[label_100]: https://github.com/massiveart/sulu-docs/blob/master/system-requirements/overview.md  "100 Basic"
+
+[link_]: https://github.com/massiveart/sulu-docs/blob/master/system-requirements/overview.md  "100 Basic"
+
+> [100 Basic][label_100]
 
 ###110 Content Structure
 ####FR-110a Content types and templates
