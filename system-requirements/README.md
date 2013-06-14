@@ -1,4 +1,3 @@
-##System Requirements
 [label_100]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic "100 Basic"
 [package_1100]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/caching.md "1100 Caching Mechanisms"
 [package_1150]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/url-management.md "1150 URL Management"
@@ -19,8 +18,8 @@
 [label_600]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/600-global "600 Global"
 [label_700]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/700-dashboard "700 Dashboard"
 
+##System Requirements
 ![System Processes](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/system-processes_03.png)
-
 * [100 Basic][label_100]
 * [200 Settings][label_200]
 * [300 Portals][label_300]
