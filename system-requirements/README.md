@@ -16,4 +16,4 @@
 * [600 Basic][label_600]
 * [700 Basic][label_700]
 
-![System Processes](https://github.com/massiveart/sulu-docs/blob/master/system-requirements/images/system-processes_01.png)
+![System Processes](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/images/system-processes_01.png)
