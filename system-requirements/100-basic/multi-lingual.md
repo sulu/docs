@@ -8,10 +8,11 @@
 [package_1350]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/workflow.md "1350 Workflow Management"
 [package_1400]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/publication.md "1400 Publication"
 [package_1450]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/sem-seo.md "1450 SEM/SEO Support"
-[package_1500]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/search "1500 Search"
-[package_1550]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/interfaces "1550 Data Interfaces"
-[package_1600]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/security "1600 Security"
-[package_1650]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/image-handling "1650 Image Handling"
+[package_1500]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/search.md "1500 Search"
+[package_1550]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/interfaces.md "1550 Data Interfaces"
+[package_1600]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/security.md "1600 Security"
+[package_1650]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/image-handling.md "1650 Image Handling"
+[package_1700]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/usability.md "1700 Usability"
 [label_200]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-settings "200 Settings"
 [label_300]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals "300 Portals"
 [package_3500]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/forms.md "3500 Forms"
@@ -28,7 +29,7 @@ The IP-to-location function automatically forwards the user to the language vers
 ####FR-1302 Language fall back
 A user must be able to choose a different language for a page within the specific language version of a portal. All pages within a content node has to be viewable as list showing all available and assigned languages. The language fall back function has to be accessible also via the list view. 
 ####FR-1303 Copying a language version
-An existing page in a certain language can be a valuable input for the translation into another language. Therefore the user copies a specific page and translates the content. Translated pages can be stored anywhere in the same or in a different portal. The list view allows to copy and save more than one page at once.
+An existing page in a certain language can be a valuable input for the translation into another language. Therefore the user copies a specific page and translates the content. Translated pages can be stored anywhere in the same or in a different portal. The list view allows to copy and save whole nodes or a selection of pages at once.
 
 <table>
     <tr>
