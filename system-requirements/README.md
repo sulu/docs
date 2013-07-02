@@ -24,12 +24,14 @@
 
 ##System Requirements
 ![System Processes](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/system-processes_03.png)
-* [100 BASIC][label_100]
-* [200 SEARCH][label_200]
-* [300 PORTALS][label_300]
-* [400 CONTACTS][label_400]
-* [500 ASSESTS][label_500]
-* [600 GLOBAL][label_600]
-* [700 SEO / SEM][label_700]
-* [800 DASHBOARD][label_800]
-* [900 SHOP][label_900]
+
+
+* ![basic](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/basic.png) [100 BASIC][label_100]
+* ![search](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/searcj.png) [200 SEARCH][label_200]
+* ![portals](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/portals.png) [300 PORTALS][label_300]
+* ![contacts](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contacts.png) [400 CONTACTS][label_400]
+* ![assets](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/assets.png) [500 ASSESTS][label_500]
+* ![global](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/global.png) [600 GLOBAL][label_600]
+* ![seo-sem](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/seo-sem.png) [700 SEO / SEM][label_700]
+* ![dashboard](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/dashboard.png) [800 DASHBOARD][label_800]
+* ![shop](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/shop.png) [900 SHOP][label_900]
