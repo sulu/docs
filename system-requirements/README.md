@@ -33,7 +33,7 @@
 
 ![contacts](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contacts.png) [400 CONTACTS][label_400]
 
-![assets](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/assets.png) [500 ASSESTS][label_500]
+![assets](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/assets.png) [500 ASSETS][label_500]
 
 ![global](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/global.png) [600 GLOBAL][label_600]
 
