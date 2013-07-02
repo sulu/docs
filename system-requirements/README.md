@@ -1,4 +1,4 @@
-[label_100]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic "100 Basic"
+[label_100]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic "100 BASIC"
 [package_1100]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/caching.md "1100 Caching Mechanisms"
 [package_1150]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/url-management.md "1150 URL Management"
 [package_1200]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/structure.md "1200 Content Structure"
@@ -12,20 +12,24 @@
 [package_1600]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/security "1600 Security"
 [package_1650]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/image-handling "1650 Image Handling"
 [package_1700]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/usability "1700 Usability"
-[label_200]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-settings "200 Settings"
-[label_300]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals "300 Portals"
+[label_200]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search "200 SEARCH"
+[label_300]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals "300 PORTALS"
 [package_3500]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/forms.md "3500 Forms"
-[label_400]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-assets "400 Assets"
-[label_500]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/500-contacts "500 Contacts"
-[label_600]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/600-global "600 Global"
-[label_700]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/700-dashboard "700 Dashboard"
+[label_400]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts "400 CONTACTS"
+[label_500]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/500-assets "500 ASSETS"
+[label_600]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/600-global "600 GLOBAL"
+[label_700]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/700-seo-sem "700 SEM / SEO"
+[label_800]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/800-dashboard "800 DASHBOARD"
+[label_900]: https://github.com/massiveart/sulu-docs/tree/master/system-requirements/900-shop "900 SHOP"
 
 ##System Requirements
 ![System Processes](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/system-processes_03.png)
-* [100 Basic][label_100]
-* [200 Settings][label_200]
-* [300 Portals][label_300]
-* [400 Assets][label_400]
-* [500 Contacts][label_500]
-* [600 Global][label_600]
-* [700 Dashboard][label_700]
+* [100 BASIC][label_100]
+* [200 SEARCH][label_200]
+* [300 PORTALS][label_300]
+* [400 CONTACTS][label_400]
+* [500 ASSESTS][label_500]
+* [600 GLOBAL][label_600]
+* [700 SEO / SEM][label_700]
+* [800 DASHBOARD][label_800]
+* [900 SHOP][label_900]
