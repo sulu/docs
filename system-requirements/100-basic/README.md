@@ -1,6 +1,6 @@
 ####[System Requirements](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/ "Index of System Requirements")
 
-###![basic](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/basic.png)100 BASIC
+###![100 BASIC](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/basic.png)100 BASIC
 
 * [1100 General](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/general.md "1100 General")
 * [1150 Caching Mechanism](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/caching-mechanism.md "1150 Caching Mechanism")
