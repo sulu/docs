@@ -33,7 +33,7 @@ Further the system should provide following CRM-extensions:
 
 * Opportunities
 * Notes
-* Attachments (see [4400 Connections] (https://raw.github.com/massiveart/sulu-docs/master/system-requirements/400-contacts/connections.md "4400 Connections"))
+* Attachments (see [4400 Connections] (https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/connections.md "4400 Connections"))
 
 **Specification:**
 
