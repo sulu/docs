@@ -5,7 +5,7 @@
 ####FR-4201 Filtering
 
 **Definition:**
-The system shall provide a facility for dynamic filtering based on all contact attributes. The user shall be able to define and save those individual dynamic filters. An automatic filter based on the standard contact roles shall be displayed by default. The user shall be able to create a manual filter by assigning contacts to an named folder.
+The system shall provide a facility for dynamic filtering based on all contact attributes. The user shall be able to define and save those individual dynamic filters. Automatic filters based on the standard contact roles shall be displayed by default. In addition the user shall be able to create a manual filter by assigning contacts to an named folder.
 
 **Specification:**
 
