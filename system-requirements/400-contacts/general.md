@@ -33,7 +33,7 @@ Further the system should provide following CRM-extensions:
 
 * Opportunities
 * Notes
-* Attachments (see [4400 Connections] (https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/connections.md "4400 Connections"))
+* Attachments (see [4400 Connections] (https://raw.github.com/massiveart/sulu-docs/master/system-requirements/400-contacts/connections.md "4400 Connections"))
 
 **Specification:**
 
@@ -44,7 +44,6 @@ Further the system should provide following CRM-extensions:
 1. A contact shall contain profile image, surname, name, email, standard roles and an optional address (copy of account address or own address if no account assigned)
 1. Accounts and contact should support additional customizable fields
 1. Contacts with the standard role "Sulu User" shall be accessible through the user management (see [1550 User Management] (https://raw.github.com/massiveart/sulu-docs/master/system-requirements/100-basic/user-management-md "1550 User Management"))
-1. The system shall provide a facility to built up a user-specific hierarchical structures with multiple layers to assign contacts (in addition to the assignment to an account)
 1. The system shall enable the user to create activities and assign them to an account and / or a contact
 1. User depended activities triggered by system events like "newsletter subscribed", "order raised", "for course registered" etc. shall automatically stored to the corresponding contact as a tracking history
 1. The system should support opportunities revering to an account and / or a contact 

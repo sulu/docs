@@ -20,8 +20,5 @@ The system shall provide a facility for dynamic filtering based on all contact a
 
 ####FR-4202 Hierarchical Structuring
 
-**Definition:*+
-
-
-
-**Specification:**
+**Definition:**
+The system should provide a facility to built up a user-specific hierarchical structures with multiple layers to assign contacts (in addition to the assignment to an account).
