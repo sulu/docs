@@ -26,7 +26,7 @@ Fig.: Node view example
 ####FR-4302 Single and Multiple Editing
 
 **Definition:**
-The system shall provide the standard data management functions ("New", "Edit" and "Delete") supporting single and multiple edit mode.
+The system shall provide the standard data management functions ("New", "Edit", Duplicate" and "Delete") supporting single and multiple edit mode. The user should be provided with a simple function to move a contact to another account or to refer an alias of the contact to another account (details see [4100 General](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/general.md)).
 
 **Specification:**
 
