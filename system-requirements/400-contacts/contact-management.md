@@ -5,8 +5,13 @@
 ####FR-4301 Navigation Types
 
 **Definition:**
+The system shall provide the following three navigation views for browsing the contacts:
+* Thumb nail view
+* list view with multiple select and sorting functions
+* node view (based on the multi column view of OS X)
 
 **Specification:**
+
 
 ####FR-4302 Single and Multiple Editing
 
