@@ -13,4 +13,4 @@
 
 **Definition:**
 
-**Specification:**
+Based on the centralized contact repository approach (see [FR-4101 Role-based Storage](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/general.md "R-4101 Role-based Storage")) all contacts including the system users shall be accessible thought the contacts area. The security for the user access rights shall be based on LPDAP-principles (details see [1550 User Management](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/user-management.md "1550 User Management")).

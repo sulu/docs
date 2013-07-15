@@ -16,7 +16,7 @@ The system shall provide the following two navigation views for browsing the con
 * Thumb nail view
 * List view with multiple select and sorting functions
 
-Both navigation views may have a standard filter for "My contacts", "All contacts" and "Last viewing".
+Both navigation views may have a standard filter for "My contacts", "All contacts" and "Last viewing". 
 
 **Specification:**
 
