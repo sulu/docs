@@ -12,12 +12,11 @@
 ####FR-4301 Navigation Types
 
 **Definition:**
-The system shall provide the following three navigation views for browsing the contacts:
+The system shall provide the following two navigation views for browsing the contacts:
 * Thumb nail view
 * List view with multiple select and sorting functions
-* Node view (based on the multi column view of OS X)
 
-Each navigation view may have a standard filter for "My contacts", "All contacts" and "Last viewing".
+Both navigation views may have a standard filter for "My contacts", "All contacts" and "Last viewing".
 
 **Specification:**
 
@@ -26,9 +25,6 @@ Each navigation view may have a standard filter for "My contacts", "All contacts
  
 ![List view](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/list-view.png)
 Fig.: List view example
-
-![Node view](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/node-view.png)
-Fig.: Node view example
 
 ####FR-4302 Single and Multiple Editing
 

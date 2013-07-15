@@ -13,16 +13,31 @@
 
 **Definition:**
 
+The system shall provide a facility to assign assets from the asset repository (see [500 ASSETS](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/500-assets/ "500 ASSETS")) to a contact, an account or an opportunity.
+
 **Specification:**
+
+1. The user shall be able to assign multiple assets
+1. Assigned Assets should be displayed with a preview icon
 
 ####FR-4402 Direct Upload
 
 **Definition:**
 
+Assets, especially the profile image, shall be assigned via direct upload to the contact or an account.
+
 **Specification:**
+
+1. The user shall be able to assign assets either out of asset repository or via direct upload
+1. When a user uploads a profile image to a contact, the system automatically does the image croping for proper representation on the user´s display 
 
 ####FR-4403 Content Assignment
 
 **Definition:**
+In some cases the system shall provide facilities to assign content to a contact, an account.
 
 **Specification:**
+
+1. The system shall enable the user to assign a contact to a specific site (eg. for assigning the head of a division to its responible divison site) 
+1. The user shall be able to assign multiple contents (sites) to a contact or an account
+1. The preview of each assigned site may be called directly from the corresponding contact or account

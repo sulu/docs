@@ -14,7 +14,7 @@
 
 **Definition:**
 
-The system shall store all contacts with its role in a centralized data repository. By default the following standard contact roles shall be implemented:
+The system shall store all contacts with its role in a centralized data repository. By default the following standard contact user roles shall be implemented:
 
 * User (registered sulu user)
 * Client (registered shop client)
@@ -56,5 +56,5 @@ Further the system should provide following CRM-extensions:
 1. User depended activities triggered by system events like "newsletter subscribed", "order raised", "for course registered" etc. shall automatically stored to the corresponding contact as a tracking history
 1. The system should support opportunities revering to an account and / or a contact 
 1. An opportunity should have a name, a phase, a probability and an amount and should optionally refer to an activity
-1. The system should enable the user to create notes and add attachments referring to an account or a contact
-1. Added attachments and the profile image should be stored in a reserved folder within the asset repository (see [500 ASSETS](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/500-assets/ "500 ASSETS"))
+1. The system shall enable the user to create notes and add attachments referring to an account or a contact 
+1. The user shall be able to assign attachments out of the assets repository or via direct upload (see [4400 Connections](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/500-assets/connections.md "4400 Connections"))
