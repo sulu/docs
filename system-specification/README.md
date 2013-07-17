@@ -19,6 +19,10 @@ In order to ensure a better overview use cases are organized in 9 main use case 
 
 ![System Processes](https://raw.github.com/massiveart/sulu-docs/master/system-specification/images/use-case-model_v01.png)
 
+![basic](https://raw.github.com/massiveart/sulu-docs/master/system-specification/images/package-basic.png)[P100 BASIC](https://github.com/massiveart/sulu-docs/tree/master/system-specification/p100 "P100 BASIC")
+
+![search](https://raw.github.com/massiveart/sulu-docs/master/system-specification/images/package-search.png)[P200 SEARCH](https://github.com/massiveart/sulu-docs/tree/master/system-specification/p200 "P200 SEARCH")
+
 ![portals](https://raw.github.com/massiveart/sulu-docs/master/system-specification/images/package-portals.png)[P300 PORTALS](https://github.com/massiveart/sulu-docs/tree/master/system-specification/p300 "P300 PORTALS")
 
 
