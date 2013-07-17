@@ -7,6 +7,6 @@
 * [P330 …](https://github.com/massiveart/sulu-docs/tree/master/system-specification/p300/p330 "P330 …")
 * [P340 …](https://github.com/massiveart/sulu-docs/tree/master/system-specification/p300/p340 "P340 …")
 * [P350 Smart Content](https://github.com/massiveart/sulu-docs/tree/master/system-specification/p300/p350 "P350 Smart Content")
-* [P360 …](https://github.com/massiveart/sulu-docs/tree/master/system-specification/p300/p310 "P310 …")
+* [P360 …](https://github.com/massiveart/sulu-docs/tree/master/system-specification/p300/p360 "P360 …")
 
 ![Use Case Package Portals](https://raw.github.com/massiveart/sulu-docs/master/system-specification/images/package-portals-detail.png)
