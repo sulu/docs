@@ -7,11 +7,11 @@
 * [4500 Interfaces](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/interfaces.md "4500 Interfaces")
 * [4600 Security](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/security.md "4600 Security")
 
-##![Portals](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/portals.png)UC-351 Add Smart Content
+##![Portals](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/portals.png)UC351 Add Smart Content
 
 **Primary Actor:** [Content Manager](https://github.com/massiveart/sulu-docs/tree/master/system-specification/actors.md "Actors") 
 
-**Scope:** [P350 Smart Content](https://github.com/massiveart/sulu-docs/tree/master/system-specification/p300/p350-smart-content "P350 Smart Content") 
+**Scope:** [P300 Portals](https://github.com/massiveart/sulu-docs/tree/master/system-specification/p300 "P300 Portals") 
 
 **Level:** Activity_User
 
