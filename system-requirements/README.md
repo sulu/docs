@@ -1,29 +1,4 @@
 ##System Requirements
-####Purpose
-The purpose of this online documentation is to present a definition of the system requirements of Sulu 2.0. It will explain the features of the system and the constraints under which it must operate. This documentation is intended for the project leaders and developers of the system.
-
-####Scope of Project
-Sulu 2.0 will be a Content Management Framework (CMF) based on Open Source - technologies replacing the current Content Management System ZOOLU. This system will be optimized for middle and large sized enterprises with multinational organizations, worldwide markets and products.
-
-By maximizing work efficiency of content management processes the system will meet the content manager´s needs while remaining easy to understand and use. More specifically, this system is designed to allow a content manager to manage multi-portals in multi-languages within complex product structures.
-
-####Rating System
-Three level rating system:
-* mandatory (“The system shall provide…")
-* desirable (“The system should enable…" or "The system may have…") 
-* optional (code-marked: [optional])
-
-The mandatory requirements cannot be sacrificed, desirable requirements are important but could be sacrificed if necessary to meet schedule or budgetary concerns. Optional requirements are ones which may not be developed (“nice to haves”).
-
-####Functional and Nonfunctional Requirements
-* Functional requirements [FR-xxxx] are generally written from a bird’s-eye viewpoint and describe system capabilities users expect for solving a specific problem.
-
-* Nonfunctional requirements [NFR-xxxx] are boundary conditions or externalities to the system under construction which will effect the performance envelope or capabilities of the system once it is in operation.
-
-####Overview
-In order to ensure a better overview the system requirements are subdivided into 9 system processes. The following schema shows a model of the relevant system processes of Sulu 2.0:
-
-![System Processes](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/system-processes_03.png)
 
 ![100 BASIC](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/basic.png)[100 BASIC](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic "100 BASIC")
 
@@ -42,4 +17,28 @@ In order to ensure a better overview the system requirements are subdivided into
 ![800 DASHBOARD](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/dashboard.png)[800 DASHBOARD](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/800-dashboard "800 DASHBOARD")
 
 ![900 SHOP](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/shop.png)[900 SHOP](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/900-shop "900 SHOP")
+####Purpose
+The purpose of this online documentation is to present a definition of the system requirements of Sulu 2.0. It will explain the features of the system and the constraints under which it must operate. This documentation is intended for the project leaders and developers of the system.
+
+####Structure
+In order to ensure a better overview the system requirements are subdivided into 9 system processes. The following schema shows a model of the relevant system processes of Sulu 2.0:
+
+![System Processes](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/system-processes_03.png)
+Fig. System Processes
+
+####Rating System
+Three level rating system:
+* mandatory (“The system shall provide…")
+* desirable (“The system should enable…" or "The system may have…") 
+* optional (code-marked: [optional])
+
+The mandatory requirements cannot be sacrificed, desirable requirements are important but could be sacrificed if necessary to meet schedule or budgetary concerns. Optional requirements are ones which may not be developed (“nice to haves”).
+
+####Functional and Nonfunctional Requirements
+* Functional requirements [FR-xxxx] are generally written from a bird’s-eye viewpoint and describe system capabilities users expect for solving a specific problem.
+
+* Nonfunctional requirements [NFR-xxxx] are boundary conditions or externalities to the system under construction which will effect the performance envelope or capabilities of the system once it is in operation.
+
+
+
 
