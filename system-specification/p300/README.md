@@ -9,4 +9,4 @@
 * [P350 Smart Content](https://github.com/massiveart/sulu-docs/tree/master/system-specification/p300/p350 "P350 Smart Content")
 * [P360 …](https://github.com/massiveart/sulu-docs/tree/master/system-specification/p300/p310 "P310 …")
 
-![Use Case Package Portals](https://raw.github.com/massiveart/sulu-docs/master/system-specification/images/package-portals-detail.png)P300 PORTALS
+![Use Case Package Portals](https://raw.github.com/massiveart/sulu-docs/master/system-specification/images/package-portals-detail.png)
