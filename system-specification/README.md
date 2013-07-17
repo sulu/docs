@@ -14,7 +14,7 @@ This documentation includes
 
 The [system requirements] (https://github.com/massiveart/sulu-docs/tree/master/system-requirements/) are linked to use cases and detail specification documents if necessary. Associated system requirements, uses cases and detail specifications can be determined through the continuous system process number. The use case packages are using the system process number as prefix (eg. system process "300 Portals" is similar to use case package "P300").
 
-####Overview Use Case Packages
+####Use Case Model
 In order to ensure a better overview use cases are organized in 9 main use case packages reflecting the 9 system processes. The following schema shows the use case model of Sulu 2.0:
 
 ![System Processes](https://raw.github.com/massiveart/sulu-docs/master/system-specification/images/use-case-model_v01.png)
