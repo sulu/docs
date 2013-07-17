@@ -24,6 +24,7 @@ The purpose of this online documentation is to present a definition of the syste
 In order to ensure a better overview the system requirements are subdivided into 9 system processes. The following schema shows a model of the relevant system processes of Sulu 2.0:
 
 ![System Processes](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/system-processes_03.png)
+Fig. System Processes
 
 ####Rating System
 Three level rating system:
