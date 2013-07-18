@@ -6,6 +6,10 @@
 
 ![portals](https://raw.github.com/massiveart/sulu-docs/master/use-cases/images/package-portals.png)[P300 PORTALS](https://github.com/massiveart/sulu-docs/tree/master/use-cases/p300 "P300 PORTALS")
 
+![contacts](https://raw.github.com/massiveart/sulu-docs/master/use-cases/images/package-contacts.png)[P400 CONTACTS](https://github.com/massiveart/sulu-docs/tree/master/use-cases/p400 "P400 CONTACTS")
+
+![assets](https://raw.github.com/massiveart/sulu-docs/master/use-cases/images/package-assets.png)[P500 ASSETS](https://github.com/massiveart/sulu-docs/tree/master/use-cases/p500 "P500 ASSETS")
+
 ####Purpose
 The purpose of this online documentation is to present a definition of the use cases of Sulu 2.0. It contains the major use cases of the system and is intended for project leaders, developers and users.
 
