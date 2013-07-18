@@ -1,0 +1,34 @@
+Use Cases
+####![Assets](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/assets.png)UC-524 Cut & Paste (Move)
+
+**Primary Actor:** [Endbenutzer](https://github.com/massiveart/sulu-docs/tree/master/system-specification/actors.md "Actors") 
+
+**Short Description:** Dieses Use Case dient dazu, eine Datei beim Cloud Provider zu einem anderen Ort innerhalb der Cloud Provider oder zu anderen Bereichen in Sulu  zu verschieben. 
+
+**Scope:** [P500 ASSETS](https://github.com/massiveart/sulu-docs/tree/master/system-specification/p500-assets "500 ASSETS") 
+
+**Level:** Activity
+
+**Precondition:** Das Use Case "Daten Auslesen" wurde erfolgreich ausgeführt. Der/Die Benutzer/in verfügt über entsprechende Rechte um dieses Use Case ausführen zu können.
+
+**Minimal quarantee:** 
+
+**Success quarantee:** Die Datei ist in den gewünschten neuen Ort/e verschoben. 
+
+**Main success szenario:** 
+
+1. Der/Die Benutzer/in wählt die zu verschiebende Datei aus.
+2. Das System zeichnet die Datei aus.
+3. Der/Die Benutzer/in startet das Schneiden(Cut) der Datei.
+4. Das System legt die Datei in den Zwischenspeicher.
+5. Der/Die Benutzer/in wählt den Zielort aus.
+6. Der/Die Benutzer/in startet das Einsetzen der Datei.
+7. Das System liest die Datei aus den Zwischenspeicher, setzt diese ein und löscht die Datei in den vorherigen Ort.
+8. Der/Die Benutzer/in macht mit Schritt 5. Weiter.
+
+**Extensions:**
+* *a. Zu jeder Zeit bricht der/die Benutzer/in das Use Case ab oder das System schlägt fehl:	
+Um einen konsistenten Zustand gewährleisten zu können müssen alle Transaktion sensitiven Zustände in jedem Schritt von Szenario wiederhergestellt werden können.
+* 9a. Der/Die Benutzer/in macht nicht weiter.
+
+ 

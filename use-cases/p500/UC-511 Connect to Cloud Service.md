@@ -1,0 +1,37 @@
+Use Cases
+####![Assets](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/assets.png)UC-511 Connect to Cloud Service
+
+**Primary Actor:** [Endbenutzer](https://github.com/massiveart/sulu-docs/tree/master/system-specification/actors.md "Actors") 
+
+**Short Description:** Dieses Use Case ist ein Basis Use Case für vielen anderen Use Cases in "Cloud" Bereich. Um anderen Use Cases, z.B. Datei Hochladen, Datei Herunterladen, etc., ausführen zu können, muss dieses Use Case bereits ausgeführt werden. Anhand dieses Use Case kann der/die Benutzer/in auf Daten in Cloud zugreifen.
+
+**Scope:** [P500 ASSETS](https://github.com/massiveart/sulu-docs/tree/master/system-specification/p500-assets "500 ASSETS") 
+
+**Level:** Activity
+
+**Precondition:** Der/Die Benutzer/in ist identifiziert und authentifiziert. Beim Cloud Provider ist bereits ein Konto angelegt und die Zugangsdaten sind vorhanden.
+
+**Minimal quarantee:** Der/Die Benutzer/in wurde informiert, dass es kein Cloud Provider vorhanden ist.
+
+**Success quarantee:** Das System zeigt dem/der Benutzer/in die gespeicherten Daten bei Cloud Provider an.
+
+**Main success szenario:** 
+
+1. Der/Die Benutzer/in wählt die "Cloud"-Rubrik in Sulu aus.
+2. Das System listet alle verfügbaren Cloud Provider auf.
+3. Der/Die Benutzer/in wählt einen Cloud Provider aus.
+4. Das System fordert dem/der Benutzer/in zur Authentifizierung auf.
+5. Der/Die Benutzer/in gibt seine/Ihre Zugangsdaten bei Cloud Provider ein und verbindet sich mit diesem.
+6. Das System zeigt alle beim Cloud Provider gespeicherten Daten an.
+
+
+**Extensions:**
+* *a. Zu jeder Zeit bricht der/die Benutzer/in das Use Case ab oder das System schlägt fehl:	
+Um einen konsistenten Zustand gewährleisten zu können müssen alle Transaktion sensitiven Zustände in jedem Schritt von Szenario wiederhergestellt werden können.
+* 2a. Es ist momentan kein verfügbarer Cloud Provider vorhanden:
+ * 1. Das System zeigt eine entsprechende Meldung an.
+* 4a. Die Authentifizierung erfolgt automatisch beim Einlogen in Sulu:
+ * 1. Weiter mit Schritt 6. (Main success szenarion).
+* 6a. Das System meldet, dass die eingegebenen Zugangsdaten Falsch sind (Falls Keine automatische Authentifizierung):
+ * 1. Weiter mit Schritt 5. (Main success szenarion).
+   	
