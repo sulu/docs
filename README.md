@@ -1,4 +1,4 @@
-##Sulu Documentation
+##Sulu System Specification
 ####Scope of Project
 Sulu 2.0 will be a Content Management Framework (CMF) based on Open Source - technologies replacing the current Content Management System ZOOLU. This system will be optimized for middle and large sized enterprises with multinational organizations, worldwide markets and products.
 
