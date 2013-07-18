@@ -1,5 +1,4 @@
-
-      Use Cases
+Use Cases
 ####![Assets](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/assets.png)UC-525 Duplicate File
 
 **Primary Actor:** [Endbenutzer](https://github.com/massiveart/sulu-docs/tree/master/system-specification/actors.md "Actors") 
