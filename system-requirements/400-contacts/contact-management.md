@@ -23,7 +23,7 @@ Both navigation views may have a standard filter for "My contacts", "All contact
 1. The user should be provided with facitlites to regonize the type of external files
 1. The list view should enable the user to filter by initial letter over an alphabetical listing of all letters. 
  
-![List view](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/list-view.png)
+![List view](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contact-list.png)
 Fig.: List view example
 
 ####FR-4302 Single and Multiple Editing
