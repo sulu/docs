@@ -10,22 +10,24 @@
 
 ##![Contacts](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contacts.png)4100 General
 
-####FR-4101 Role-based Storage
+####FR-4101 Centralized Data Repository
 
 **Definition:**
 
-The system shall store all contacts with its role in a centralized data repository. By default the following standard contact user roles shall be implemented:
+The system shall store all contacts with its permissions and roles in a centralized data repository. User permissions shall be definable for each contact through assigning specific user roles. The system shall provide a facility to define user roles in a dedicated section (see [1550 User Management] (https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/user-management.md "1550 User Management")). Within the contacts area the user shall be able to select contacts filtered by system-dependent modules, like:
 
 * User (registered sulu user)
-* Client (registered shop client)
+* Customer (registered shop client)
 * Newsletter (newsletter subscriber)
 
 **Specification:**
 
-1. The system shall provide an automatic assignment of the standard user roles to each added contact depending on its origin (eg. a new registered shop user shall be assigned to the role "Client")
-2. Each standard role may have be represented as a specific folder in the navigation area
-3. Each standard role shall be accessible through the user management (see [1550 User Management] (https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/user-management.md "1550 User Management"))
+1. The system shall provide an "All contacts" - list view.
+2. The system-dependent filter may have be represented as a specific folder in the navigation area
 
+![list view](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contact-list.png)
+
+Fig. "All contacts" - list view
 
 ####FR-4102 CRM Approach
 
@@ -58,3 +60,13 @@ Further the system should provide following CRM-extensions:
 1. An opportunity should have a name, a phase, a probability and an amount and should optionally refer to an activity
 1. The system shall enable the user to create notes and add attachments referring to an account or a contact 
 1. The user shall be able to assign attachments out of the assets repository or via direct upload (see [4400 Connections](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/500-assets/connections.md "4400 Connections"))
+
+![contact details](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contact-details.png)
+
+Fig. Contact details
+
+![schema contacts](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/schema-contacts.png)
+
+Fig. Schema of contacts
+
+
