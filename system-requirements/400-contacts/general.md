@@ -61,10 +61,12 @@ Further the system should provide following CRM-extensions:
 1. The system shall enable the user to create notes and add attachments referring to an account or a contact 
 1. The user shall be able to assign attachments out of the assets repository or via direct upload (see [4400 Connections](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/500-assets/connections.md "4400 Connections"))
 
+![contact details](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contact-details.png)
+
+Fig. Contact details
+
 ![schema contacts](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/schema-contacts.png)
 
 Fig. Schema of contacts
 
-![contact details](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contact-details.png)
 
-Fig. Contact details
