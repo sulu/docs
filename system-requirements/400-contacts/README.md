@@ -8,3 +8,4 @@
 * [4400 Connections](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/connections.md "4400 Connections")
 * [4500 Interfaces](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/interfaces.md "4500 Interfaces")
 * [4600 Security](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/security.md "4600 Security")
+* [4700 Newsletter](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/newsletter.md "4700 Newsletter")
