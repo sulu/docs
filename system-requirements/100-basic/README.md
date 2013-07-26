@@ -13,7 +13,6 @@
 * [1400 Publication](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/publication.md "1400 Publication")
 * [1450 Data Interfaces](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/data-interfaces.md "1450 Data Interfaces")
 * [1500 Security](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/security.md "1500 Security")-->
-
 * [1550 Access Rights](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/access-rights.md "1550 Access Rights")
 
 <!--* [1600 Settings](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/settings.md "1600 Settings")
