@@ -5,4 +5,4 @@
 ####FR-1201 Content types and templates
 Content has to be structured in various content types to build up the layout of a site. Content types have specific formats. A plausibility validation has to be implemented for each format. Wrong formats have to be determined immediately while data entering. The user should get a meaningful example of the correct data format.
 
-####FR-1202 Site types
+####FR-1202 Smart types
