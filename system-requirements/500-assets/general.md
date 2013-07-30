@@ -13,21 +13,27 @@
 
 **Definition:**
 
+The system shall render the required image sizes for the backend GUI (eg. thumbnails or standard previews) immediately after the upload is completed. Content-dependent images sizes shall be rendered after the assignment process. Optionally the system should provide a facitity to render images on demand (on front-end site request).
+
 **Specification:**
 
-####FR-5102 File Sizes and Formats
+1. When the user assigns a image to a content the system shall render the required images sizes according to the underlying site template within a background operation (rendering queue).
+1. CMYK-imageA shall be automatically converted to RGB-images
+
+####FR-5102 Image Croping
 
 **Definition:**
 
+The system shall provide manual image croping functionalities with predefined aspect rates.
+
 **Specification:**
+
+1. The user shall be able to select one of the aspect rates calculated out of all implemented site templates 
+1. The system shall display a selection area with the selected aspect rate
+1. The user shall be able to change the selection area in size an position while the aspect rate remains unchangeably
 
 ####FR-5103 Copy Ressource Locator Path
 
 **Definition:**
 
-**Specification:**
-
-####FR-5104 Image Croping
-**Definition:**
-
-**Specification:**
+The system shall provide a function to copy the resource locator path (URL) of each rendered image to the clipboard.

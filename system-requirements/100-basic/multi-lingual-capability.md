@@ -20,7 +20,14 @@
 ##![basic](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/basic.png)1300 Multi-lingual Capability
 
 ####FR-1301 Translations
-  
+
+**Definition:**
+
+The system shall provide a user interface for a centralized translation of all static content.
+
+**Specification:**
+
+1. The system shall   
 
 ####FR-1302 Language Fall Back
 A user must be able to choose a different language for a page within the specific language version of a portal. All pages within a content node has to be viewable as list showing all available and assigned languages. The language fall back function has to be accessible also via the list view. 
