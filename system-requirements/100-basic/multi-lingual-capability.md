@@ -14,9 +14,6 @@
 * 1300 Multi-lingual Capability
 * [1550 Access Rights](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/access-rights.md "1550 Access Rights")
 
-
-
-
 ##![basic](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/basic.png)1300 Multi-lingual Capability
 
 ####FR-1301 Translations
@@ -27,7 +24,23 @@ The system shall provide a user interface for a centralized translation of all s
 
 **Specification:**
 
-1. The system shall   
+1. The system shall support higher-level translation packages (see Fig. Translation packages)
+1. Each translation package shall consist of one or more language catalogues and sections (see Fig. Translation package settings)
+1. Each language catalogue shall be defined by one dedicated language 
+1. Sections shall be used to categorize the translation codes in meaningful headlines
+1. Each translation code (language key) shall have an editable field for the translation to the target language and a suggestion to support the translation work (see Fig. Translating table)
+
+![translation-packages](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/translation-packages.png)
+
+Fig. Translation packages
+
+![translation-packages](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/translation-packages-settings.png)
+
+Fig. Translation package settings
+
+![translation-packages](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/translating-table.png)
+
+Fig. Translating table
 
 ####FR-1302 Language Fall Back
 A user must be able to choose a different language for a page within the specific language version of a portal. All pages within a content node has to be viewable as list showing all available and assigned languages. The language fall back function has to be accessible also via the list view. 
