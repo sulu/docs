@@ -34,7 +34,7 @@ The system shall provide a user interface for a centralized translation of all s
 
 Fig. Translation packages
 
-![translation-packages](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/translation-packages-settings.png)
+![translation-packages](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/translation-package-settings.png)
 
 Fig. Translation package settings
 
