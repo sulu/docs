@@ -41,13 +41,21 @@ Supported content containers with their standard content types:
 	* Excerpt (text, image)
 	* Contact (multiple assignment, see [500 ASSETS]((https://github.com/massiveart/sulu-docs/tree/master/system-requirements/500-assets "500 ASSETS"))
 	* Additional content areas (depending on project)
-	
 * Overview page
 	* Title media (image, video)
 	* Article text
 	* Smart content (title, filter settings [visual styling, category, amount, value for sorting, order, target node, include/exclude sub-pages)
 	* Excerpt (text, image)
 	* Contact (multiple assignment, see [500 ASSETS]((https://github.com/massiveart/sulu-docs/tree/master/system-requirements/500-assets "500 ASSETS"))
+* External link
+	* External URL
+	* Target
+	* Excerpt (text, image)
+* Internal link (destination page)
+* iFrame
+	* External URL
+	* Format (width, height)
+* Sitemap
 
 ####FR-1252 Content Sniplets
 
@@ -58,7 +66,7 @@ The System shall support a multiple usage of global defined content fragments (c
 **Specification:**
 
 1. The user shall be able to manage content sniplets at one centralized place.
-1. The system shall allow an easy assignment of content sniplets to one or more sites.
+1. The system shall allow an easy assignment of content sniplets to one or more pages.
 
 ####FR-1252 Microdata format
 The system shall suppport the microdata format (see schema.org and http://dev.w3.org/html5/md-LC/).
