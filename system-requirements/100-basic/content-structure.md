@@ -14,15 +14,51 @@
 * [1300 Multi-lingual Capability](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/multi-lingual-capability.md "1300 Multi-lingual Capability")
 * [1550 Access Rights](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/access-rights.md "1550 Access Rights")
 
-##![basic](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/basic.png)1200 Content Structure
+##![basic](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/basic.png)1250 Content Structure
 
-####FR-1201 Content types and templates
+####FR-1251 Templates and Content Types
 
 **Definition:**
 
-Content has to be structured in various content types to build up the layout of a site. Content types have specific formats. A plausibility validation has to be implemented for each format. Wrong formats have to be determined immediately while data entering. The user should get a meaningful example of the correct data format.
+Content shall be structured in templates with various content types to build up the layout of a site. A template shall consist of a core container and one or more content types arranged in content containers. Content types have specific formats. A plausibility validation shall be implemented for each format. Wrong formats shall be determined immediately while data entering. The user should get a meaningful example of the correct data format. 
 
 **Specification:**
 
+Template Composition:
 
-####FR-1202 Smart types
+* Core container (title, article title, URL)
+* Content container (content page, overview page, external link, internal link, iFrame and sitemap)
+
+Supported content containers with their standard content types:
+* Content page
+	* Title media (image, video)
+	* Article text
+	* Multiple content blocks (title, media [image, video], text)
+	* Gallery (multiple images)
+	* Video (multiple)
+	* Document (multiple)
+	* Internal link (multiple)
+	* Excerpt (text, image)
+	* Contact (multiple assignment, see [500 ASSETS]((https://github.com/massiveart/sulu-docs/tree/master/system-requirements/500-assets "500 ASSETS"))
+	* Additional content areas (depending on project)
+	
+* Overview page
+	* Title media (image, video)
+	* Article text
+	* Smart content (title, filter settings [visual styling, category, amount, value for sorting, order, target node, include/exclude sub-pages)
+	* Excerpt (text, image)
+	* Contact (multiple assignment, see [500 ASSETS]((https://github.com/massiveart/sulu-docs/tree/master/system-requirements/500-assets "500 ASSETS"))
+
+####FR-1252 Content Sniplets
+
+**Definition:**
+
+The System shall support a multiple usage of global defined content fragments (content sniplets). 
+
+**Specification:**
+
+1. The user shall be able to manage content sniplets at one centralized place.
+1. The system shall allow an easy assignment of content sniplets to one or more sites.
+
+####FR-1252 Microdata format
+The system shall suppport the microdata format (see schema.org and http://dev.w3.org/html5/md-LC/).
