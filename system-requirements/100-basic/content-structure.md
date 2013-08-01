@@ -69,4 +69,4 @@ The System shall support a multiple usage of global defined content fragments (c
 1. The system shall allow an easy assignment of content sniplets to one or more pages.
 
 ####FR-1252 Microdata format
-The system shall suppport the microdata format (see schema.org and http://dev.w3.org/html5/md-LC/).
+The system shall suppport the microdata format (see [schema.org](http://schema.org) and [W3C](http://dev.w3.org/html5/md-LC/)).
