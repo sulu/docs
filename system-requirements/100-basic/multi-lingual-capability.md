@@ -50,6 +50,21 @@ An existing page in a certain language can be a valuable input for the translati
 
 ####FR-1304 Language Detection
 
+**Definition:**
+
+The standard language detection shall be based on the site URL. The system shall support different mapping combinations of top-level and sub domains configurable for each implemented portal.
+
+**Specification:**
+
+Following mapping options shall be implemented.
+* http://www.example.de - Top-level domain
+* http://www.example.com - Top-level domain 
+* http://de.example.com - Sub domain
+* http://www.example.com/de - URL-path-prefix
+* http://www.example.com/de-ch - URL-path-prefix with localization
+* http://de.example.ch - Combination of sub and top-level domain
+* http://www.example.de /ch - Combination of top-level domain and URL-path-prefix
+
 
 ####FR-1305 IP to Location
 
