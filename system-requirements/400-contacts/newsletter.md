@@ -10,6 +10,8 @@
 
 ##![Contacts](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contacts.png)4700 Newsletter
 
+tbd with RSH
+
 ####FR-4701 Administration
 
 **Definition:**
