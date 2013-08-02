@@ -21,7 +21,7 @@ Both navigation views may have a standard filter for "My contacts", "All contact
 
 **Specification:**
 
-1. The user should be provided with facitlites to regonize the type of external files
+1. The thumb nails of the profile images shall generated automatically
 1. The list view should enable the user to filter by initial letter over an alphabetical listing of all letters. 
  
 ![List view](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contact-list.png)
@@ -30,6 +30,7 @@ Fig.: List view example
 ####FR-4302 Single and Multiple Editing
 
 **Definition:**
+
 The system shall provide the standard data management functions ("New", "Edit", Duplicate" and "Delete") supporting single and multiple edit mode. The user should be provided with a simple function to move a contact to another account or to refer an alias of the contact to another account (details see [4100 General](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/general.md)).
 
 **Specification:**
