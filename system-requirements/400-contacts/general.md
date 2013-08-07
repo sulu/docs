@@ -38,10 +38,10 @@ The contacts shall follow the customer relationship systems approach (CRM-approa
 
 * Contacts
 * Accounts
-* Activities
 
 Further the system should provide following CRM-extensions:
 
+* Activities
 * Opportunities
 * Notes
 * Attachments (see [4400 Connections] (https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/connections.md "4400 Connections"))
@@ -65,6 +65,10 @@ Further the system should provide following CRM-extensions:
 ![contact details](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contact-details.png)
 
 Fig. Contact details
+
+![contact details](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/account-details.png)
+
+Fig. Account details
 
 ![schema contacts](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/schema-contacts.png)
 
