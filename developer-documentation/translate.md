@@ -1,4 +1,4 @@
-# Bundle (example translate)
+# Translate Bundle
 ## Editing
 * define relational backbone models
 * define list and form backbone view
@@ -13,3 +13,4 @@
 * build Package
 * Insert to database
 * addional flushes because of combined primary key with foreign identities
+* Implement separate command class and register it in app/console
