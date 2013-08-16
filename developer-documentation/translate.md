@@ -14,3 +14,8 @@
 * Insert to database
 * addional flushes because of combined primary key with foreign identities
 * Implement separate command class and register it in app/console
+
+## Export
+* Use XliffFileDumper of Symfony/Translate and own implementation of FileDumper-Interface for JSON
+* Written own Repository for filtering desired Translations
+* Implement separte command class and register it in app/console
