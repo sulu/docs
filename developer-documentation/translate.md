@@ -19,3 +19,7 @@
 * Use XliffFileDumper of Symfony/Translate and own implementation of FileDumper-Interface for JSON
 * Written own Repository for filtering desired Translations
 * Implement separte command class and register it in app/console
+
+## Content navigation
+* return simple javascript object (in the format the navigation needs it)
+* trigger event on husky navigation with this object
