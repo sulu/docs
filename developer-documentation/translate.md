@@ -23,3 +23,7 @@
 ## Content navigation
 * return simple javascript object (in the format the navigation needs it)
 * trigger event on husky navigation with this object
+
+## Code Repository
+* Splited list and getAll to comply to the conventions of Backbone
+* List can filter columns and create where statements, paginate data and sort (Relation joins resolved automatically)
