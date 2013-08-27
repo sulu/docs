@@ -1,5 +1,4 @@
-How to deal with idContactsCreator and idContactsChanger
-########################################################
+# How to deal with idContactsCreator and idContactsChanger
 
 * set onDelete to "set null" => this will set i null when the contact is deleted.
 
