@@ -1,5 +1,7 @@
 ##Detail Specification
 
+![000 FOUNDATION](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/foundation.png)[000 FOUNDATION](https://github.com/massiveart/sulu-docs/tree/master/detail-specification/000-foundation "000 FOUNDATION")
+
 ![100 BASIC](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/basic.png)[100 BASIC](https://github.com/massiveart/sulu-docs/tree/master/detail-specification/100-basic "100 BASIC")
 
 ![200 SEARCH](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/search.png)[200 SEARCH](https://github.com/massiveart/sulu-docs/tree/master/detail-specification/200-search "200 SEARCH")
