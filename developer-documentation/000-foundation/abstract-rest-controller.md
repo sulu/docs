@@ -1,5 +1,6 @@
 # Abstract RestController
 * extracts some common rest functionality into a base class
+* heavy usage of callback functions
 * Childclass overwrites `entityName`-property
 * Childclass uses predefined functions from abstract RestController (response* for response-generating functions and process* for functions doing some work without returning response objects)
  * responseGetById
