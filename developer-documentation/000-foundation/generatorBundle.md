@@ -24,10 +24,10 @@ Generates a Bundle for Sulu.
 
 #### Flow
 
-1 /Command/GenerateBundleCommand ... Handles flow of commandline, starts generating bundle
-1 /Generator/SuluBundleGenerator ... Generates Bundle structure and renders the required files
-1 /Manipulator/KernelManipulator ... Manipulates the Kernel of the Project and add the new Bundle
-1 /Manipulator/RoutingManipulator ... Manipulates the Routing of the Project and add the new Bundle for Routing
+1. /Command/GenerateBundleCommand ... Handles flow of commandline, starts generating bundle
+1. /Generator/SuluBundleGenerator ... Generates Bundle structure and renders the required files
+1. /Manipulator/KernelManipulator ... Manipulates the Kernel of the Project and add the new Bundle
+1. /Manipulator/RoutingManipulator ... Manipulates the Routing of the Project and add the new Bundle for Routing
 
 #### Structure
 
