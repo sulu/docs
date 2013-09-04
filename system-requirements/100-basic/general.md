@@ -36,6 +36,8 @@ Fig. General list view
 
 Fig. Contacts list view
 
+######NAVIGATION:
+
 ![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_node-treeview.png)
 
 Fig. Node tree view navigation (portals)
@@ -47,6 +49,8 @@ Fig. Contacts navigation
 ![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_assets.png)
 
 Fig. Assets navigation
+
+######UI ELEMENTS:
 
 ![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/buttons_functions.png)
 
