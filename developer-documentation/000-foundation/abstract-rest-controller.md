@@ -46,9 +46,11 @@ class ExampleController extends RestController implements ClassResourceInterface
             $id,
             function ($id) {
                 // Delete data from database, throw Exceptions if operation not successful
-                // EntityNotFoundException, EntityIdAlreadySetException and a RestException are already delivered with this bundle
+                // EntityNotFoundException, EntityIdAlreadySetException and
+                // an abstract RestException are already delivered with this bundle
             }
         );
+        return $this->handleView($view);
     }
 }
 ```
