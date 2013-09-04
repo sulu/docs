@@ -22,15 +22,43 @@
 
 **Definition:**
 
-The basic user interface concept defines UI layout with the basic UI elements and its usage.
+The basic user interface concept defines UI layout with the basic UI elements and its usage. All formulars, lists and views shall be consistent in design, interaction concept and functionalities.
 
 **Specification:**
 
-1. All formulars, lists and views shall be consistent in design, interaction concept and functionalities
+######LISTS:
 
 ![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/list_general.png)
 
-Fig. Access rights model
+Fig. General list view
+
+![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/list_contacts.png)
+
+Fig. Contacts list view
+
+![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_node-treeview.png)
+
+Fig. Node tree view navigation (portals)
+
+![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_contacts.png)
+
+Fig. Contacts navigation
+
+![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_assets.png)
+
+Fig. Assets navigation
+
+![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/buttons_functions.png)
+
+Fig. Buttons and functions
+
+![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/forms.png)
+
+Fig. Forms
+
+![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/typography.png)
+
+Fig. Typography
 
 ####FR-1102 Import / Export Functions in Lists
 
