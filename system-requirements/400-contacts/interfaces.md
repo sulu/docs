@@ -25,12 +25,8 @@ The system shall provide comprehensive import and export facilities.
 
 ####FR-4502 LDAP / AD Integration
 
-**Definition:**
-
 The shall provide a facility to integrate user out of external LDAP and Active Directory structures to be further managed in the system (see [1550 User Management](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/user-management.md "1550 User Management")).
 
 ####FR-4503 Salesforce Integration
-
-**Definition:**
 
 The system should use the open REST API of Salesforce to integrate standardized CRM data (details see [developerforce](http://wiki.developerforce.com/page/REST_API "developerforce" )).

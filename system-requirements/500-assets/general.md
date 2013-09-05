@@ -34,6 +34,4 @@ The system shall provide manual image croping functionalities with predefined as
 
 ####FR-5103 Copy Ressource Locator Path
 
-**Definition:**
-
 The system shall provide a function to copy the resource locator path (URL) of each rendered image to the clipboard.

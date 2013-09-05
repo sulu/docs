@@ -78,8 +78,6 @@ The user shall be able to export each list view in the system to different forma
 
 ####FR-1103 Separation of Staging and Live Environment
 
-**Definition:**
-
 The system architecture shall support a physical and logical separation of the staging and live environment. Staging and live data repositories shall be synched according to the master - slave approach.
 
 ####FR-1104 Multiple Copy-Paste with Field Mapping
