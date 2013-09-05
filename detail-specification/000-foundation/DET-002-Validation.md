@@ -20,6 +20,14 @@ For Validation of Form's we have researched two possible cadidate:
 
 Both Candidates dont implement all requirements. But we have decided to use ParsleyJS and add the localization.
 
+Parsley have folowing opportunities:
+
+* Initialization without js code
+* Strong validation methods like: greater than an other field
+* It uses data attributes, isolation of style (not classes) and code
+* Easy validation method extensions
+* Modern
+
 ## ParsleyJS Example
 
 The Server can initialize the Validation with HTML data Attributes.
