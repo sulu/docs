@@ -25,7 +25,7 @@ The security for the user access rights shall be based on LPDAP-principles.
 2. The system shall provide a facility to match a LDAP-structured permission tree to the systems access right structure.
 3. Every LDAP directory layer shall be allocated to an unique user group layer. Therefore the system shall support nested user groups (more see FR-1202).
 
-####FR-1552 User, Groups, Roles and Permissions
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-1552 User, Groups, Roles and Permissions
 
 **Definition:**
 
