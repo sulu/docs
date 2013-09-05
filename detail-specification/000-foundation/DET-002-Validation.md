@@ -18,7 +18,7 @@ For Validation of Form's we have researched two possible cadidate:
 
 ## Result
 
-Both Candidates dont implement all requirements. But we have decided to use one of them and build the localization with an other library.
+Both Candidates dont implement all requirements. But we have decided to use ParsleyJS and add the localization.
 
 ## ParsleyJS Example
 
