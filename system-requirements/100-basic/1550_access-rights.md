@@ -45,3 +45,7 @@ The access right management shall cover the complex requirements arising from th
 ![Access rights model](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/access-rights-model.png)
 
 Fig. Access rights model
+
+![Access rights model](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contact-permissions.png)
+
+Fig. Contact permission settings
