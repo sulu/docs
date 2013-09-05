@@ -14,7 +14,7 @@
 
 ##![basic](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/basic.png)1300 Multi-lingual Capability
 
-####FR-1301 Translations
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-1301 Translations
 
 **Definition:**
 
@@ -40,13 +40,13 @@ Fig. Translation package settings
 
 Fig. Translating table
 
-####FR-1302 Language Fall Back
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-1302 Language Fall Back
 A user must be able to choose a different language for a page within the specific language version of a portal. All pages within a content node has to be viewable as list showing all available and assigned languages. The language fall back function has to be accessible also via the list view. 
 
-####FR-1303 Copying a Language Version
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-1303 Copying a Language Version
 An existing page in a certain language can be a valuable input for the translation into another language. Therefore the user copies a specific page and translates the content. Translated pages can be stored anywhere in the same or in a different portal. The list view allows to copy and save whole nodes or a selection of pages at once.
 
-####FR-1304 Language Detection
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-1304 Language Detection
 
 **Definition:**
 

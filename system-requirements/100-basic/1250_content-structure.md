@@ -13,7 +13,7 @@
 * [1600 Settings](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1600_settings.md "1600 Settings")
 
 ##![basic](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/basic.png)1250 Content Structure
-####FR-1251 Templates and Content Types
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-1251 Templates and Content Types
 
 **Definition:**
 
@@ -54,7 +54,7 @@ Supported content containers with their standard content types:
 	* Format (width, height)
 * Sitemap
 
-####FR-1252 Content Sniplets
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-1252 Content Sniplets
 
 **Definition:**
 
@@ -65,5 +65,20 @@ The System shall support a multiple usage of global defined content fragments (c
 1. The user shall be able to manage content sniplets at one centralized place.
 1. The system shall allow an easy assignment of content sniplets to one or more pages.
 
-####FR-1252 Microdata format
+####FR-1253 Microdata format
 The system shall suppport the microdata format (see [schema.org](http://schema.org) and [W3C](http://dev.w3.org/html5/md-LC/)).
+
+####FR-1254 Structures
+
+**Definition:**
+
+The system shall provide a facility to define unlimited individual hierarchical structures independent of the portal content.
+
+**Specification:**
+
+1. Each node shall have a reference to a specific entity 
+1. Each node may have an assigned template with URL and additional information (e.g. SEO)
+
+
+
+
