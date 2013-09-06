@@ -33,35 +33,35 @@ The basic user interface concept defines UI layout with the basic UI elements an
 
 Fig. General list view
 
-![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/list_contacts.png)
+![Contacts list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/list_contacts.png)
 
 Fig. Contacts list view
 
 ######NAVIGATION:
 
-![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_node-treeview.png)
+![Node tree view navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_node-treeview.png)
 
 Fig. Node tree view navigation (portals)
 
-![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_contacts.png)
+![Contacts navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_contacts.png)
 
 Fig. Contacts navigation
 
-![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_assets.png)
+![Assets navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_assets.png)
 
 Fig. Assets navigation
 
 ######UI ELEMENTS:
 
-![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/buttons_functions.png)
+![Buttons and functions](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/buttons_functions.png)
 
 Fig. Buttons and functions
 
-![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/forms.png)
+![Forms](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/forms.png)
 
 Fig. Forms
 
-![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/typography.png)
+![Typography](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/typography.png)
 
 Fig. Typography
 
