@@ -9,6 +9,6 @@
 
 ##![Contacts](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/assets.png)5600 Security
 
-####FR-5601 Collection-based File Security
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-5601 Collection-based File Security
 
-The system shall provide a facility to protect collections (group of files) by assigning user-specific access rights.
+The system shall provide a facility to protect collections (group of files) by assigning user-specific access rights. A user should be able to apply access rights on each level of a self-defined hierarchical file structure.
