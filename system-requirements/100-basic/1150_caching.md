@@ -19,29 +19,38 @@
 
 **Definition:**
 
+The system shall provide user-driven page cache mechanisms to optimize the speed of the managed portal.
+
 **Specification:**
+
+1. The user shall be able to cache a whole page
+1. The system should also provide a cache on request functionality
+1. Within the portal settings the user shall be able to generate a cache on save (cache warming)
+
 
 ####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-1152 Cache Expiring
 
 **Definition:**
 
-**Specification:**
-
-####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-1153 Support of ESI for Partial Cache Disabling
-
-**Definition:**
+The system shall support different cache expiring settings.
 
 **Specification:**
 
-####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-1154  Deliver Cached Page without any Database Request
+The following methods for cache expiring shall be implemented:
+* whole portal expiring (manually)
+* single page expiring (manually or automatic on save)
+* intelligent cache lifetime calculation (cache considers publish and expiring dates of all effected components and pages)
 
-**Definition:**
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-1153 Partial Cache Disabling
 
-**Specification:**
+The system shall provide partial cache disabling mechanisms according to the Edge Side Includes (ESI) standard proceeded by the system or by varnish. 
 
-####FR-1155  Transparent Caching Mechanism
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-1154 Database independent page delivery  
 
-**Definition:**
+The system shall provide facilities to deliver cached pages without database requests. The site should be reachable even if the database is down. 
 
-**Specification:**
+####NFR-1155  Transparent Caching Mechanism
 
+The system shall provide intelligent caching mechanisms to minimize manual interventions by the user.
+
+To be checked with RSH…

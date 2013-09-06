@@ -17,9 +17,14 @@
 
 **Definition:**
 
-The basic user interface concept defines UI layout with the basic UI elements and its usage. All formulars, lists and views shall be consistent in design, interaction concept and functionalities.
+The basic user interface concept defines UI layout with the basic UI elements and its usage.
 
 **Specification:**
+
+1. All formulars, lists and views shall be consistent in design, interaction concept and functionalities
+1. The interaction concept strictly differentiates between list and edit views with their own UI behavior rules and functionalities.
+1. When deleting an item within the list view a message box appears ("…do you really want to delete…")
+1. Deleted elements like input fields or complex content types within the edit view shall be marked as deleted before confirming the changes by saving the form (see states of save button in fig. buttons and functions)
 
 ######LISTS:
 
