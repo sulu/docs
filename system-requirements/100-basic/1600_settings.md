@@ -18,10 +18,6 @@
 
 The system must provide centralized and process-categorized tag management functionalities for non-nested data labeling.
 
-####FR-1602 Automatic Country Codes
-
-
-
-####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-1603 Categories
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-1602 Categories
 
 The system shall support a centralized management of category trees with add, edit and delete functions.
