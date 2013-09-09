@@ -40,7 +40,7 @@ The access right management shall cover the complex requirements arising from th
 1. Each user group shall be assignable to parent user group(s).
 1. A role shall be assignable to a system user or a user group.
 1. The system shall provide a facility to define the permission settings for each security context of the system bundles (ACL´s).
-1. A role shall be implemented as a set of security contexts with assigned user permissions.
+1. A role shall be implemented as a security context with assigned user permissions.
 1. Within the contact management the system shall provide a facility to change the assigned user groups and / or roles (see [4600 Security](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/securtiy.md "4600 Securty")) and to show all user generated security contexts in an non-editable overview.
 
 ![Access rights model](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/access-rights-model.png)
