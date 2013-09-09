@@ -13,7 +13,7 @@
 
 **Definition:**
 
-The system shall provide basic text formatting functionalities through CKEditor.
+The system shall provide basic text formatting functionalities through [CKEditor](http://ckeditor.com).
 
 ![CKEditor](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/ckeditor.png)
 
