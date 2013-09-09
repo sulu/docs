@@ -41,7 +41,7 @@ The system shall provide a multiple upload and download of files.
 
 **Definition:**
 
-The system shall provide two navigation views for browsing for assets:
+The system shall provide two navigation views for browsing assets:
 * Thumb nail view
 * List view with multiple select and sorting functions
 

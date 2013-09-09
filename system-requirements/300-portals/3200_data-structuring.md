@@ -16,22 +16,25 @@
 * Landing Pages
 * Settings
 
+![Node tree view navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_node-treeview.png)
+
+Fig. Node tree view navigation (portals)
+
 ####FR-3202 Favorites
 
 **Definition:**
 
-**Specification:**
-
-####FR-3203 Content Sniplets
-
-**Definition:**
+The user shall be able to define personal favorites of particular pages. 
 
 **Specification:**
+
+1. All added favorites shall be displayed and accessible via a favorites folder in the navigation area.
+1. The user shall be able to sort his favorites in preferred order
+
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-3203 Content Sniplets
+
+The system shall provide a means of defining content sniplets like banners, sidebars or footers to apply them as often as desired to different pages.
 
 ####FR-3204 Structures
 
-**Definition:**
-
-**Specification:**
-
-
+See [FR-1254 Structures] (https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1250_content-structure.md "1250 Content Structure")

@@ -73,7 +73,7 @@ The system shall suppport the microdata format (see [schema.org](http://schema.o
 
 **Definition:**
 
-The system shall provide a facility to define unlimited individual hierarchical structures independent of the portal content.
+The user shall be provided with facilities to define unlimited individual hierarchical structures independent of the portal content.
 
 **Specification:**
 
