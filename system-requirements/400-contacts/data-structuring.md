@@ -13,6 +13,7 @@
 ####FR-4201 Filtering
 
 **Definition:**
+
 The system shall provide a facility for dynamic filtering based on all contact attributes. The user shall be able to define and save those individual dynamic filters. Automatic filters based on the standard contact user roles shall be displayed by default. In addition the user shall be able to create a manual filter by assigning contacts to a named folder.
 
 **Specification:**
@@ -28,5 +29,4 @@ The system shall provide a facility for dynamic filtering based on all contact a
 
 ####FR-4202 Hierarchical Structuring [optional]
 
-**Definition:**
 The system may provide a facility to built up a user-specific hierarchical structures with multiple layers to assign contacts (in addition to the assignment to an account).

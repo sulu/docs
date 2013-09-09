@@ -34,6 +34,8 @@ Three level rating system:
 
 The mandatory requirements cannot be sacrificed, desirable requirements are important but could be sacrificed if necessary to meet schedule or budgetary concerns. Optional requirements are ones which may not be developed (“nice to haves”).
 
+Requirements which are necessary for the planned alpha release are marked with an ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png).
+
 ####Functional and Nonfunctional Requirements
 * Functional requirements [FR-xxxx] are generally written from a bird’s-eye viewpoint and describe system capabilities users expect for solving a specific problem.
 

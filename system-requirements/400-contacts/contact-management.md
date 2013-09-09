@@ -13,6 +13,7 @@
 ####FR-4301 Navigation Types
 
 **Definition:**
+
 The system shall provide the following two navigation views for browsing the contacts:
 * Thumb nail view
 * List view with multiple select and sorting functions

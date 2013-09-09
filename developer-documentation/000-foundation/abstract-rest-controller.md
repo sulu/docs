@@ -24,17 +24,33 @@ class ExampleController extends RestController implements ClassResourceInterface
 
     public function getAction($id)
     {
-        return $this->responseGetById(
+        $view = $this->responseGetById(
             $id,
             function ($id) {
                 // Load data (e.g. from database)
             }
         );
+
+        return $this->handleView($view);
     }
 
     public function listAction()
     {
-        return $this->responseList();
+        $view = $this->responseList();
+        return $this->handleView($view);
+    }
+
+    public function deleteAction($id)
+    {
+        $view = $this->responseDelete(
+            $id,
+            function ($id) {
+                // Delete data from database, throw Exceptions if operation not successful
+                // EntityNotFoundException, EntityIdAlreadySetException and
+                // an abstract RestException are already delivered with this bundle
+            }
+        );
+        return $this->handleView($view);
     }
 }
 ```
