@@ -11,7 +11,9 @@
   * rm -rf app/logs/*
   * setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs
   * setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs
-  
+1. Create Database: app/console doctrine:database:create
+1. Create Schema: app/console doctrine:schema:create
+
 ## Templates
 
 ### VHost
