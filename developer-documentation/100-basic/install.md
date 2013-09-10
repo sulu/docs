@@ -14,6 +14,7 @@
   * sudo setfacl -dR -m u:www-data:rwx -m u:\`whoami\`:rwx app/cache app/logs
 1. Create Database: app/console doctrine:database:create
 1. Create Schema: app/console doctrine:schema:create
+1. Create one of each Type and Country 
 
 ## Templates
 
