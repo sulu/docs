@@ -11,6 +11,4 @@
 
 ####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-2601 Security Check
 
-**Definition:**
-
-**Specification:**
+The system shall consider security aspects within indexing and querying for the front-end and the admin.

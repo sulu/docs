@@ -13,10 +13,14 @@
 
 **Definition:**
 
+The system shall provide a search index for all relevant data to be found via search queries.
+
 **Specification:**
+
+1. The implementation of the search should be designed as an abstraction layer for Elastic Search and ZEND Lucene
+1. The system shall support customizable priorities for search indices
+1. Referenced content should also be indexed
 
 ####FR-2102 Advanced Search
 
-**Definition:**
-
-**Specification:**
+The system shall provide a facility to prioritize and list search results in the order of frequency of clicked result links. When a user enters a search query the system shall display a recommendation of meaningful search terms.

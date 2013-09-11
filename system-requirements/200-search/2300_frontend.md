@@ -11,11 +11,10 @@
 
 ####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-2301 Search-Results
 
-**Definition:**
-
-**Specification:**
+* The front-end search shall be based on the best match approach
+* The user should be able to priorizise content types (e.g. products before news) to be grouped within the search results
 
 ####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-2302 Live Search
-**Definition:**
 
-**Specification:**
+* Search entries on defined fields shall deliver fast response (title, tags and categories)
+* When a user types a search term the system shall post the search request after the entry of the first three letters

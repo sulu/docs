@@ -11,6 +11,4 @@
 
 ####FR-2401 Search tracking
 
-**Definition:**
-
-**Specification:**
+The system shall provide a report to analyze the most used search terms including a hit tracking figure of all search entries.

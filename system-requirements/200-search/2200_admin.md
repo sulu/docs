@@ -11,13 +11,8 @@
 
 ####FR-2201 Process-based Search
 
-**Definition:**
-
-**Specification:**
+The user shall be able to limit the search query to a specific system process (Assets, Contacts, Global, Portals or all)
 
 ####FR-2202 Tag-based Search
 
-**Definition:**
-
-**Specification:**
-
+The user shall be able to execute tag-based searches over the whole system with process-independent results.
