@@ -5,7 +5,7 @@
 
 ####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-0201 Content Delivery Approach
 
-####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-0202 Multi-device
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-0202 Multi-device Support
 
 **Definition:**
 
