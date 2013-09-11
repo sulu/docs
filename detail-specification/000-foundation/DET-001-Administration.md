@@ -28,3 +28,9 @@ Every Navigation Item can have a action-attribute, to which a request is sent, w
 The last column of the navigation is the so called content navigation, displaying multiple sub forms of a resource. You could also describe it as tabs, altough they are not located on top.
 The bundle can decide on its own where this navigation comes from. If you don't need any serverside information you could just return a navigation Object. In case you don't have all the information available you can also make an AJAX-Request, and use this JSON as the input.
 This data is delivered to the navigation with an triggered event.
+
+####Commands
+The admin has also to return an array with instances from all commands offered by this bundle. It is needed to register the commands in the `app/console`-command of Sulu.
+
+####Security Contexts
+Another thing the bundle/admin has to return is the security contexts it is offering. The bundle uses these contexts to check if the logged in user has the permission to execute the desired operation. 
