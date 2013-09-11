@@ -9,8 +9,14 @@
 
 ##![portals](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/portals.png)3600 Security
 
-####FR-3601 …
+####FR-3601 Node based Security
 
 **Definition:**
 
+The user shall be able to define security settings on a node on group and role level.
+
 **Specification:**
+
+1. Within the content delivery process the system shall consider the security settings
+1. Security settings of a parent node has to be passed to the child nodes (additional security inheritance approach)
+1. The security settings shall provide a separation of front and backend security definitions

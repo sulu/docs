@@ -9,14 +9,20 @@
 
 ##![portals](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/portals.png)3500 Interfaces
 
-####FR-3501 Import / Export
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-3501 Import / Export
 
-**Definition:**
-
-**Specification:**
+The system shall provide a means of importing and exporting content (details see [FR-1452 General API](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1450_data-interfaces.md "FR-1452 General API"))
 
 ####FR-3502 External Nodes
 
 **Definition:**
 
+The system shall provide a facility to import external data providers.
+
 **Specification:**
+
+Following features to manage external content shall be implemented: 
+
+1. Visualization of Daemom jobs
+1. Automatic data import mechanisms (batch jobs)
+1. Editing of specific fields of imported data (eg. geo-data of addresses)
