@@ -11,7 +11,7 @@
 
 ##![Contacts](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contacts.png)4100 General
 
-####FR-4101 Centralized Data Repository
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-4101 Centralized Data Repository
 
 **Definition:**
 
@@ -30,7 +30,7 @@ The system shall store all contacts with its permissions and roles in a centrali
 
 Fig. "All contacts" - list view
 
-####FR-4102 CRM Approach
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-4102 CRM Approach
 
 **Definition:**
 

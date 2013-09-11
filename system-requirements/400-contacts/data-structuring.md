@@ -27,6 +27,6 @@ The system shall provide a facility for dynamic filtering based on all contact a
 6. To set up a manual filter, the user has to define a filter name and select the desired contacts (multiple selection).
 
 
-####FR-4202 Hierarchical Structuring [optional]
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-4202 Hierarchical Structuring
 
 The system may provide a facility to built up a user-specific hierarchical structures with multiple layers to assign contacts (in addition to the assignment to an account).
