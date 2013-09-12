@@ -10,7 +10,7 @@
 
 ##![Contacts](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contacts.png)4400 Connections
 
-####FR-4401 Asset Assignment
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-4401 Asset Assignment
 
 **Definition:**
 
@@ -21,7 +21,7 @@ The system shall provide a facility to assign assets from the asset repository (
 1. The user shall be able to assign multiple assets
 1. Assigned Assets should be displayed with a preview icon
 
-####FR-4402 Direct Upload
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-4402 Direct Upload
 
 **Definition:**
 
@@ -32,7 +32,7 @@ Assets, especially the profile image, shall be assigned via direct upload to the
 1. The user shall be able to assign assets either out of asset repository or via direct upload
 1. When a user uploads a profile image to a contact, the system automatically does the image croping for proper representation on the user´s display 
 
-####FR-4403 Content Assignment
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-4403 Content Assignment
 
 **Definition:**
 In some cases the system shall provide facilities to assign content to a contact, an account.

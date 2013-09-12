@@ -65,6 +65,10 @@ Fig. Forms
 
 Fig. Typography
 
+![Dialog Box](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/dialog-box.png)
+
+Fig. Dialog Box
+
 ####FR-1102 Import / Export Functions in Lists
 
 **Definition:**

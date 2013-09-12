@@ -10,7 +10,7 @@
 
 ##![Contacts](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contacts.png)4300 Contact Management
 
-####FR-4301 Navigation Types
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-4301 Navigation Types
 
 **Definition:**
 
@@ -28,7 +28,7 @@ Both navigation views may have a standard filter for "My contacts", "All contact
 ![List view](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contact-list.png)
 Fig.: List view example
 
-####FR-4302 Single and Multiple Editing
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-4302 Single and Multiple Editing
 
 **Definition:**
 
