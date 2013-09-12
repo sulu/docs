@@ -5,7 +5,7 @@
 ####![000 FOUNDATION](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/foundation.png)000 FOUNDATION
 
 #####0100 Admin Concepts
-[FR-0101 Non Destructive Delete] (https://raw.github.com/massiveart/sulu-docs/master/system-requirements/000-foundation/0100_admin-concepts.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-0101 Non Destructive Delete] (https://raw.github.com/massiveart/sulu-docs/master/system-requirements/000-foundation/0100_admin-concepts.md)
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-0102 Validation](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/000-foundation/0100_admin-concepts.md)
 
@@ -21,11 +21,11 @@
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-1101 Basic User Interface Concept](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1100_general.md)
 
-[FR-1102 Import / Export Functions in Lists](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1100_general.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-1102 Import / Export Functions in Lists](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1100_general.md)
 
-[FR-1103 Separation of Staging and Live Environment](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1100_general.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-1103 Separation of Staging and Live Environment](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1100_general.md)
 
-[FR-1104 Multiple Copy-Paste with Field Mapping](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1100_general.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-1104 Multiple Copy-Paste with Field Mapping](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1100_general.md)
 
 #####1150 Caching Mechanism
 
@@ -37,7 +37,7 @@
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-1154 Database independent page delivery](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1150_caching.md)
 
-[NFR-1155  Transparent Caching Mechanism](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1150_caching.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[NFR-1155  Transparent Caching Mechanism](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1150_caching.md)
 
 #####1200 Resource Locator Path Management
 
@@ -53,9 +53,9 @@
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-1252 Content Sniplets](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1250_content-structure.md)
 
-[FR-1253 Microdata format](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1250_content-structure.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-1253 Microdata format](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1250_content-structure.md)
 
-[FR-1254 Structures](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1250_content-structure.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-1254 Structures](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1250_content-structure.md)
 
 #####1300 Multi-lingual Capability
 
@@ -67,31 +67,31 @@
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-1304 Language Detection](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1300_multi-lingual-capability.md)
 
-[FR-1305 IP to Location](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1300_multi-lingual-capability.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-1305 IP to Location](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1300_multi-lingual-capability.md)
 
 #####1350 Content Life Cycle Workflow
 
-[FR-1351 General Approach](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1350_clc.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-1351 General Approach](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1350_clc.md)
 
 #####1400 Publication
 
-[FR-1401 Multi-formats](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1400_publication.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-1401 Multi-formats](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1400_publication.md)
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-1402 Themes](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1400_publication.md)
 
 #####1450 Data Interfaces
 
-[FR-1451 Migration](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1450_data-interfaces.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-1451 Migration](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1450_data-interfaces.md)
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-1452 General API](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1450_data-interfaces.md)
 
 #####1500 Security
 
-[FR-1501 IP Addresses](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1500_security.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-1501 IP Addresses](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1500_security.md)
 
 #####1550 Access Rights
 
-[FR-1551 Support of LDAP Principles](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1550_access-rights.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-1551 Support of LDAP Principles](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1550_access-rights.md)
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-1552 User, Groups, Roles and Permissions](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/1550_access-rights.md)
 
@@ -107,13 +107,13 @@
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-2101 Search Index](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search/2100_general.md)
 
-[FR-2102 Advanced Search](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search/2100_general.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-2102 Advanced Search](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search/2100_general.md)
 
 #####2200 Admin Search
 
-[FR-2201 Process-based Search](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search/2200_admin.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-2201 Process-based Search](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search/2200_admin.md)
 
-[FR-2202 Tag-based Search](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search/2200_admin.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-2202 Tag-based Search](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search/2200_admin.md)
 
 #####2300 Front-end Search
 
@@ -123,13 +123,13 @@
 
 #####2400 Statistics
 
-[FR-2401 Search tracking](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search/2400_statistics.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-2401 Search tracking](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search/2400_statistics.md)
 
 #####2500 Interfaces
 
-[FR-2501 Google Analytics Integration](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search/2500_interfaces.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-2501 Google Analytics Integration](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search/2500_interfaces.md)
 
-[FR-2502 Integration of Google Site Search](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search/2500_interfaces.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-2502 Integration of Google Site Search](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search/2500_interfaces.md)
 
 #####2600 Security
 
@@ -145,11 +145,11 @@
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-3102 Main navigation points](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3200_data-structuring.md)
 
-[FR-3202 Favorites](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3200_data-structuring.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-3202 Favorites](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3200_data-structuring.md)
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-3203 Content Sniplets](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3200_data-structuring.md)
 
-[FR-3204 Structures](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3200_data-structuring.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-3204 Structures](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3200_data-structuring.md)
 
 #####3300 Content Management
 
@@ -169,13 +169,13 @@
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-3402 Direct Upload](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3400_connections.md)
 
-[FR-3403 Dynamic Document Assignment](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3400_connections.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-3403 Dynamic Document Assignment](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3400_connections.md)
 
 #####3500 Interfaces
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-3501 Import / Export](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3500_interfaces.md)
 
-[FR-3502 External Nodes](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3500_interfaces.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-3502 External Nodes](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3500_interfaces.md)
 
 #####3500 Security
 
@@ -189,7 +189,7 @@
 
 #####4200 Data Structuring
 
-[FR-4201 Filtering](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/400-contacts/data-structuring.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-4201 Filtering](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/400-contacts/data-structuring.md)
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-4202 Hierarchical Structuring](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/data-structuring.md)
 
@@ -209,21 +209,21 @@
 
 #####4500 Interfaces
 
-[FR-4501 Import / Export](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/interfaces.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-4501 Import / Export](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/interfaces.md)
 
-[FR-4502 LDAP / AD Integration](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/interfaces.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-4502 LDAP / AD Integration](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/interfaces.md)
 
-[FR-4503 Salesforce Integration](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/interfaces.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-4503 Salesforce Integration](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/interfaces.md)
 
 #####4600 Security
 
-[FR-4601 Permissions of Contacts / System Users](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/security.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-4601 Permissions of Contacts / System Users](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/security.md)
 
 #####4700 Newsletter
 
-[FR-4701 Administration](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/newsletter.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-4701 Administration](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/newsletter.md)
 
-[FR-4702 Mailing](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/newsletter.md)
+![–](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/placeholder.png)[FR-4702 Mailing](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts/newsletter.md)
 
 
 
