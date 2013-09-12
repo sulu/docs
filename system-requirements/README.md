@@ -22,9 +22,7 @@
 
 ![900 SHOP](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/shop.png)[900 SHOP](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/900-shop "900 SHOP")-->
 
-[List of requirements](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/index.md "List of requirements")
-
-[List of alpha requirements](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/index-alpha.md "List of alpha requirements")
+![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[REQUIREMENTS](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/index-alpha.md "List of alpha requirements")
 
 ####Purpose
 The purpose of this online documentation is to present a definition of the system requirements of Sulu 2.0. It will explain the features of the system and the constraints under which it must operate. This documentation is intended for the project leaders and developers of the system.
