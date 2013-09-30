@@ -34,6 +34,7 @@ The access right management shall cover the complex requirements arising from th
 
 **Specification:**
 
+1. The user shall be able to log on and use the system according to the underlying user permissions.
 1. The system shall enable the user to define system users and system user groups.
 1. A user group shall consist of one or more dedicated users.
 1. Each system user or user group shall have one or more associated content languages.
@@ -46,6 +47,10 @@ The access right management shall cover the complex requirements arising from th
 ![Access rights model](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/access-rights-model.png)
 
 Fig. Access rights model
+
+![System log on](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/log-on.png)
+
+Fig. System log on
 
 ![Access rights model](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contact-permissions.png)
 
