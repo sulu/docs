@@ -20,6 +20,6 @@
 $this->get('security.context')->isGranted(array(
     'context' => 'Your security context',
     'permission' => 'view|add|edit|delete|archive|live|security',
-    'locale' => 'Your locale'
+    'locale' => 'Your locale' //this one is optional
 ));
 ```
