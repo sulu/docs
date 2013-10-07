@@ -9,3 +9,16 @@
 * Used standard [http://symfony.com/doc/current/book/security.html#how-security-works-authentication-and-authorization](symfony components)
 * configureable in `app/config/security.yml`
  * `security.encoders` defines the encoding for the password of each entity
+
+## Authorization
+* Used symfony components
+* Implemented Voter for our own Permissions
+* Implemented own UserProvider (for avoiding lazy loading)
+* Check permissions in a Controller
+```php
+$this->get('security.context')->isGranted(array(
+    'context' => 'Your security context',
+    'permission' => 'view|add|edit|delete|archive|live|security',
+    'locale' => 'Your locale'
+));
+```
