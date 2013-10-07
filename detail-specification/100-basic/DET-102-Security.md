@@ -17,3 +17,10 @@ A Sulu user can be in several roles and several groups (stored in the tables `se
 
 ####Authentication
 Sulu uses the basic Symfony authentication as described in [this section of the symfony documentation](http://symfony.com/doc/current/book/security.html#how-security-works-authentication-and-authorization). A firewall is defined in the `app/config/security.yml`-file, which secures the `/admin`-url, where the sulu administration is located. The url `/admin/login` shows the login-form, and is of course also accessible when the user is not authenticated. The user provider is the `User`-model of our SecurityBundle, and as encoding `sha512` with 5000 iterations is used.
+
+####Authorization
+The authorization is done with an own voter. Our `PermissionVoter` implements the `VoterInterface`, which checks if the logged in User has the required Permissions to perform the current Request.
+
+For this there has also been an own `UserProvider` implemented, which loads all the required Roles and Permissions used by the `PermissionVoter`.
+
+The used [Access Decision Strategy](http://symfony.com/doc/current/components/security/authorization.html#access-decision-manager) is affirmative. This grants the permission as soon as one Voter returns a affirmative response. Normally the unanimous strategy should be used (which grants permission as long as no voter denies), but it seems as if there are some standard voters interfering with the sulu voter implementation. This could result in some problems, as soon as other voters will be added.
