@@ -33,10 +33,8 @@
 * navigation.list = Zurück zur Liste
 
 ##TranslateBundle - Package:
-###List (index):
+###General:
 * translate.package.title = Packet
-
-###Form (general):
 * translate.package.catalogues = Sprachen Kataloge
 
 ###Form (settings):
@@ -55,10 +53,8 @@
 * translate.package.details.addElement
 
 ##ContactBundle:
-###Form:
-* contact.form.addEmail = E-Mail hinzufügen
-* contact.form.addPhone = Telefon hinzufügen
-* contact.form.addAddress = Adresse hinzufügen
+
+###General
 * contact.address.street = Straße
 * contact.address.number = Nummer
 * contact.address.additional = Haus, Stock, etc.
@@ -66,6 +62,11 @@
 * contact.address.city = Stadt
 * contact.address.state = Staat
 * contact.address.country = Land
+
+###Form:
+* contact.form.addEmail = E-Mail hinzufügen
+* contact.form.addPhone = Telefon hinzufügen
+* contact.form.addAddress = Adresse hinzufügen
 
 ###Contacts:
 * contact.contacts.title = Kontakt
