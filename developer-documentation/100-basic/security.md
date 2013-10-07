@@ -15,6 +15,7 @@
 * Implemented Voter for our own Permissions
 * Implemented own UserProvider (for avoiding lazy loading)
 * Check permissions in a Controller
+
 ```php
 $this->get('security.context')->isGranted(array(
     'context' => 'Your security context',
