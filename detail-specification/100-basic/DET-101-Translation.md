@@ -55,7 +55,9 @@ this.sandbox.translate('public.delete')
 
 If the translation for the key is not found in the messages, the key will be displayed.
 
-#####Add Messages
+####Basic
+
+Actual Keys find [here ...](https://github.com/massiveart/sulu-docs/blob/master/detail-specification/100-basic/DET-101-Translation-Keys.md)
 
 Add Messages to Husky at start:
 
