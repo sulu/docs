@@ -94,14 +94,14 @@
 * security.roles.permissions = Berechtigungen
 * security.roles.all = Alle
 
-####User:
-* security.user.title = Benutzername & Passwort
-* security.user.username = Benutzername
-* security.user.password = Passwort
-* security.user.passwordRepeat = Wiederhole Passwort
-* security.user.email = Primäre E-Mail-Adresse
-* security.user.titlePermissions = Sulu Berechtigungen
-* security.user.role.title = Titel
-* security.user.role.language = Sprache
-* security.user.role.permissions = Berechtigungen
+####Permissions:
+* security.permission.title = Benutzername & Passwort
+* security.permission.username = Benutzername
+* security.permission.password = Passwort
+* security.permission.passwordRepeat = Wiederhole Passwort
+* security.permission.email = Primäre E-Mail-Adresse
+* security.permission.titlePermissions = Sulu Berechtigungen
+* security.permission.role.title = Titel
+* security.permission.role.language = Sprache
+* security.permission.role.permissions = Berechtigungen
 
