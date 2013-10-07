@@ -1,48 +1,48 @@
-#Translation Keys:
+##Translation Keys:
 
-##Public:
+###Public:
 * public.name = Name
 * public.edit = Editieren
 * public.email = E-Mail
 * public.phone = Telefon
 * public.address = Adresse
 
-##Email
+###Email
 * email.home = Persöhnlich
 * email.work = Geschäftlich
 
-##Phone
+###Phone
 * phone.home = Persöhnlich
 * phone.work = Geschäftlich
 
-##Address
+###Address
 * address.home = Persöhnlich
 * address.work = Geschäftlich
 
-##Country
+###Country
 * country.austria = Österreich
 * country.germany = Deutschland
 
-##Header:
+###Header:
 * header.add = Hinzufügen
 * header.save = Speichern
 * header.saved = Gespeichert
 * header.delete = Löschen
 
-##Navigation
+###Navigation
 * navigation.list = Zurück zur Liste
 
-##TranslateBundle - Package:
-###General:
+###TranslateBundle - Package:
+####General:
 * translate.package.title = Packet
 * translate.package.catalogues = Sprachen Kataloge
 
-###Form (settings):
+####Form (settings):
 * translate.package.settings.title = Titel
 * translate.package.settings.locale = Region
 * translate.package.settings.addCatalogue = Region hinzufügen
 
-###Form (details):
+####Form (details):
 * translate.package.details.key
 * translate.package.details.translation
 * translate.package.details.suggestion
@@ -52,9 +52,9 @@
 * translate.package.details.backend
 * translate.package.details.addElement
 
-##ContactBundle:
+###ContactBundle:
 
-###General
+####General
 * contact.address.street = Straße
 * contact.address.number = Nummer
 * contact.address.additional = Haus, Stock, etc.
@@ -63,12 +63,12 @@
 * contact.address.state = Staat
 * contact.address.country = Land
 
-###Form:
+####Form:
 * contact.form.addEmail = E-Mail hinzufügen
 * contact.form.addPhone = Telefon hinzufügen
 * contact.form.addAddress = Adresse hinzufügen
 
-###Contacts:
+####Contacts:
 * contact.contacts.title = Kontakt
 * contact.contacts.contactTitle = Titel
 * contact.contacts.firstName = Vorname
@@ -76,15 +76,15 @@
 * contact.contacts.position = Position
 * contact.contacts.company = Unternehmen
 
-###Accounts:
+####Accounts:
 * contact.accounts.title = Account
 * contact.accounts.name = Name
 * contact.accounts.website = Internetseite
 * contact.accounts.company = Übergeordnetes Unternehmen
 
-##SecurityBundle:
+###SecurityBundle:
 
-###Roles:
+####Roles:
 * security.roles.title = Rollen & Berechtigungen
 * security.roles.name = Titel
 * security.roles.system = System
