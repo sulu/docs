@@ -29,6 +29,12 @@ The last column of the navigation is the so called content navigation, displayin
 The bundle can decide on its own where this navigation comes from. If you don't need any serverside information you could just return a navigation Object. In case you don't have all the information available you can also make an AJAX-Request, and use this JSON as the input.
 This data is delivered to the navigation with an triggered event.
 
+###### Component Diagram
+![Admin component diagram](https://raw.github.com/massiveart/sulu-docs/master/detail-specification/images/admin_diagram.png)
+###### Server Side
+Similar to the architecture of the Main Navigation, the ContentNavigation service holds all the NavigationItems provided by other bundles with a tagged service. The abstract class ContentNavigation is implemented by the bundle which has a content-navigation. This same bundle instantiates the ContentNavigationPass, which collects all tagged ContentNavigationInterface services from other bundles.
+The bundle then should return the navigation object with a NavigationController to the application.
+
 ####Commands
 The admin has also to return an array with instances from all commands offered by this bundle. It is needed to register the commands in the `app/console`-command of Sulu.
 
