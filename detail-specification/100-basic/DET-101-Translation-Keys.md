@@ -104,4 +104,6 @@
 * security.permission.role.title = Titel
 * security.permission.role.language = Sprache
 * security.permission.role.permissions = Berechtigungen
+* security.permission.role.chooseLanguage = Sprache auswählen
+* security.permission.role.allLanguages = Alle ausgewählt
 
