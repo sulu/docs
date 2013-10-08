@@ -5,8 +5,8 @@
 * Remove the [WIP] when you finished open tasks and the PR will be able to merge.
 
 ##Structure
-´´´
-<short description>:
+```
+[short description]:
 
 - [ ] test coverage
 - [ ] finish the code
@@ -16,12 +16,12 @@
 
 | Q             | A
 | ------------- | ---
-| Bug fix?      | <yes|no>
-| New feature?  | <yes|no>
-| Tests pass?   | <yes|no|none>
-| Fixed tickets | <yes|no|none>
-| Doc           | <url to doc|none>
-´´´
+| Bug fix?      | [yes|no]
+| New feature?  | [yes|no]
+| Tests pass?   | [yes|no|none]
+| Fixed tickets | [yes|no|none]
+| Doc           | [url to doc|none]
+```
 
 ##Example
 Create User Command:
