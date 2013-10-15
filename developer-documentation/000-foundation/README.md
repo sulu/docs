@@ -6,3 +6,5 @@
 * [Admin Integration](https://github.com/massiveart/sulu-docs/tree/master/developer-documentation/000-foundation/admin-integration.md "Admin Integration")
 * [Content Navigation](https://github.com/massiveart/sulu-docs/tree/master/developer-documentation/000-foundation/content-navigation-integration.md "Content Navigation")
 * [GeneratorBundle](https://github.com/massiveart/sulu-docs/tree/master/developer-documentation/000-foundation/generator-bundle.md "GeneratorBundle")
+
+* [DoctrineRepositories](https://github.com/massiveart/sulu-docs/tree/master/developer-documentation/000-foundation/doctrine-repositories.md "DoctrineRepositories")
