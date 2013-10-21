@@ -115,7 +115,7 @@ class NavigationController extends Controller
      * Special function for lists
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function contactAction()
+    public function contentAction()
     {
 
         /** @var ContentNavigation $contentNavigation */
@@ -123,15 +123,29 @@ class NavigationController extends Controller
             $contentNavigation = $this->get(self::SERVICE_NAME);
         }
 
-        return new Response(json_encode($contentNavigation->toArray('contact')));
+        return new Response(json_encode($contentNavigation->toArray('content')));
     }
 }
 ```
 
-Don't forget to define the specified route in routes.yml!
+Don't forget to define the specified route in routing.yml:
+```
+acme_content.navigation:
+    path: /navigation/content
+    defaults: { _controller: AcmeContentBundle:Navigation:content }
+```
 
 ### Javascript - get navigation  object
 When you want to load the contentnavigation put following code into your javascript:
+
+in define, import navigation object:
+```
+define([
+    'text!/acme/navigation/content'
+], function(ContentNavigation) {
+...
+```
+in the same file do the following:
 ```
 
 		initialize: function() {
@@ -140,7 +154,7 @@ When you want to load the contentnavigation put following code into your javascr
                 this.sandbox.emit('navigation.item.column.show', {
                     data: navigation
                 });
-           	}.bind(this))
+           	}.bind(this));
 		},
  	     
        	
