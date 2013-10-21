@@ -99,7 +99,7 @@ In Controllers Directory create Navigation Controller, which returns Navigation 
 The toArray('contact') function will return all NavigationItems which have the contentType = 'contact'; (which were defined in AcmeContentContentNavigation).
 
 ```
-namespace Sulu\Bundle\ContactBundle\Controller;
+namespace Acme\Bundle\ContentBundle\Controller;
 
 use Sulu\Bundle\AdminBundle\Admin\ContentNavigation;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
