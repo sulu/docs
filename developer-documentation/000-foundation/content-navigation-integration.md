@@ -107,7 +107,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class NavigationController extends Controller
 {
-
+    // has to be the same as defined in service.yml
     const SERVICE_NAME = 'acme_content.admin.content_navigation';    
 
     /**
@@ -117,8 +117,6 @@ class NavigationController extends Controller
      */
     public function contactAction()
     {
-
-        // TODO: get type of content (contact / account ...)
 
         /** @var ContentNavigation $contentNavigation */
         if ($this->has(self::SERVICE_NAME)) {
