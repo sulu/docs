@@ -31,8 +31,13 @@
 
 ###Navigation
 * navigation.list = Zurück zur Liste
+* navigation.settings
 
 ###TranslateBundle - Package:
+
+####Navigation:
+* translate.navigation.translate
+
 ####General:
 * translate.package.title = Packet
 * translate.package.catalogues = Sprachen Kataloge
