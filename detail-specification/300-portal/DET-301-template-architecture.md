@@ -36,6 +36,17 @@
 
 * ContentTypes are implemented as Services
 * ID: sulu.content.type.<<name>>
+* get method sets data from node to property
+* set method gets data from property and set data to node
 * two types:
   * SimpleContentType: complete save and read method to save data in a property of phpcr node
   * ComplexContentType: Extends ContainerAware for complex operations. To control the flow there are two types PRE_SAVE and POST_SAVE
+
+## Mapper
+
+* Provides a interface to read and write data
+* Uses Structure
+* Iterates over Properties
+* Save data of pre_save properties before $session->save() and data of post_save after $session->save()
+* To get the structure for a key it uses the Service 'sulu.content.structure' which (should) implement StructureFactoryInterface
+* The read method returns a structure field with value
