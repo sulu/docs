@@ -52,12 +52,12 @@
 * The read method returns a structure field with value
 
 ## Template-Reader
-* Reads an template in XML format and returns structure as array
-* Is available as service
+The template-reader is able to parses a template in XML format and returns the structure as array. Therefore the load-method which accepts as the first parameter the path to the xml-file is used. This array will then be used to generate a cacheable php-class with the StructureManager.
+The template-reader works according to the structure defined in the template.xsd-file in Sulu/Bundle/ContentBundle/Xml/Template/Schema/template.xsd.
 
-## Template Example
-* You can find an example for a template that the template reader can parse below
-* There is also an xsd available. (Sulu/Bundle/ContentBundle/Xml/Template/Schema/template.xsdtemplate.xsd)
+### Template Example
+You can find an example for a template that the template reader can parse below:
+
 
 ```
 <?xml version="1.0" ?>
@@ -86,4 +86,16 @@
     </properties>
 </template>
 
+```
+
+## Structure Manager
+The structure manager uses the template reader to retrieve a cached php file from the cache. When the requested file does not exist it will be generated and placed in the cache direcotry. The constructor accepts an array with configuration options - the default values can be found below:
+```
+$this->options = array(
+    'template_dir' => null,
+    'cache_dir' => null,
+    'debug' => false,
+    'cache_class_prefix' => 'Template_Structure_',
+    'base_class' => 'Structure.php'
+);
 ```
