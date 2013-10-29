@@ -50,3 +50,40 @@
 * Save data of pre_save properties before $session->save() and data of post_save after $session->save()
 * To get the structure for a key it uses the Service 'sulu.content.structure' which (should) implement StructureFactoryInterface
 * The read method returns a structure field with value
+
+## Template-Reader
+* Reads an template in XML format and returns structure as array
+* Is available as service
+
+## Template Example
+* You can find an example for a template that the template reader can parse below
+* There is also an xsd available. (Sulu/Bundle/ContentBundle/Xml/Template/Schema/template.xsdtemplate.xsd)
+
+```
+<?xml version="1.0" ?>
+<template xmlns="http://schemas.sulu.io/template/template"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template.xsd">
+
+    <key>overview</key>
+
+    <view>page.html.twig</view>
+    <controller>SuluContentBundle:Default:index</controller>
+    <cacheLifetime>2400</cacheLifetime>
+
+    <properties>
+        <property name="title" type="textLine" mandatory="true"/>
+        <property name="url" type="resourceLocator" mandatory="true"/>
+        <property name="article" type="textArea" mandatory="false"/>
+        <property name="pages" type="smartContentSelection" mandatory="false"/>
+
+        <property name="images" type="imageSelection" minOccurs="0" maxOccurs="2">
+            <params>
+                <param name="minLinks" value="1"/>
+                <param name="maxLinks" value="10"/>
+            </params>
+        </property>
+    </properties>
+</template>
+
+```
