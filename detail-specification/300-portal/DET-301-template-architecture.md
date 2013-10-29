@@ -89,7 +89,7 @@ You can find an example for a template that the template reader can parse below:
 ```
 
 ## Structure Manager
-The structure manager uses the template reader to retrieve a cached php file from the cache. When the requested file does not exist it will be generated and placed in the cache direcotry. The constructor accepts an array with configuration options - the default values can be found below:
+The structure manager uses the template-reader to retrieve a specific php-class from the cache and returns an object of the requested php-class. When the requested class-file does not exist it will be generated and placed in the specified cache direcotry. The constructor accepts an array with configuration options - the default values can be found below:
 ```
 $this->options = array(
     'template_dir' => null,
@@ -99,3 +99,4 @@ $this->options = array(
     'base_class' => 'Structure.php'
 );
 ```
+The getStructure-metod actually retrieves the object from the requested class. The class-file as well as the template-file will be identified with the key-parameter.
