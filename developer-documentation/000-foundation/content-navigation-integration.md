@@ -1,12 +1,17 @@
 # Content Navigation Integration
 
 The admin bundle holds all abstract classes and interfaces needed for implementing a content navigation. 
+There are two different use cases: 
+
+1. create a content navigation in your bundle
+2. extend an existing content navigation of another bundle
+
 In the following it is assumed that a content-navigation should be implemented in AcmeContentBundle and extended in AcmeExtensionBundle.
 
 
-## Insert Content Navigation into a Bundle
+## 1. Create Content Navigation in a Bundle
 
-### Extend ContentNavigation
+### Create ContentNavigation
 
 Create a file called AcmeContentNavigation in /Admin
     
@@ -52,7 +57,9 @@ services:
         class: %acme_content.admin.content_navigation.class%
 ```
     	
-### Extend Compiler Pass
+### Create Compiler Pass (optional)
+
+This step has only to be done, if you'd like to extend your content navigation by another bundle (see 2.).
 
 In \DependencyInjection\Compiler insert AddContentNavigationPass. Rename services and tag. 
 
@@ -150,53 +157,17 @@ in the same file do the following:
 
 		initialize: function() {
 	      	// show navigation submenu
-           	this.getTabs(this.options.id, function(navigation) {
+           	this.sandbox.sulu.navigation.getContentTabs(ContentNavigation, this.options.id, function(navigation) {
                 this.sandbox.emit('navigation.item.column.show', {
                     data: navigation
                 });
            	}.bind(this));
 		},
  	     
-       	
-		getTabs: function(id, callback) {
-            var navigation = JSON.parse(ContentNavigation),
-                hasNew, hasEdit;
-
-            // get url from backbone
-            this.sandbox.emit('navigation.url', function(url) {
-                var items = [];
-                // check action
-                this.sandbox.util.foreach(navigation.sub.items, function(content) {
-                    // check DisplayMode (new or edit) and show menu item or don't
-                    hasNew = content.displayOptions.indexOf('new') >= 0;
-                    hasEdit = content.displayOptions.indexOf('edit') >= 0;
-                    if ((!id && hasNew) || (id && hasEdit)) {
-                        content.action = this.parseActionUrl(content.action, url, id);
-                        items.push(content);
-                    }
-                }.bind(this));
-                navigation.sub.items = items;
-                callback(navigation);
-            }.bind(this));
-        },
-
-        parseActionUrl: function(actionString, url, id) {
-            // if first char is '/' use absolute url
-            if (actionString.substr(0, 1) === '/') {
-                return actionString.substr(1, actionString.length);
-            }
-            if (id) {
-                var strSearch = 'edit:' + id;
-                url = url.substr(0, url.indexOf(strSearch) + strSearch.length);
-            }
-            return  url + '/' + actionString;
-        }
-    };
-            
 ```
 
 
-## Extend Navigation in another Bundle
+## 2. Extend Navigation in another Bundle
 
 If the Navigation should be extended by another Bundle proceed by following steps
 
