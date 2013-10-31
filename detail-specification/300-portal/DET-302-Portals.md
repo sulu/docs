@@ -1,7 +1,7 @@
 ##DET-001 Portals
 
 ####Component diagram
-![Portal component diagram](https://raw.github.com/massiveart/sulu-docs/master/detail-specification/images/PortalManager.png)
+![Portal component diagram](https://raw.github.com/massiveart/sulu-docs/master/detail-specification/images/diagrams/PortalManager.png)
 
 ####General
 #####XML
