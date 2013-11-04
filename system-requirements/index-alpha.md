@@ -109,7 +109,7 @@
 
 #####3200 Data Structuring
 
-![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-3102 Main navigation points](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3200_data-structuring.md)
+![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-3201 Main navigation points](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3200_data-structuring.md)
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-3203 Content Sniplets](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3200_data-structuring.md)
 
