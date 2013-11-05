@@ -112,6 +112,9 @@
 * security.permission.role.chooseLanguage = Sprache auswählen
 * security.permission.role.allLanguages = Alle ausgewählt
 * security.permissions.view = view
-* * security.permissions.view = view
-* * security.permissions.view = view
-
+* security.permissions.add = add
+* security.permissions.edit = edit
+* security.permissions.delete = delete
+* security.permissions.archive = archive
+* security.permissions.live = publish
+* security.permissions.security = security
