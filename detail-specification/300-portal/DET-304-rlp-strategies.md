@@ -55,7 +55,21 @@ TODO documentation of URL History
 
 The cleanup of URL contains:
 
-| From | To |
-| ---- | -- |
-* Space -> -
-* 
+* lowercase
+* replace signs (language depending)
+
+Example:
+
+| Before | After |
+| ------ |:-----:|
+| +      | -     |
+| space  | -     |
+| ä      | ae    |
+| ü      | ue    |
+| ö      | oe    |
+
+* ??? delete problematic characters ???
+* relace multiple minus with one
+* remove trailing start/end - 
+
+
