@@ -41,7 +41,7 @@ TODO documentation of URL History
 
 #### Class diagram
 
-![Form Generation component diagram](https://raw.github.com/sulu-cmf/docs/master/detail-specification/images/diagrams/RLPStrategy.png)
+![Form Generation component diagram](https://raw.github.com/sulu-cmf/docs/master/detail-specification/images/diagrams/RLPStrategies.png)
 
 #### Flow
 
