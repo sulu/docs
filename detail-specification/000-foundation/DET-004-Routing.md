@@ -10,8 +10,8 @@ The `RequestListener` only calls the `analyze`-method of the `RequestAnalyzer`, 
 
 ##Routing
 ![Routing Process Diagram](https://raw.github.com/sulu-cmf/docs/master/detail-specification/images/diagrams/RoutingProcess.png)
-The general routing process is using the `ChainRouter` of the Symfony CMF. Together with its dynamic router it allows us to use dynamic routes. For this there is the `PortalRouteProvider`, which passes the URI of the current request to the `ContentMapper`. The `ContentMapper` returns the structure of the current page, which is used to render the website.
+First of all there is a check, if the requested page has a still valid entry in the cache. If yes, just this page has to be returned in a response.
 
-The `PortalRouteProvider` creates a new Route with the required information, and redirects to the `DefaultController`, respectively to the controller and view defined in the Template.
+For the general routing process the `ChainRouter` of the Symfony CMF is used. Together with its dynamic router it allows us to use dynamic routes. For this there is the `PortalRouteProvider`, which first analyzes the request with the `RequestAnalyzer`. Then the `RequestAnalyzer` can be used further, so that the request analyzation has only to be done once.
 
-The default controller makes a lookup for the current URL in the `PortalManager`, and sets the according theme. The `LiipThemeBundle` will then resolve the paths to the Twig-templates in respect of the active theme.
+Afterwards the `PortalRouteProvider` checks if the request should be redirected, and redirects to a route returning a `RedirectResponse`. Otherwise it will set the current theme and try to load the content with the given path from the `ContentMapper`. The `ContentMapper` returns the structure of the current page, which is used to render the website. It passes the data to the template, and fills a response with the correct CacheHandlers. If the `ContentMapper` can't find any content, it will create a response with a HTTP 404 error, and return this one instead.
