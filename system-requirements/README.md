@@ -8,7 +8,7 @@
 
 ![200 SEARCH](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/search.png)[200 SEARCH](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search "200 SEARCH")
 
-![300 PORTALS](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/portals.png)[300 PORTALS](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals "300 PORTALS")
+![300 WEBSPACES](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/portals.png)[300 WEBSPACES](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals "300 WEBSPACES")
 
 ![400 CONTACTS](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/contacts.png)[400 CONTACTS](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/400-contacts "400 CONTACTS")
 
@@ -30,7 +30,7 @@ The purpose of this online documentation is to present a definition of the syste
 ####Structure
 In order to ensure a better overview the system requirements are subdivided into 9 system processes. The following schema shows a model of the relevant system processes of Sulu 2.0:
 
-![System Processes](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/system-processes_03.png)
+![System Processes](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/system-processes_04.png)
 Fig. System Processes
 
 ####Rating System
