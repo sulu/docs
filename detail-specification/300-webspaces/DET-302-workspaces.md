@@ -1,4 +1,4 @@
-##DET-302 Portals
+##DET-302 Workspaces
 
 ####Component diagram
 ![Portal component diagram](https://raw.github.com/massiveart/sulu-docs/master/detail-specification/images/diagrams/Workspaces.png)
