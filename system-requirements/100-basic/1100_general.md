@@ -29,27 +29,19 @@ The basic user interface concept defines UI layout with the basic UI elements an
 
 ######LISTS:
 
-![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/list_general.png)
-
-Fig. General list view
-
 ![Contacts list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/list_contacts.png)
 
 Fig. Contacts list view
 
 ######NAVIGATION:
 
-![Node tree view navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_node-treeview.png)
+![Navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation.png)
 
-Fig. Node tree view navigation (portals)
+Fig. navigation
 
-![Contacts navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_contacts.png)
+![Assets navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/asset-assignment.png)
 
-Fig. Contacts navigation
-
-![Assets navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_assets.png)
-
-Fig. Assets navigation
+Fig. Asset assignment
 
 ######UI ELEMENTS:
 
