@@ -39,21 +39,37 @@ Fig. Contacts list view
 
 Fig. navigation
 
+![Assets navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation-collapsed.png)
+
+Fig. Navigation collapsed
+
+######UI ELEMENTS:
+
 ![Assets navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/asset-assignment.png)
 
 Fig. Asset assignment
 
-######UI ELEMENTS:
+![Toolbars and buttons](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/buttons_functions.png)
 
-![Buttons and functions](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/buttons_functions.png)
+Fig. Toolbars and buttons
 
-Fig. Buttons and functions
+![Basic forms](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/basic-forms.png)
+
+Fig. Basic forms
 
 ![Forms](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/forms.png)
 
-Fig. Forms
+Fig. Forms and field types
+
+![Smart content](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/smart-content.png)
+
+Fig. Smart content
 
 ![Typography](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/typography.png)
+
+Fig. Image gallery
+
+![Image gallery](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/image-gallery.png)
 
 Fig. Typography
 
