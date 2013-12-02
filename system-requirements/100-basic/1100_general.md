@@ -45,9 +45,13 @@ Fig. Navigation collapsed
 
 ######UI ELEMENTS:
 
-![Assets navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/asset-assignment.png)
+![Asset assignment](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/asset-assignment.png)
 
 Fig. Asset assignment
+
+![Video assignment](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/video-assignment.png)
+
+Fig. Video assignment
 
 ![Toolbars and buttons](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/buttons_functions.png)
 
@@ -57,9 +61,9 @@ Fig. Toolbars and buttons
 
 Fig. Basic forms
 
-![Forms](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/forms.png)
+![Forms and content types](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/forms.png)
 
-Fig. Forms and field types
+Fig. Forms and content types
 
 ![Smart content](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/smart-content.png)
 
@@ -67,11 +71,15 @@ Fig. Smart content
 
 ![Typography](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/typography.png)
 
-Fig. Image gallery
+Fig. Typography
 
 ![Image gallery](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/image-gallery.png)
 
-Fig. Typography
+Fig. Image gallery
+
+![Video](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/video.png)
+
+Fig. Video
 
 ![Dialog Box](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/dialog-box.png)
 
