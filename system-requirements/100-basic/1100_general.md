@@ -45,9 +45,9 @@ Fig. Navigation collapsed
 
 ######UI ELEMENTS:
 
-![Asset assignment](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/asset-assignment.png)
+![Image assignment](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/asset-assignment.png)
 
-Fig. Asset assignment
+Fig. Image assignment
 
 ![Video assignment](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/video-assignment.png)
 
