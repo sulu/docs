@@ -6,7 +6,7 @@ History will be created in RlpMapper::move. the old resource locator will be cop
 
 ![History Generation activity diagram](https://raw.github.com/sulu-cmf/docs/master/detail-specification/images/diagrams/rlp-history.jpg)
 
-In short:
+### In short:
 
 * copy source resource locator (+plus nested tree)
 * foreach resourcelocator in this tree (+source resourcelocator)
