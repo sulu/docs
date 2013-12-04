@@ -55,6 +55,10 @@ Supported content containers with their standard content types:
 	* Format (width, height)
 * Sitemap
 
+![Overview of easy content types](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/content-types-easy.png)
+
+Fig. Overview of easy content types
+
 ####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-1252 Content Sniplets
 
 **Definition:**
