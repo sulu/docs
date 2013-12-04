@@ -37,10 +37,6 @@ Fig. Standard list
 
 Fig. Contacts list view
 
-![Column tree](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/column-tree.png)
-
-Fig. Column tree for user-generated content (Webspaces)
-
 ######NAVIGATION:
 
 ![Navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation.png)
@@ -50,6 +46,10 @@ Fig. navigation
 ![Assets navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation-collapsed.png)
 
 Fig. Navigation collapsed
+
+![Column tree](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/column-tree.png)
+
+Fig. Column tree for user-generated content (Webspaces)
 
 ######UI ELEMENTS:
 
