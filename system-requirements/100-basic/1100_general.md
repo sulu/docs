@@ -29,9 +29,17 @@ The basic user interface concept defines UI layout with the basic UI elements an
 
 ######LISTS:
 
+![Standard list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/list_general.png)
+
+Fig. Standard list
+
 ![Contacts list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/list_contacts.png)
 
 Fig. Contacts list view
+
+![Column tree](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/column-tree.png)
+
+Fig. Column tree for user-generated content (Webspaces)
 
 ######NAVIGATION:
 
