@@ -31,19 +31,20 @@ Fig. UI CKEditor
  * Internal links
  * Word import with plain text (no formatting)
 
-####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-3302 Navigation Types
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-3302 Column Tree Navigation
 
 **Definition:**
 
-The system shall provide two navigation views:
-* List view with multiple select and sorting functions
-* Node tree view 
+The column tree navigation vies all nodes of the underlying webspace including ghost and shadow nodes. 
 
 **Specification:**
 
-![Node tree view navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_node-treeview.png)
+1. A ghost node is a node within the underlying webspace which is not available in the selected localisation.
+2. When the ghost node display mode is activated, all ghost nodes are shown with the highest language hierarchy (e.g.: en-us).
 
-Fig. Node tree view navigation (portals)
+![Column tree navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/column-tree.png)
+
+Fig. Column Tree Navigation
 
 ####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-3303 Single and Multiple Edit
 
@@ -74,6 +75,10 @@ The user should be provided with facilities to make textual amendments in the fr
 1. After editing the icon changes to a save button for confirming the amendments
 1. Front end editing is limited to textual amendments, which means that no new content blocks or asset assingment features are available
 
+####FR-3305 Forms
+
+**tbd**
+
 ####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-3306 Preview
 
 **Definition:**
@@ -84,3 +89,4 @@ The system shall display a preview of the edited content.
 
 1. The system shall display the preview in a new window
 1. The system should display the preview in place within the edit area
+
