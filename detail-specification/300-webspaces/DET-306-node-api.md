@@ -6,7 +6,7 @@ The api for nodes looks like in the following example:
 /workspaces/[ID]/nodes
 ```
 
-This example above will return all nodes available.
+This example above will return all nodes available from the workspace with the [ID].
 
 ## Parameters
 
