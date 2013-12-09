@@ -52,11 +52,11 @@ Response for request on `workspace/1234/nodes?depth=1`.
                      "self" : "/workspace/1234/nodes/123",
                      "children" : "/workspace/1234/nodes?parent=123&depth=1"
                  },
-                 "_embedded": [],
-                 "title": "Root",
-                 "id": "1",
-                 "hasSub": true, 
+                 "_embedded": []
             }
-    ]
+    ],
+    "title": "Root",
+    "id": "1",
+    "hasSub": true, 
 }
 ```
