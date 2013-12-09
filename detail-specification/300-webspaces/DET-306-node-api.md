@@ -40,7 +40,7 @@ Response for request on `workspace/1234/nodes/1?depth=1`.
 ```
 {
     "_links" : {
-        "self": "/workspace/1234/nodes/1?depth=1",
+        "self": "/workspace/1234/nodes/1",
         "children" : "/workspace/1234/nodes?parent=1&depth=1",
     },
     "_embedded": [
@@ -49,7 +49,7 @@ Response for request on `workspace/1234/nodes/1?depth=1`.
                 "id": "123",
                 "hasSub": true,
                 "_links" : {
-                     "self" : "/workspace/1234/nodes/123?depth=1",
+                     "self" : "/workspace/1234/nodes/123",
                      "children" : "/workspace/1234/nodes?parent=123&depth=1"
                  },
                  "_embedded": []
