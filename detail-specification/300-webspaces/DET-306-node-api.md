@@ -30,7 +30,7 @@ A request on the following uri will return the first level of nodes which means 
 A request on the following uri will return the first level of nodes which means all direct childrend from the node with id 123-123-123.
 
 ```
-/workspaces/[ID]/nodes?paretn=123-123-123&depth=1
+/workspaces/[ID]/nodes?parent=123-123-123&depth=1
 ```
 
 ### Example response
