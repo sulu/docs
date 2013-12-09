@@ -19,7 +19,7 @@ __depth__
 With this parameter the depth can be limited which means from the start point x level of nodes will be returned.
 
 
-### Example
+### Example URI
 
 A request on the following uri will return the first level of nodes which means all direct childrend from the root node.
 
@@ -31,4 +31,29 @@ A request on the following uri will return the first level of nodes which means 
 
 ```
 /workspaces/[ID]/nodes?paretn=123-123-123&depth=1
+```
+
+### Example response
+```
+{
+    "_links" : {
+        "self": "/workspace/[ID]/nodes/1",
+        "children" : "/workspace/[ID]/nodes?parent=1depth=1",
+    },
+    "_embedded": [
+            {
+                "title": "Page 123",
+                "id": "123",
+                "hasSub": true,
+                "_links" : {
+                     "self" : "/workspace/[ID]/nodes/123",
+                     "children" : "/workspace/[ID]/nodes?parent=123depth=1"
+                 },
+                 "_embedded": []
+            }
+    ],
+    "title": "Root",
+    "id": "1",
+    "hasSub": true, 
+}
 ```
