@@ -35,7 +35,7 @@ A request on the following uri will return the first level of nodes which means 
 
 ### Example response
 
-Response for request on `workspace/1234/nodes/1?depth=1`.
+Response for request on `workspace/1234/nodes?depth=1`.
 
 ```
 {
@@ -54,9 +54,6 @@ Response for request on `workspace/1234/nodes/1?depth=1`.
                  },
                  "_embedded": []
             }
-    ],
-    "title": "Root",
-    "id": "1",
-    "hasSub": true, 
+    ]
 }
 ```
