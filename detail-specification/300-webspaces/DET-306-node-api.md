@@ -34,11 +34,14 @@ A request on the following uri will return the first level of nodes which means 
 ```
 
 ### Example response
+
+Response for request on `workspace/1234/nodes/1?depth=1`.
+
 ```
 {
     "_links" : {
-        "self": "/workspace/[ID]/nodes/1",
-        "children" : "/workspace/[ID]/nodes?parent=1depth=1",
+        "self": "/workspace/1234/nodes/1?depth=1",
+        "children" : "/workspace/1234/nodes?parent=1&depth=1",
     },
     "_embedded": [
             {
@@ -46,8 +49,8 @@ A request on the following uri will return the first level of nodes which means 
                 "id": "123",
                 "hasSub": true,
                 "_links" : {
-                     "self" : "/workspace/[ID]/nodes/123",
-                     "children" : "/workspace/[ID]/nodes?parent=123depth=1"
+                     "self" : "/workspace/1234/nodes/123?depth=1",
+                     "children" : "/workspace/1234/nodes?parent=123&depth=1"
                  },
                  "_embedded": []
             }
