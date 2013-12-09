@@ -24,6 +24,11 @@ With this parameter the depth can be limited which means from the start point x 
 A request on the following uri will return the first level of nodes which means all direct childrend from the root node.
 
 ```
-/workspaces/[ID]/nodes?parent=null&depth=1
+/workspaces/[ID]/nodes?depth=1
 ```
 
+A request on the following uri will return the first level of nodes which means all direct childrend from the node with id 123-123-123.
+
+```
+/workspaces/[ID]/nodes?paretn=123-123-123&depth=1
+```
