@@ -49,7 +49,7 @@ Response for request on `workspace/1234/nodes?depth=1`.
                 "id": "123",
                 "hasSub": true,
                 "published":true,
-                "linked": true,
+                "linked": internal,
                 "type": {
                     "name": "ghost",
                     "value: "us_en"
@@ -67,4 +67,5 @@ Response for request on `workspace/1234/nodes?depth=1`.
 }
 ```
 
-__type.name__ can have following values: ghost (should have a value), shadow, link (probably internal and extern later on)
+__type.name__ can have following values: ghost (should have a value), shadow, false
+__linked__  can have the values internal, external, false 
