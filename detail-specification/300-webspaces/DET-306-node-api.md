@@ -67,6 +67,6 @@ Response for request on `workspace/1234/nodes?depth=1`.
 }
 ```
 
-__type.name__ can have following values: ghost (should have a value), shadow, false
+__type.name__ can have following values: ghost (should have a value), shadow (true, false), false
 
 __linked__  can have the values internal, external, false 
