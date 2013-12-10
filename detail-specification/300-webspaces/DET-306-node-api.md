@@ -48,6 +48,9 @@ Response for request on `workspace/1234/nodes?depth=1`.
                 "title": "Page 123",
                 "id": "123",
                 "hasSub": true,
+                "published":true,
+                "linked": true,
+                "type": "ghost",
                 "_links" : {
                      "self" : "/workspace/1234/nodes/123",
                      "children" : "/workspace/1234/nodes?parent=123&depth=1"
