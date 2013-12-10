@@ -50,7 +50,10 @@ Response for request on `workspace/1234/nodes?depth=1`.
                 "hasSub": true,
                 "published":true,
                 "linked": true,
-                "type": "ghost",
+                "type": {
+                    "name": "ghost",
+                    "value: "us_en"
+                },
                 "_links" : {
                      "self" : "/workspace/1234/nodes/123",
                      "children" : "/workspace/1234/nodes?parent=123&depth=1"
@@ -63,3 +66,5 @@ Response for request on `workspace/1234/nodes?depth=1`.
     "hasSub": true, 
 }
 ```
+
+__type.name__ can have following values: ghost (should have a value), shadow, link (probably internal and extern later on)
