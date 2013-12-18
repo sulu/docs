@@ -28,24 +28,26 @@ class AcmeContentContentNavigation extends ContentNavigation
     {
         parent::__construct();
 
-		// define navigation 
-        $this->setName('Content');
-        $this->setHeader(array(
-            'title'         => 'back to content',
-            'displayOption' => 'link',
-            'action'        => 'content'
-        ));
 		// define content-tabs
         $details = new NavigationItem('Details');
-        $details->setContentType('contact');
         $details->setAction('details');
-        $details->setType('content');
-
+        $details->setContentType('contact');
+        // define which component has to be called
+        $details->setContentComponent('contacts@sulucontact');
+        $details->setContentComponentOptions(array('display'=>'form'));
         $this->addNavigationItem($details);
     }
 }
 
 ```
+
+The following NavigationItem options are important for creating a content item:
+* setAction - the url to be called (either relative or absolute by providing '/')
+* setContentType - used to group content tabs
+* setContentDisplay - array which defines when tabs are shown (either 'new' or 'edit')
+* setContentComponent - defines which component is called when clicking tab
+* setContentComponentOption - array of options
+
 And add service to Resources/config/services.yml (or xml):
 
 ```
