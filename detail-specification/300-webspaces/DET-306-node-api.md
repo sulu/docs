@@ -83,5 +83,71 @@ Response for request on `workspace/1234/nodes?depth=1`.
 ```
 
 * type.name: can have following values: ghost (should have a value), shadow (true, false), false
-
 * linked: can have the values internal, external, false 
+
+#### Get Tree to a child
+
+__URI__
+
+```
+/workspaces/[ID]/nodes?children=123-123-123
+```
+
+__Response__
+
+```
+{
+    "_links" : {
+        "self": "/workspace/1234/nodes/1",
+        "children" : "/workspace/1234/nodes?parent=1&depth=1",
+    },
+    "_embedded": [
+            {
+                "id": "1",
+                ...
+                 "_embedded": []
+            },
+            {
+                "id": "2",
+                ...
+                 "_embedded": []
+            },
+            {
+                "id": "123",
+                ...
+                 "_embedded": []
+            },
+            {
+                "id": "123",
+                ...
+                "_links" : {
+                     "self" : "/workspace/1234/nodes/123",
+                     "children" : "/workspace/1234/nodes?parent=123&depth=1"
+                 },
+                 "_embedded": [
+                    ...
+                    {
+                        "id": "123-123",
+                        ...
+                        "_links" : {
+                             "self" : "/workspace/1234/nodes/123-123",
+                             "children" : "/workspace/1234/nodes?parent=123-123&depth=1"
+                         },
+                         "_embedded": [
+                            ...
+                            "id": "123-123-123",
+                            ...
+                            "_links" : {
+                                 "self" : "/workspace/1234/nodes/123-123-123",
+                                 "children" : "/workspace/1234/nodes?parent=123-123-123&depth=1"
+                             }
+                         ]
+                    }
+                 ]
+            }
+    ],
+    "title": "Root",
+    "id": "1",
+    "hasSub": true, 
+}
+```
