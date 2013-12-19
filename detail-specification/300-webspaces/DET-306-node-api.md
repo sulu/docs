@@ -11,15 +11,30 @@ This example above will return all nodes available from the workspace with the [
 ## Parameters
 
 __parent__
+Default: null
 
 With this parameter the starting point in the node tree can be set.
 
 __depth__
+default: null
 
 With this parameter the depth can be limited which means from the start point x level of nodes will be returned.
 
+__flat__
+default: true
 
-### Example URI
+With this parameter type of response can be set. True returns a flat list of nodes, false returns a tree of elements.
+
+__children__
+Default: null
+
+With this parameter the depth of the tree can be limited. The response holds the tree of nodes from given children down to th root (limited by depth).
+
+### Examples 
+
+#### Get One layer
+
+__URI__
 
 A request on the following uri will return the first level of nodes which means all direct childrend from the root node.
 
@@ -33,7 +48,7 @@ A request on the following uri will return the first level of nodes which means 
 /workspaces/[ID]/nodes?parent=123-123-123&depth=1
 ```
 
-### Example response
+__Response__
 
 Response for request on `workspace/1234/nodes?depth=1`.
 
@@ -67,6 +82,6 @@ Response for request on `workspace/1234/nodes?depth=1`.
 }
 ```
 
-__type.name__ can have following values: ghost (should have a value), shadow (true, false), false
+* type.name: can have following values: ghost (should have a value), shadow (true, false), false
 
-__linked__  can have the values internal, external, false 
+* linked: can have the values internal, external, false 
