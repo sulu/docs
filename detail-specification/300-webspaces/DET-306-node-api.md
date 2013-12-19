@@ -25,7 +25,7 @@ default: true
 
 With this parameter type of response can be set. True returns a flat list of nodes, false returns a tree of elements.
 
-__children__
+__child__
 Default: null
 
 With this parameter the depth of the tree can be limited. The response holds the tree of nodes from given children down to th root (limited by depth).
@@ -90,7 +90,7 @@ Response for request on `workspace/1234/nodes?depth=1`.
 __URI__
 
 ```
-/workspaces/[ID]/nodes?children=123-123-123
+/workspaces/[ID]/nodes?child=123-123-123
 ```
 
 __Response__
