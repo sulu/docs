@@ -90,7 +90,7 @@ Response for request on `workspace/1234/nodes?depth=1`.
 __URI__
 
 ```
-/workspaces/[ID]/nodes?child=123-123-123
+/workspaces/[ID]/nodes?child=123-123-123&flat=false
 ```
 
 __Response__
