@@ -21,6 +21,13 @@ The workspaces will be configured in the `app/Resources/workspaces`-folder, with
         <localization language="de" country="at"/>
         <localization language="de"/>
     </localizations>
+    
+    <theme>
+        <key>default</key>
+        <excluded>
+            <template>overview</template>
+        </excluded>
+    </theme>
 
     <portals>
         <portal>
@@ -29,13 +36,6 @@ The workspaces will be configured in the `app/Resources/workspaces`-folder, with
             <resource-locator>
                 <strategy>tree</strategy>
             </resource-locator>
-
-            <theme>
-                <key>default</key>
-                <excluded>
-                    <template>overview</template>
-                </excluded>
-            </theme>
 
             <localizations>
                 <localization language="de" country="at"/>
@@ -61,9 +61,9 @@ The workspaces will be configured in the `app/Resources/workspaces`-folder, with
 
 
 ```
-There will be a file for each workspace. It contains a root workspace node, which has some subnodes defining a name, a key, many localization (with a tree structure) and a list of all the portals. The workspace defines an area for all the content, and a portal is built on top of this content. 
+There will be a file for each workspace. It contains a root workspace node, which has some subnodes defining a name, a key, many localization (with a tree structure) and a list of all the portals. The workspace defines an area for all the content, and a portal is built on top of this content. Every workspace must also define which theme is used, and which templates of this theme should be included. 
 
-A portal includes different localizations (which can also be configured in the xml). A portal also gets an own name and key, and defines the resource locator strategy. Every portal must also define which theme is used, and which templates of this theme should be included. 
+A portal includes different localizations (which can also be configured in the xml). A portal also gets an own name and key, and defines the resource locator strategy. 
 Every portal must also define a list of environments, which will be chosen by the environment variable (which is the type of each environment). Every environment defines its own urls, containing a pattern to describe language, country and segment (written in curly braces), or these values are defined in the url node, as you can see above.
 
 #####Interpreting
