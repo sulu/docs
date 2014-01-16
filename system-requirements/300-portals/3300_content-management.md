@@ -58,6 +58,7 @@ The system shall provide the standard functions "Edit", "Delete", "Move" and "Al
 1. Deleted pages shall be removed to a trash archive (see [Content Life Cycle Workflow] (https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/content-life-cycle-workflow.md))
 1. When a user selects the delete function, the system shall show a message box which the user has to confirm before deleting a page
 1. The system shall allocate a multiple selection option (eg. a check box) to access the multiple edit mode
+1. After selecting a set of data entries the user shall be able to change attributes in the edit mode
 1. One or more selected pages can be moved to another place (cut and paste)
 1. The user shall be able to create an alias of one or more selected pages and move dem to another place (copy and paste) 
 1. Each data manipulation shall log date of change and user to be saved in the change history
