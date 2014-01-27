@@ -76,7 +76,22 @@ To support older Browser or Server which cannot start a Websocket server, the AP
 	* Example Request: TODO
 	* Example Response: TODO
 
-## RDFA ([Wikipedia](http://de.wikipedia.org/wiki/RDFa))
+## RDFa ([Wikipedia](http://en.wikipedia.org/wiki/RDFa))
+
+The essence of RDFa is to provide a set of attributes that can be used to carry metadata in an XML language (hence the 'a' in RDFa).
+
+These attributes are:
+
+* about – a URI or CURIE specifying the resource the metadata is about
+* rel and rev – specifying a relationship and reverse-relationship with another resource, respectively
+* src, href and resource – specifying the partner resource
+* property – specifying a property for the content of an element or the partner resource
+* content – optional attribute that overrides the content of the element when using the property attribute
+* datatype – optional attribute that specifies the datatype of text specified for use with the property attribute
+* typeof – optional attribute that specifies the RDF type(s) of the subject or the partner resource (the resource that the metadata is about).
+
+In the preview the attribute property to locate impact of changes in the rendered HTML-Document.
+
 
 ```html
 <div vocab="http://schema.org/" typeof="Product">
