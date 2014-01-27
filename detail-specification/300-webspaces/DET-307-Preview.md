@@ -76,5 +76,14 @@ To support older Browser or Server which cannot start a Websocket server, the AP
 	* Example Request: TODO
 	* Example Response: TODO
 
+## RDFA ([Wikipedia](http://de.wikipedia.org/wiki/RDFa))
 
-## RDFA
+```html
+<div vocab="http://schema.org/" typeof="Product">
+  <p>Kaufen Sie den 
+     <span property="name">Staubsauger XF704</span> 
+     jetzt im Sonderangebot! 
+     <img property="image" src="acmeXF704.jpg" />
+  </p>
+</div>
+```
