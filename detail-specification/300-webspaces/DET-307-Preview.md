@@ -67,14 +67,37 @@ To support older Browser or Server which cannot start a Websocket server, the AP
 
 * render
 	* renders the whole HTML Document for the page
-	* Example URL: TODO
+	* URL Schema: `/admin/content/preview/<uuid>`
+	* Example Request: `GET /admin/content/preview/0ad908b1-5b26-41ad-a9ac-2fc4371c147d`
 * update
 	* Send update for given page
-	* Example Request: TODO 
+	* URL Schema: `POST /admin/content/preview/<uuid>`
+	* Example Request: 
+	
+```
+POST /admin/content/preview/0ad908b1-5b26-41ad-a9ac-2fc4371c147d
+{
+	changes: [
+		title: 'Test Title'
+	]
+}
+```
 * changes
 	* Returns changes for given page since last request
-	* Example Request: TODO
-	* Example Response: TODO
+	* URL Schema: `/admin/content/preview/<uuid>.json`
+	* Example URL: `GET /admin/content/preview/0ad908b1-5b26-41ad-a9ac-2fc4371c147d.json`
+	* Example Response:
+	
+```
+{
+	title:{
+		property: "title",
+		content:[
+			"Test Title"
+		]
+	}
+}
+```
 
 ## RDFa ([Wikipedia](http://en.wikipedia.org/wiki/RDFa))
 
@@ -90,7 +113,7 @@ These attributes are:
 * datatype – optional attribute that specifies the datatype of text specified for use with the property attribute
 * typeof – optional attribute that specifies the RDF type(s) of the subject or the partner resource (the resource that the metadata is about).
 
-In the preview the attribute property to locate impact of changes in the rendered HTML-Document.
+The preview service uses the attribute property to locate the impact of changes in the rendered HTML-Document.
 
 
 ```html
