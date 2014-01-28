@@ -19,7 +19,9 @@ There are 2 Strategies for storing translations for pages:
 
 ### Attribute
 
-Global default language is de (set in configuation).
+For translation fallbacks there will be an implementation for fallbacks configured in webspace xml!
+
+![ODM Attribute strategy](https://raw2.github.com/sulu-cmf/docs/master/detail-specification/images/locale_attribute.png)
 
 * title is multilingual
 * name is not multilingual
@@ -42,7 +44,7 @@ Request language en:
 }
 ```
 
-Request for other language:
+Request for other language (fallback choosen by language fallback chooser):
 
 ```
 {
@@ -54,18 +56,20 @@ Request for other language:
 Example Structure:
 
 ```
-.../page -> sulu_lang_de:title='Titel' sulu_lang_en:title='title' sulu_lang_fr:title='titre' name='test name'
+.../page -> sulu_locale:de-title='Titel' sulu_locale:en-title='title' sulu_locale:fr-title-='titre' name='test name'
     |-->/sub-page -> ...
     |-->/sub-page-1 -> ...
 ```
 
 ### Child
 
+![ODM child strategy](https://raw2.github.com/sulu-cmf/docs/master/detail-specification/images/locale_child.png)
+
 ```
 .../page -> name='test name'
-    |-->/sulu_lang_de -> title='Titel'
-    |-->/sulu_lang_en -> title='title'
-    |-->/sulu_lang_fr -> title='titre'
+    |-->/sulu_locale:de -> title='Titel'
+    |-->/sulu_locale:en -> title='title'
+    |-->/sulu_locale:fr -> title='titre'
     |-->/sub-page-1
     		   |-->...
     |-->/sub-page-2
