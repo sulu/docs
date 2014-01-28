@@ -2,9 +2,10 @@
 To integrate Content Tabs into your application you first need to implement a content navigation for your bundle in the backend. After that the server is going to be able to send the necesseary navigation data to the frontend application. After that, 
 
 #### Table of Contents
+
 [I. Content Navigation Integration in the Backend](#backend)<br />
- [ 1. create a content navigation in your bundle](#backend-create)<br />
- [ 2. extend an existing content navigation of another bundle](#backend-extend)<br />
+... [ 1. create a content navigation in your bundle](#backend-create)<br />
+... [ 2. extend an existing content navigation of another bundle](#backend-extend)<br />
 [II. Content Tabs Integration into the Frontend](#frontend)<br />
 
 ##<a name="backend"></a> I. Content Navigation Integration in the Backend
