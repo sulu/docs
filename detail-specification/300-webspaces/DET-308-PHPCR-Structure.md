@@ -21,6 +21,8 @@ There are 2 Strategies for storing translations for pages:
 
 For translation fallbacks there will be an implementation for fallbacks configured in webspace xml!
 
+__Example from PHPCR - ODM: Language strategie attribute__
+
 ![ODM Attribute strategy](https://raw2.github.com/sulu-cmf/docs/master/detail-specification/images/locale_attribute.png)
 
 * title is multilingual
@@ -63,6 +65,8 @@ Example Structure:
 
 ### Child
 
+__Example from PHPCR - ODM: Language strategie child__
+
 ![ODM child strategy](https://raw2.github.com/sulu-cmf/docs/master/detail-specification/images/locale_child.png)
 
 ```
@@ -86,3 +90,9 @@ Schema:
 /cmf/<webspace>/route
            |-->/content
 ```
+
+For the name of the node there are two possibilities:
+
+* create node: take title in the current language
+* update node & title changed: if the language is the default language rename it
+* else do nothing
