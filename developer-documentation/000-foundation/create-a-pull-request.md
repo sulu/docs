@@ -1,6 +1,6 @@
 #How to create a Pull Request
 
-* Create the pull request as soon as posible.
+* Create the pull request as soon as possible.
 * Mark the PR with [WIP] in the title when you work on it.
 * Remove the [WIP] when you finished open tasks and the PR will be able to merge.
 

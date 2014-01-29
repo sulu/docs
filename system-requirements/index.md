@@ -139,7 +139,7 @@ All Requirements | [Alpha Requirements](https://github.com/massiveart/sulu-docs/
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-2601 Security Check](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search/2600_security.md)
 
-####![300 PORTALS](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/portals.png)300 PORTALS
+####![300 WEBSPACES](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/portals.png)300 WEBSPACES
 
 #####3100 General
 

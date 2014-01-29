@@ -8,15 +8,15 @@
 * public.address = Adresse
 
 ###Email
-* email.home = Persöhnlich
+* email.home = Persönlich
 * email.work = Geschäftlich
 
 ###Phone
-* phone.home = Persöhnlich
+* phone.home = Persönlich
 * phone.work = Geschäftlich
 
 ###Address
-* address.home = Persöhnlich
+* address.home = Persönlich
 * address.work = Geschäftlich
 
 ###Country
@@ -111,4 +111,10 @@
 * security.permission.role.permissions = Berechtigungen
 * security.permission.role.chooseLanguage = Sprache auswählen
 * security.permission.role.allLanguages = Alle ausgewählt
-
+* security.permissions.view = view
+* security.permissions.add = add
+* security.permissions.edit = edit
+* security.permissions.delete = delete
+* security.permissions.archive = archive
+* security.permissions.live = publish
+* security.permissions.security = security

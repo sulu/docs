@@ -9,7 +9,7 @@
 
 ##![portals](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/portals.png)3200 Data Structuring
 
-####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-3102 Admin Portal Navigation
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-3201 Admin Portal Navigation
 
 * Home Page
 * Pages

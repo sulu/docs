@@ -1,6 +1,6 @@
 ####[System Requirements](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/ "Index of System Requirements")
 
-###![500 ASSETS](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/portals.png)300 PORTALS
+###![500 ASSETS](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/portals.png)300 WEBSPACES
 
 * [3100 General](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3100_general.md "3100 General")
 * [3200 Data Structuring](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3200_data-structuring.md "3200 Data Structuring")

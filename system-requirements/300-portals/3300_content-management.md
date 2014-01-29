@@ -2,7 +2,7 @@
 
 * [3100 General](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3100_general.md "3100 General")
 * [3200 Data Structuring](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3200_data-structuring.md "3200 Data Structuring")
-* 3300 Content Management]
+* 3300 Content Management
 * [3400 Connections](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3400_connections.md "3400 Connections")
 * [3500 Interfaces](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3500_interfaces.md "3500 Interfaces")
 * [3600 Security](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3600_security.md "3600 Security")
@@ -31,19 +31,20 @@ Fig. UI CKEditor
  * Internal links
  * Word import with plain text (no formatting)
 
-####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-3302 Navigation Types
+####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-3302 Column Tree Navigation
 
 **Definition:**
 
-The system shall provide two navigation views:
-* List view with multiple select and sorting functions
-* Node tree view 
+The column tree navigation vies all nodes of the underlying webspace including ghost and shadow nodes. 
 
 **Specification:**
 
-![Node tree view navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_node-treeview.png)
+1. A ghost node is a node within the underlying webspace which is not available in the selected localisation.
+2. When the ghost node display mode is activated, all ghost nodes are shown with the highest language hierarchy (e.g.: en-us).
 
-Fig. Node tree view navigation (portals)
+![Column tree navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/column-tree.png)
+
+Fig. Column Tree Navigation
 
 ####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-3303 Single and Multiple Edit
 
@@ -57,6 +58,7 @@ The system shall provide the standard functions "Edit", "Delete", "Move" and "Al
 1. Deleted pages shall be removed to a trash archive (see [Content Life Cycle Workflow] (https://github.com/massiveart/sulu-docs/tree/master/system-requirements/100-basic/content-life-cycle-workflow.md))
 1. When a user selects the delete function, the system shall show a message box which the user has to confirm before deleting a page
 1. The system shall allocate a multiple selection option (eg. a check box) to access the multiple edit mode
+1. After selecting a set of data entries the user shall be able to change attributes in the edit mode
 1. One or more selected pages can be moved to another place (cut and paste)
 1. The user shall be able to create an alias of one or more selected pages and move dem to another place (copy and paste) 
 1. Each data manipulation shall log date of change and user to be saved in the change history
@@ -74,6 +76,10 @@ The user should be provided with facilities to make textual amendments in the fr
 1. After editing the icon changes to a save button for confirming the amendments
 1. Front end editing is limited to textual amendments, which means that no new content blocks or asset assingment features are available
 
+####FR-3305 Forms
+
+**tbd**
+
 ####![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)FR-3306 Preview
 
 **Definition:**
@@ -84,3 +90,4 @@ The system shall display a preview of the edited content.
 
 1. The system shall display the preview in a new window
 1. The system should display the preview in place within the edit area
+

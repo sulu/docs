@@ -38,10 +38,15 @@ In the template use the translate function. This function will be added to the c
 ...                
 ```
 
-#####Sandbox Function
+#####Sandbox Functions:
 
+*this.sandbox.translate*: translates a single key and returns translation
 ```
 this.sandbox.translate('public.delete')
+```
+*this.sandbox.translateArray*: translates an array of keys and returns an array of translations
+```
+this.sandbox.translateArray(['public.add','public.delete'])
 ```
 
 #####PHP - translate service

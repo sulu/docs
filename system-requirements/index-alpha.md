@@ -101,7 +101,7 @@
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-2601 Security Check](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/200-search/2600_security.md)
 
-####![300 PORTALS](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/portals.png)300 PORTALS
+####![300 WEBSPACES](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/portals.png)300 WEBSPACES
 
 #####3100 General
 
@@ -109,7 +109,7 @@
 
 #####3200 Data Structuring
 
-![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-3102 Main navigation points](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3200_data-structuring.md)
+![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-3201 Main navigation points](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3200_data-structuring.md)
 
 ![Alpha](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/alpha.png)[FR-3203 Content Sniplets](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/300-portals/3200_data-structuring.md)
 

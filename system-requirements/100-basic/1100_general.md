@@ -29,9 +29,9 @@ The basic user interface concept defines UI layout with the basic UI elements an
 
 ######LISTS:
 
-![General list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/list_general.png)
+![Standard list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/list_general.png)
 
-Fig. General list view
+Fig. Standard list
 
 ![Contacts list](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/list_contacts.png)
 
@@ -39,31 +39,55 @@ Fig. Contacts list view
 
 ######NAVIGATION:
 
-![Node tree view navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_node-treeview.png)
+![Navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation.png)
 
-Fig. Node tree view navigation (portals)
+Fig. navigation
 
-![Contacts navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_contacts.png)
+![Assets navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation-collapsed.png)
 
-Fig. Contacts navigation
+Fig. Navigation collapsed
 
-![Assets navigation](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/navigation_assets.png)
+![Column tree](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/column-tree.png)
 
-Fig. Assets navigation
+Fig. Column tree for user-generated content (Webspaces)
 
 ######UI ELEMENTS:
 
-![Buttons and functions](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/buttons_functions.png)
+![Image assignment](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/asset-assignment.png)
 
-Fig. Buttons and functions
+Fig. Image assignment
 
-![Forms](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/forms.png)
+![Video assignment](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/video-assignment.png)
 
-Fig. Forms
+Fig. Video assignment
+
+![Toolbars and buttons](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/buttons_functions.png)
+
+Fig. Toolbars and buttons
+
+![Basic forms](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/basic-forms.png)
+
+Fig. Basic forms
+
+![Forms and content types](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/forms.png)
+
+Fig. Forms and content types
+
+![Smart content](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/smart-content.png)
+
+Fig. Smart content
 
 ![Typography](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/typography.png)
 
 Fig. Typography
+
+![Image gallery](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/image-gallery.png)
+
+Fig. Image gallery
+
+![Video](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/video.png)
+
+Fig. Video
 
 ![Dialog Box](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/dialog-box.png)
 

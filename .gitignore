@@ -1,2 +1,8 @@
 .DS_Store
 *.mwb.bak
+
+
+/detail-specification/models/uml/.vpprefdata/*
+/detail-specification/models/uml/tmp/*
+*~*
+
