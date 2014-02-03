@@ -45,6 +45,7 @@ Example:
 	command: '<command>',
 	content: '<uuid>',
 	type: '<form|preview>',
+	user: '1',
 	params: {
 		<any>
 	}
@@ -58,7 +59,7 @@ The properties command, content and type ar mandatory to find out which window a
 | command | params                                     | answer |
 | ------- | ------------------------------------------ | ------ |
 | start   | none                                       | OK and a flag if the other part started (repeated after the other part started) |
-| update  | `{property: '<property>', data: '<data>'}` | OK for form and the changes for the preview |
+| update  | `{changes: {'<property>': '<data>'}}` | OK for form and the changes for the preview |
 | close   | none                                       | none |
 
 ## Fallback
@@ -98,6 +99,29 @@ POST /admin/content/preview/0ad908b1-5b26-41ad-a9ac-2fc4371c147d
 	}
 }
 ```
+
+### Fallback detection
+
+```php
+var support = "MozWebSocket" in window ? 'MozWebSocket' : ("WebSocket" in window ? 'WebSocket' : null);
+// no support
+if (support === null) {
+	console.log("Your browser doesn't support Websockets.");
+	return false;
+}
+// let's invite Firefox to the party.
+if (window.MozWebSocket) {
+	window.WebSocket = window.MozWebSocket;
+}
+// support exists
+return true;
+```
+
+* Check if Object WebSocket (HTML5) or MozWebSocket (Mozilla) exists
+* if there is no of this goto fallback (Source: [http://www.marcofolio.net/webdesign/working_with_websockets.html](http://www.marcofolio.net/webdesign/working_with_websockets.html))
+* if MozWebSocket then set WebSocket = MozWebSocket (Source: [http://eamusic.dartmouth.edu/~osetinsky/HTML5%20Demo%20%20Web%20Socket.html](http://eamusic.dartmouth.edu/~osetinsky/HTML5%20Demo%20%20Web%20Socket.html))
+
+
 
 ## RDFa ([Wikipedia](http://en.wikipedia.org/wiki/RDFa))
 
