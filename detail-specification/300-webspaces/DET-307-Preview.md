@@ -59,7 +59,7 @@ The properties command, content and type ar mandatory to find out which window a
 | command | params                                     | answer |
 | ------- | ------------------------------------------ | ------ |
 | start   | none                                       | OK and a flag if the other part started (repeated after the other part started) |
-| update  | `{changes: {'<property>': '<data>'}}` | OK for form and the changes for the preview |
+| update  | `{changes: {'<property>': '<data>', ...}}` | OK for form and the changes for the preview |
 | close   | none                                       | none |
 
 ## Fallback
@@ -96,7 +96,8 @@ POST /admin/content/preview/0ad908b1-5b26-41ad-a9ac-2fc4371c147d
 		content:[
 			"Test Title"
 		]
-	}
+	},
+	...
 }
 ```
 
