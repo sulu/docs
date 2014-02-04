@@ -88,7 +88,8 @@ This extension contains multiple useful functions, making the developers live ea
 #### Miscellaneous
 * `sandbox.sulu.initListToolbarAndList(key, url, listToolbarOptions, datagridOptions)`
 
-	initializes sulu list-toolbar with column options and datagrid
+	initializes sulu list-toolbar with column options and datagrid. First, fields are loaded with the specified url and matched against settings of the specified key. Then a list-toolbar and the datagrid are initialized with the specified fields.
+	
 	* {String} key Settings key - will be stored in database with the specified key
 	* {String} url Url to load and save fields
 	* {Object} listToolbarOptions Options object of list-toolbar@suluadmin component
