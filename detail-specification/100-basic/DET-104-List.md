@@ -6,6 +6,5 @@
 Lists can be editable with following restrictions:
 - when the users edits a field the row is saved when the row loses the focus
 - local validation is only displayed when an error occurs
-- validation with interaction of the server will display error and success
-- success of validation will be visible for a few seconds then the input fields will be replaced by the saved value
-- progress of save action will be displayed with a loading icon at the end of the changed row
+- validation can be locally (e.g. for format related issues) or in interaction with the server (e.g. uniqueness)
+- the progress of save action will be displayed with a loading icon at the end of the changed row
