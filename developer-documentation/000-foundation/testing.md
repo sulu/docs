@@ -8,6 +8,8 @@ The `SuluTestBundle` has to be installed in the current bundle or app. This is d
 ```
 Afterwards the `SuluTestBundle` can be installed with the command `composer update`. The last step is to add an instance of the `SuluTestBundle` in the AppKernel. In a standalone bundle it can be added to the `bundles`-array in `Tests/Resources/app/AppKernel.php` and in a full application it should be added only in the dev-environment.
 
+It's also very important to be sure that the security and testing-bundle are configured correctly, as both of them deliver the same services (although the one responsible for testing does it in a much easier way).
+
 ## DatabaseTestCase
 The DatabaseTestCase is the abstract base class for functional tests. It provides a member variable to the entity manager from doctrine and creates an instance of the SchemaTool, for resetting the database after every test run.
 
