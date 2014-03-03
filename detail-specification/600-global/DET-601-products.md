@@ -32,3 +32,10 @@ Products can also be linked to other products, which is described in the tables 
 
 ##### Product sets
 The `pr_sets`-table can group some products and offer the entire set for a special price. The price is defined by a percental discount, as set can also contain master products being available in different variants and prices, which make the handling quite hard.
+
+#### SuluProductAdvancedBundle
+The advanced version of the products introduces suppliers. The suppliers are represented by the `co_accounts`-table from our ContactBundle.
+
+The advanced product bundle also defines it's own version of the product in `ap_products`, but does not add any additional fields. The `ap_supplier_products`-table adds the link to the suppliers or accounts, and adds some additional informations and/or overrides the information from the original product by the information from the concrete supplier. The additional information contains the delivery status of the supplier's product (`ap_product_delivery_status`), the product's status (`ap_product_status_translations`) and some attributes which are only defined by the supplier (`ap_supplier_product_attribues`), whereby the same attributes as in the SuluProductBaseBundle are available. 
+
+The pricing is done in the `ap_supplier_product_prices`, where also a minimum quantity for the price is written, which enables the possibility to model different price ranges.
