@@ -41,7 +41,18 @@ option parameters:
 
 * {String} heading
 * {String|Object} template [default]
+* {String|Object} parentTemplate  
+* {Function} changeStateCallback
+* {Function} parentChangeStateCallback
 * {String} instanceName
+ 
+#### How to set a custom template?
+Overwrite template parameter. See husky documentation for "edit-toolbar" component to get further information regarding the data-format.
+
+#### How to extend an existing template?
+Set "parentTemplate" to the template which should be extended. Then set "template" with the data on which the parent template should be extended. Do the same with "changeStateCallback" and "parentListener" if necessary
+
+ * to insert new data: just pass the new item and define "position" to set its order in the edit-toolbar
 
 
 ###list-toolbar
@@ -51,7 +62,20 @@ option parameters:
 
 * {String} heading
 * {String|Object} template [default]
+* {String|Object} parentTemplate 
+* {Function} listener [default]  
+* {Function} parentListener  
 * {String} instanceName
+
+#### How to set a custom template?
+Overwrite template parameter. See husky documentation for "toolbar" component to get further information regarding the data-format.
+
+#### How to extend an existing template?
+Set "parentTemplate" to the template which should be extended. Then set "template" with the data on which the parent template should be extended. Do the same with "listener" and "parentListener" if necessary
+
+ * to insert new data: just pass the new item and define "position" (and probably also "group") to set its order
+ * to overwrite data: if you'd like to overwrite a main item just set the same id.
+
 
 
 ##Aura Extensions
