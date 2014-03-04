@@ -4,7 +4,7 @@ used for receiving global vars in javascipt
 
 ##provided functions:
 	
-* **getUser() **
+* **getUser()**
 
  	returns user variables + settings
  	
