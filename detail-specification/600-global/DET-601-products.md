@@ -12,7 +12,7 @@ The shown `SuluProductAdvancedBundle` introduces suppliers, which is not always 
 Later there will also be a `SuluProductSimpleBundle`, which adds some missing fields to the product required for a simple shop without suppliers.
 
 ####SuluProductBaseBundle
-This bundle contains the abstract products entity (for the `pr_products`-table shown in the diagram, which is never generated due to its abstractness), holding the most common information like a key, serial numbers, a manufacturer and so on. Additionally it stores the type of the product (`pr_product_types`). It is also linked to a language dependent table containing the products name and description (`pr_product_translations`).
+This bundle contains the abstract products entity (for the `pr_products`-table shown in the diagram, which is never generated due to its abstractness), holding the most common information like a key, serial numbers, a manufacturer and so on. Additionally it stores the type of the product (`pr_types`). It is also linked to a language dependent table containing the products name and description (`pr_product_translations`).
 
 ##### Product attributes
 The `pr_attributes`-table contains all the available attributes in the system together with a unit and a type (enumeration, text, integer, double, ...). The relation to the product is established by the `pr_product_attributes`-table containing the value as well. The `pr_templates`-table combines some of these attributes, to offer some preconfigured templates to the user for convenience.
@@ -36,6 +36,6 @@ The `pr_sets`-table can group some products and offer the entire set for a speci
 #### SuluProductAdvancedBundle
 The advanced version of the products introduces suppliers. The suppliers are represented by the `co_accounts`-table from our ContactBundle.
 
-The advanced product bundle also defines it's own version of the product in `ap_products`, but does not add any additional fields. The `ap_supplier_products`-table adds the link to the suppliers or accounts, and adds some additional informations and/or overrides the information from the original product by the information from the concrete supplier. The additional information contains the delivery status of the supplier's product (`ap_product_delivery_status`), the product's status (`ap_product_status_translations`) and some attributes which are only defined by the supplier (`ap_supplier_product_attribues`), whereby the same attributes as in the SuluProductBaseBundle are available. 
+The advanced product bundle also defines it's own version of the product in `ap_products`, but does not add any additional fields. The `ap_supplier_products`-table adds the link to the suppliers or accounts, and adds some additional informations and/or overrides the information from the original product by the information from the concrete supplier. The additional information contains the delivery status of the supplier's product (`ap_delivery_status`) and additional attributes (`ap_supplier_product_attribues`), whereby the same attributes as in the SuluProductBaseBundle are available. 
 
 The pricing is done in the `ap_supplier_product_prices`, where also a minimum quantity for the price is written, which enables the possibility to model different price ranges.
