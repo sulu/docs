@@ -2,11 +2,6 @@
 
 ![Template architecture](https://raw.github.com/massiveart/sulu-docs/master/detail-specification/images/diagrams/structure_architecture.png)
 
-* Devided in three sections
-  * Structure
-  * ContentTypes
-  * Mapper
-
 ## Structure
 
 * Holds information about Template
@@ -31,25 +26,6 @@
   * contentTypeName ... name of content Type
   * value ... value of property
 * This classes are basic data - classes with less logic
-
-## ContentTypes
-
-* ContentTypes are implemented as Services
-* ID: sulu.content.type.<<name>>
-* get method sets data from node to property
-* set method gets data from property and set data to node
-* two types:
-  * SimpleContentType: complete save and read method to save data in a property of phpcr node
-  * ComplexContentType: Extends ContainerAware for complex operations. To control the flow there are two types PRE_SAVE and POST_SAVE
-
-## Mapper
-
-* Provides a interface to read and write data
-* Uses Structure
-* Iterates over Properties
-* Save data of pre_save properties before $session->save() and data of post_save after $session->save()
-* To get the structure for a key it uses the Service 'sulu.content.structure' which (should) implement StructureFactoryInterface
-* The read method returns a structure field with value
 
 ## Template-Reader
 The template-reader is able to parses a template in XML format and returns the structure as array. Therefore the load-method which accepts as the first parameter the path to the xml-file is used. This array will then be used to generate a cacheable php-class with the StructureManager.
@@ -90,6 +66,7 @@ You can find an example for a template that the template reader can parse below:
 
 ## Structure Manager
 The structure manager uses the template-reader to retrieve a specific php-class from the cache and returns an object of the requested php-class. When the requested class-file does not exist it will be generated and placed in the specified cache direcotry. The constructor accepts an array with configuration options - the default values can be found below:
+
 ```
 $this->options = array(
     'template_dir' => null,
@@ -99,4 +76,5 @@ $this->options = array(
     'base_class' => 'Structure.php'
 );
 ```
+
 The getStructure-metod actually retrieves the object from the requested class. The class-file as well as the template-file will be identified with the key-parameter.

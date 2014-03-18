@@ -37,6 +37,7 @@ The access right management shall cover the complex requirements arising from th
 1. The user shall be able to log on and use the system according to the underlying user permissions.
 1. The system shall enable the user to define system users and system user groups.
 1. A user group shall consist of one or more dedicated users.
+1. The user shall be able to set specific access control for Sulu (backend) and the frontend.
 1. Each system user or user group shall have one or more associated content languages.
 1. Each user group shall be assignable to parent user group(s).
 1. A role shall be assignable to a system user or a user group.
