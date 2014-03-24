@@ -52,6 +52,13 @@ You can find an example for a template that the template reader can parse below:
         <property name="url" type="resourceLocator" mandatory="true"/>
         <property name="article" type="textArea" mandatory="false"/>
         <property name="pages" type="smartContentSelection" mandatory="false"/>
+        
+        <block name="article" minOccurs="2" maxOccurs="10">
+	           <properties>
+                <property name="title" type="text_line"/>
+				            <property name="article" type="text_area"/>
+	           </properties>
+        </block>
 
         <property name="images" type="imageSelection" minOccurs="0" maxOccurs="2">
             <params>
@@ -63,6 +70,13 @@ You can find an example for a template that the template reader can parse below:
 </template>
 
 ```
+
+## Block Content
+The block content is a special property type in template xml structure. This parts will be handled with the BlockContentType. This Content Type creates a node property foreach child property (<blockname>-<propertyname>). if the property is multiple, it will create foreach property an array of values in the node property. To save and load content from phpcr the othe content types will be used, defined in each child property. Theoretical th block content can be used recursive, but our UI supports only on stage.
+
+__Example (from above -> only block)__:
+* sulu_locale:de-article-title = array ( 'Title 1' , 'Title 2' )
+* sulu_locale:de-article-article = array ( 'Article 1' , 'Article 2' )
 
 ## Structure Manager
 The structure manager uses the template-reader to retrieve a specific php-class from the cache and returns an object of the requested php-class. When the requested class-file does not exist it will be generated and placed in the specified cache direcotry. The constructor accepts an array with configuration options - the default values can be found below:
