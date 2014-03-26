@@ -8,7 +8,7 @@ There are 2 Sections to devide RL storage and generating:
 
 ##### Strategy
 
-Generates a Resource Locator (string) form a given Structure.
+Generates a Resource Locator (string) form a given Structure (current implemented only tree).
 
 * Short - as short as Possible:
 	* try if title is a valid unique RL
@@ -70,6 +70,19 @@ Example:
 
 * ??? delete problematic characters ???
 * relace multiple minus with one
-* remove trailing start/end - 
+* remove trailing start/end '-'
 
+### Mapping in PHPCR
+```
+/cmf/<webspace>/routes/
+                     -> <localization>/<segment>/<real route>
+                     -> en_us/sommer/news/this-is-a-big-surprise
+                     -> de/sommer/neuigkeiten/das-ist-eine-große-neuigkeit
+```
 
+Example: `en.xxx.us/sommer/news/this-is-a-big-surprise` -> Routeprovider extracts localization (en_us) and segment (sommer)-> rlpmapper returns content for Resource Locator
+
+### Ghost Page handling
+If parent page has no resource locator (ghost page), the tree strategy switches to short url strategy (takes only title and unify it).
+
+PROBLEM: parent page will be activated (translated) -> sub page is not a sub resourcelocator -> cannot create history and new resource locator (ISSUE -> TODO URL)
