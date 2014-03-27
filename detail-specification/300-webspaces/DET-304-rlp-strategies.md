@@ -85,4 +85,4 @@ Example: `en.xxx.us/sommer/news/this-is-a-big-surprise` -> Routeprovider extract
 ### Ghost Page handling
 If parent page has no resource locator (ghost page), the tree strategy switches to short url strategy (takes only title and unify it).
 
-PROBLEM: parent page will be activated (translated) -> sub page is not a sub resourcelocator -> cannot create history and new resource locator (ISSUE -> TODO URL)
+PROBLEM: parent page will be activated (translated) -> sub page is not a sub resourcelocator -> cannot create history and new resource locator -> later this wont work because sub gohts can not be activated!
