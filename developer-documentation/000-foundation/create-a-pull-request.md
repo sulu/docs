@@ -9,7 +9,6 @@
 [short description]:
 
 - [ ] test coverage
-- [ ] finish the code
 - [ ] gather feedback for my changes
 - [ ] submit changes to the documentation
 
@@ -27,7 +26,6 @@
 Create User Command:
 
 - [x] test coverage (no tests)
-- [x] finish the code
 - [ ] gather feedback for my changes
 - [x] submit changes to the documentation
 
