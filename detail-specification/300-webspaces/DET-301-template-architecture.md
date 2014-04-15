@@ -48,24 +48,26 @@ You can find an example for a template that the template reader can parse below:
     <cacheLifetime>2400</cacheLifetime>
 
     <properties>
-        <property name="title" type="textLine" mandatory="true"/>
-        <property name="url" type="resourceLocator" mandatory="true"/>
-        <property name="article" type="textArea" mandatory="false"/>
-        <property name="pages" type="smartContentSelection" mandatory="false"/>
-        
-        <block name="article" minOccurs="2" maxOccurs="10">
-	           <properties>
-                <property name="title" type="text_line"/>
-				            <property name="article" type="text_area"/>
-	           </properties>
-        </block>
-
-        <property name="images" type="imageSelection" minOccurs="0" maxOccurs="2">
-            <params>
-                <param name="minLinks" value="1"/>
-                <param name="maxLinks" value="10"/>
-            </params>
+        <property name="title" title="sulu.property.title" type="text_line" mandatory="true">
+            <tag name="sulu.node.name"/>
+            <tag name="sulu.rlp.part" priority="1"/>
         </property>
+        <property name="name" title="sulu.property.name" type="text_line" mandatory="true">
+            <tag name="sulu.rlp.part" priority="2"/>
+        </property>
+        <property name="url" title="sulu.property.url" type="resource_locator" mandatory="true">
+            <tag name="sulu.rlp.input"/>
+        </property>
+        <property name="article" title="sulu.property.article" type="text_editor" mandatory="true"/>
+
+        <block name="block" title="sulu.property.block" minOccurs="2" maxOccurs="10" mandatory="true">
+            <properties>
+                <property name="title" title="sulu.property.block.title" type="text_line" mandatory="true">
+                    <tag name="sulu.rlp.part" priority="3"/>
+                </property>
+                <property name="article" title="sulu.property.block.article" type="text_editor" mandatory="true"/>
+            </properties>
+        </block>
     </properties>
 </template>
 
@@ -92,3 +94,22 @@ $this->options = array(
 ```
 
 The getStructure-metod actually retrieves the object from the requested class. The class-file as well as the template-file will be identified with the key-parameter.
+
+## Property - Tags
+This feature resulting out of issue https://github.com/sulu-cmf/sulu/issues/76 .
+
+Tags are saved in the template structure along with the property, and the Structure-Class has some methods to return all the properties with a given Tag or a method to return the property with the highest priority.
+
+The `XMLFileLoader` has check if there is one property with the `sulu.node.name`-tag, and reject the configuration file with a warning, if there is none.
+
+Tags should be namespaced as in the example, so that we don't get troubles with eventually usage of this feature in client projects.
+
+Tags should also be able to receive a priority, like the `sulu.rlp.part`-tag in the example. The one using the tag can decide for what the priority is used (only use the property with a value and the highest priority on this tag, or use all of them and use the priority for sequencing). The `XMLFileLoader` checks the combination of name and priority of uniquess. Default priority is `1`.
+
+Sulu will then never again ask hardcoded for the `title`-attribute anywhere, but use the structure to get the fields with the given tag instead.
+
+For URL generation in form there are two needed tags in the tempalte:
+
+* `sulu.rlp.part` : used as input for the gernation, if there are more than one, the parts will ne concated with rising priority
+* `sulu.rlp.input` : the generated url will be placed in this property
+
