@@ -15,6 +15,10 @@ The webspaces will be configured in the `app/Resources/webspaces`-folder, with t
 
     <name>Sulu CMF</name>
     <key>sulu_io</key>
+    
+    <security>
+        <system>sulu_io</system>
+    </security>
 
     <localizations>
         <localization language="en" country="us" shadow="auto"/>
@@ -61,7 +65,9 @@ The webspaces will be configured in the `app/Resources/webspaces`-folder, with t
 
 
 ```
-There will be a file for each webspace. It contains a root webspace node, which has some subnodes defining a name, a key, many localization (with a tree structure) and a list of all the portals. The webspace defines an area for all the content, and a portal is built on top of this content. Every webspace must also define which theme is used, and which templates of this theme should be included. 
+There will be a file for each webspace. It contains a root webspace node, which has some subnodes defining a name, a key, many localization (with a tree structure) and a list of all the portals. There is also an optional security section, which which can configure an security system. If the webspace is secured, only the users which have a role including this system can access the restricted area.
+
+The webspace defines an area for all the content, and a portal is built on top of this content. Every webspace must also define which theme is used, and which templates of this theme should be included. 
 
 A portal includes different localizations (which can also be configured in the xml). A portal also gets an own name and key, and defines the resource locator strategy. 
 Every portal must also define a list of environments, which will be chosen by the environment variable (which is the type of each environment). Every environment defines its own urls, containing a pattern to describe language, country and segment (written in curly braces), or these values are defined in the url node, as you can see above.
