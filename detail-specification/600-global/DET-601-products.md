@@ -19,9 +19,9 @@ The `pr_attributes`-table contains all the available attributes in the system to
 
 ##### Product types
 All products are categorized in the following types:
-* Masterproducts consist of different variants. These variants are stored as seperate products, and differ only in some specified attributes. The master product's price can be overruled by its variants.
-* Simple products are the most used type, which represents products with no different variants. They are also used for the variants in the master product.
-* Extra products are not visible in the standard overview, and are for products which are only available in combination with another one.
+* Products with options. Options are stored as seperate products, and differ only in some specified attributes. The master product's price can be overruled by its assigned options.
+* Products are the most used type, which represents products with no different variants. They are also used for the variants in the master product.
+* Product add ons are not visible in the standard overview, and are for products which are only available in combination with another one.
 
 ##### Product links
 Products can also be linked to other products, which is described in the tables `pr_crosssells`, `pr_upsells`, `pr_relations` and `pr_extras`. These connections are classified as follows:
