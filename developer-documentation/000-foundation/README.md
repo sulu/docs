@@ -8,3 +8,5 @@
 * [GeneratorBundle](https://github.com/massiveart/sulu-docs/tree/master/developer-documentation/000-foundation/generator-bundle.md "GeneratorBundle")
 
 * [DoctrineRepositories](https://github.com/massiveart/sulu-docs/tree/master/developer-documentation/000-foundation/doctrine-repositories.md "DoctrineRepositories")
+
+* [Githooks](https://github.com/sulu-cmf/docs/blob/master/developer-documentation/000-foundation/setup-githook.md)
