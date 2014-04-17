@@ -55,6 +55,7 @@ define(['router'], function (Router) {
 ## Admin/SuluExampleAdmin.php
 * Initializes navigation entries for bundle
 * Initializes commands for app/console
+* returns the folder for the js bundle, if this method is not provided there will no javascript file be delivered
 
 ```php
 <?php
@@ -84,7 +85,11 @@ class SuluExampleAdmin extends Admin
     {
         return array();
     }
-
+    
+    public function getJsBundleName()
+    {
+        return 'suluexample';
+    }
 }
 
 ```
