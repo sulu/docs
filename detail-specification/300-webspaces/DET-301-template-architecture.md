@@ -61,12 +61,23 @@ You can find an example for a template that the template reader can parse below:
         <property name="article" title="sulu.property.article" type="text_editor" mandatory="true"/>
 
         <block name="block" title="sulu.property.block" minOccurs="2" maxOccurs="10" mandatory="true">
-            <properties>
-                <property name="title" title="sulu.property.block.title" type="text_line" mandatory="true">
-                    <tag name="sulu.rlp.part" priority="3"/>
-                </property>
-                <property name="article" title="sulu.property.block.article" type="text_editor" mandatory="true"/>
-            </properties>
+        	<types>
+        		<type name="title">
+            		<properties>
+                		<property name="title" title="sulu.property.block.title" type="text_line" mandatory="true">
+             	       		<tag name="sulu.rlp.part" priority="3"/>
+                		</property>
+  	          		</properties>
+  	          	</type>
+        		<type name="title_text">
+            		<properties>
+                		<property name="title" title="sulu.property.block.title" type="text_line" mandatory="true">
+             	       		<tag name="sulu.rlp.part" priority="3"/>
+                		</property>
+	                	<property name="article" title="sulu.property.block.article" type="text_editor" mandatory="true"/>
+  	          		</properties>
+  	          	</type>
+  	     	</types>
         </block>
     </properties>
 </template>
@@ -74,11 +85,19 @@ You can find an example for a template that the template reader can parse below:
 ```
 
 ## Block Content
-The block content is a special property type in template xml structure. This parts will be handled with the BlockContentType. This Content Type creates a node property foreach child property (<blockname>-<propertyname>). if the property is multiple, it will create foreach property an array of values in the node property. To save and load content from phpcr the othe content types will be used, defined in each child property. Theoretical th block content can be used recursive, but our UI supports only on stage.
+The block content is a special property type in template xml structure. This parts will be handled with the BlockContentType. This Content Type creates a node property foreach child property (<blockname>-<propertyname>). if the property is multiple, it will create foreach property an array of values in the node property. To save and load content from phpcr the othe content types will be used, defined in each child property. Theoretical th block content can be used recursive, but our UI supports only one stage.
 
 __Example (from above -> only block)__:
+
 * sulu_locale:de-article-title = array ( 'Title 1' , 'Title 2' )
 * sulu_locale:de-article-article = array ( 'Article 1' , 'Article 2' )
+
+### Types
+Block Content allows to define Types to define diffrent manifestations. These types can have complete diffrent look and feel.
+
+Each Instance of block have a implicity (hidden property) `type` these holds the name of the type. These type property allows to load the right properties for the instance and read and load data in the right structure.
+
+__TODO IMAGE__
 
 ## Structure Manager
 The structure manager uses the template-reader to retrieve a specific php-class from the cache and returns an object of the requested php-class. When the requested class-file does not exist it will be generated and placed in the specified cache direcotry. The constructor accepts an array with configuration options - the default values can be found below:
