@@ -76,11 +76,13 @@ class ContactExampleWidget1 implements SplitViewWidgetInterface
 
 __/Resources/views/SplitView/example1.html.twig__
 
-```php
+```html
 <p>Widget: {{ name }} with priority: {{ priority }}</p>
 
 <p>{{ data.test }}</p>
 ```
+
+### Service Configuration
 
 __/Resources/config/services.yml__
 
@@ -106,6 +108,8 @@ services:
             - {name: sulu.contact.split_view, priority: 1}
 ```
 
+### CompilerPass
+
 __/SuluContactBundle.php__
 
 ```php
@@ -120,6 +124,39 @@ class SuluContactBundle extends Bundle
         );
     }
 }
+```
+
+### Result
+
+```html
+<div id="split-view">
+    <div class="header">
+        <h1>Contact Split View</h1>
+    </div>
+
+    <div class="content">
+        <div class="widget widget-Example2 widget-priority-20">
+            <p>Widget: Example2 with priority: 20</p>
+
+            <p>2</p>
+        </div>
+        <div class="widget widget-Example1 widget-priority-10">
+            <p>Widget: Example1 with priority: 10</p>
+
+            <p>1</p>
+        </div>
+        <div class="widget widget-Example1 widget-priority-5">
+            <p>Widget: Example1 with priority: 5</p>
+
+            <p>1</p>
+        </div>
+        <div class="widget widget-Example2 widget-priority-1">
+            <p>Widget: Example2 with priority: 1</p>
+
+            <p>2</p>
+        </div>
+    </div>
+</div>
 ```
 
 ## Frontend
