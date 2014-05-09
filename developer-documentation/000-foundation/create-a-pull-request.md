@@ -28,7 +28,7 @@ __Informations:__
 | New feature?  | [yes|no]
 | Tests pass?   | [yes|no => <WHY?>]
 | Fixed tickets | [<WHICH?>|none]
-| Doc           | [url to doc|none]
+| Doc           | [url to commit|none]
 ```
 
 ## Example
