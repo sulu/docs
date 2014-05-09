@@ -6,7 +6,15 @@
 ## RequestListener
 The requested portal is detected by the `RequestListener`, which listens on Symfony's `Kernel.REQUEST`-Event. We set a very high priority on this task, because we need this information already in the routing process, which already includes a very high prioritized listener on this event. 
 
-The `RequestListener` only calls the `analyze`-method of the `RequestAnalyzer`, which analyzes the given Request, calculates and loads some values, and saves them in some variables.  The `RequestAnalyzer` is a service, so that you can use these values (Portal, PortalUrl, Language, Country, Redirect) from every place.
+The `RequestListener` only calls the `analyze`-method of the `RequestAnalyzer`, which analyzes the given Request, calculates and loads some values, and saves them in some variables.  The `RequestAnalyzer` is a service, so that you can use these values (MatchType, Webspace, Portal, PortalUrl, Language, Country, Redirect) from every place. Besides webspace and portal the MatchType is the most important value saved by the `RequestAnalyzer`, which can have one of the following values.
+
+| MatchType     | Description
+| ------------- | -----------
+| Full Match    | The given URL starts with the value given from the portal, including the language and segment
+| Partial Match | The given URL starts with the general URL from the portal, which does noet include the language and segment (e.g. for the pattern `{localization}.sulu.io` it just matches `sulu.io`. The standard behaviour is to redirect to the default language and segment
+| Redirect      | There is a redirect URL defined, which means the current Request ist just redirected to it
+
+The description above includes the standard behaviour, if there is a standard symfony route defined, it is handled before our dynamic routes, which means the controller called then decides on the behaviour. However, the controller can still use the values from the `RequestAnalyzer`.
 
 ##Routing
 ![Routing Process Diagram](https://raw.github.com/sulu-cmf/docs/master/detail-specification/images/diagrams/RoutingProcess.png)
