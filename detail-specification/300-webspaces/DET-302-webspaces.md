@@ -42,7 +42,7 @@ The webspaces will be configured in the `app/Resources/webspaces`-folder, with t
             </resource-locator>
 
             <localizations>
-                <localization language="de" country="at"/>
+                <localization language="de" country="at" default="true"/>
             </localizations>
 
             <environments>
@@ -72,6 +72,8 @@ The webspace defines an area for all the content, and a portal is built on top o
 A portal includes different localizations (which can also be configured in the xml). A portal also gets an own name and key, and defines the resource locator strategy. 
 Every portal must also define a list of environments, which will be chosen by the environment variable (which is the type of each environment). Every environment defines its own urls, containing a pattern to describe language, country and segment (written in curly braces), or these values are defined in the url node, as you can see above.
 
+There has to be one localization (and one segment, if there are some segments at all) which is defined as the default one. The default localization and segment is used for the generation of the standard URL. The standard URL is generated for every defined URL in the portal's environment section, removes all the placeholder, and uses this URL with the default values for the localization and segments.
+
 The following table shows the valid placeholders in the URL:
 
 | Placeholder    | Value
@@ -79,6 +81,8 @@ The following table shows the valid placeholders in the URL:
 | {localization} | The complete localization code, containing the language and country (e.g. `en-us` or `de-at`)
 | {country}      | Only the country (e.g. `us` or `at`)
 | {language}     | Only the language (e.g. `en` or `de`)
+
+The URL is only allowed to use placeholders as complete subdomain or subfolder. That means that a URL definition like `{localization}-somevalue.sulu.io/{segment}` is invalid, because the default generated URL will be `-somevalue.sulu.io`, which will lead to some problems. Therefore you should only use URLs like `{localization}.sulu.io/{segment}`.
 
 #####Interpreting
 The `WebspaceManager` is a service, responsible for offering the workspaces and portals defined in the above described configuration files. Because it should not read the information on every request, it caches the information with the `PhpWebspaceCollectionDumper`. The `ConfigCache`-class offered by Symfony checks if the cache is fresh, and if not it writes a new class to the cache, using the `PhpWebspaceCollectionDumper`.
