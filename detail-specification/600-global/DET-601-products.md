@@ -15,13 +15,14 @@ Later there will also be a `SuluProductSimpleBundle`, which adds some missing fi
 This bundle contains the abstract products entity (for the `pr_products`-table shown in the diagram, which is never generated due to its abstractness), holding the most common information like a key, serial numbers, a manufacturer and so on. Additionally it stores the type of the product (`pr_types`). It is also linked to a language dependent table containing the products name and description (`pr_product_translations`).
 
 ##### Product attributes
-The `pr_attributes`-table contains all the available attributes in the system together with a unit and a type (enumeration, text, integer, double, ...). The relation to the product is established by the `pr_product_attributes`-table containing the value as well. The `pr_templates`-table combines some of these attributes, to offer some preconfigured templates to the user for convenience.
+The `pr_attributes`-table contains all the available attributes in the system together with a unit and a type (enumeration, text, integer, double, ...). The relation to the product is established by the `pr_product_attributes`-table containing the value as well. The `pr_attribute_sets`-table combines some of these attributes, to offer some preconfigured attribute sets to the user for convenience.
 
 ##### Product types
 All products are categorized in the following types:
-* Products with options. Options are stored as seperate products, and differ only in some specified attributes. The master product's price can be overruled by its assigned options.
-* Products are the most used type, which represents products with no different variants. They are also used for the variants in the master product.
-* Product add ons are not visible in the standard overview, and are for products which are only available in combination with another one.
+* `Products` are the most used type, which represents products with no different variants. They are also used for the variants in the master product.
+* `ProductVariants` define a product, which is available in different variants. Variants are stored as seperate products, and differ only in some specified attributes. The master product's price can be overruled by its assigned variants.
+* `ProductAddons` are not visible in the standard overview, and are for products which are only available in combination with another one.
+* `ProductSets` are a combination of products, which can be bought all together. There is also the possibility to specify an own price for the set.
 
 ##### Product links
 Products can also be linked to other products, which is described in the tables `pr_crosssells`, `pr_upsells`, `pr_relations` and `pr_extras`. These connections are classified as follows:
@@ -30,12 +31,11 @@ Products can also be linked to other products, which is described in the tables 
 * `pr_crosssells` define other possibly interesting products, which not necessarily have a connection to the original product, and are usually shown in the basket.
 * `pr_extras` show other products, which only can be bought in addition to the original product and usually have the product type `extra`. It also contains a price, which can be used to override the extra products original price.
 
-##### Product sets
-The `pr_sets`-table can group some products and offer the entire set for a special price. The price is defined by a percental discount, as set can also contain master products being available in different variants and prices, which make the handling quite hard.
+Additionaly there is the table `pr_sets`, which is used only for ProductSets, and defines the products which the set consists of.
 
 #### SuluProductAdvancedBundle
 The advanced version of the products introduces suppliers. The suppliers are represented by the `co_accounts`-table from our ContactBundle.
 
-The advanced product bundle also defines it's own version of the product in `ap_products`, but does not add any additional fields. The `ap_supplier_products`-table adds the link to the suppliers or accounts, and adds some additional informations and/or overrides the information from the original product by the information from the concrete supplier. The additional information contains the delivery status of the supplier's product (`ap_delivery_status`) and additional attributes (`ap_supplier_product_attribues`), whereby the same attributes as in the SuluProductBaseBundle are available. 
+The advanced product bundle also defines it's own version of the product in `ap_products`, and adds the additional fields, so that our `ProductVariants` from above can be used to create the same Product from different suppliers. The additional information contains the delivery status of the supplier's product (`ap_delivery_status`) and some other fields in the `ap_products`-table, which extends the mapped super class from the SuluProductBaseBundle. 
 
 The pricing is done in the `ap_supplier_product_prices`, where also a minimum quantity for the price is written, which enables the possibility to model different price ranges.
