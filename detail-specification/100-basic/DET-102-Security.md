@@ -18,6 +18,8 @@ Groups are stored in the `se_groups`-table, and they are simply a combination of
 
 A Sulu user can be in several roles and several groups (stored in the tables `se_user_roles`and `se_user_groups`), and the combination of the resulting roles resp. permissions is the set of allowed operations for this specific user. 
 
+For additional filtering the `se_security_types` can be used.
+
 ####Authentication
 Sulu uses the basic Symfony authentication as described in [this section of the symfony documentation](http://symfony.com/doc/current/book/security.html#how-security-works-authentication-and-authorization). A firewall is defined in the `app/config/security.yml`-file, which secures the `/admin`-url, where the sulu administration is located. The url `/admin/login` shows the login-form, and is of course also accessible when the user is not authenticated. The user provider is the `User`-model of our SecurityBundle, and as encoding `sha512` with 5000 iterations is used.
 
