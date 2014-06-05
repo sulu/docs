@@ -48,39 +48,86 @@ You can find an example for a template that the template reader can parse below:
     <cacheLifetime>2400</cacheLifetime>
 
     <properties>
-        <property name="title" title="sulu.property.title" type="text_line" mandatory="true">
+        <property name="title" type="text_line" mandatory="true">
+            <meta>
+                <title lang="de">Titel</title>
+                <title lang="en">Title</title>
+
+                <placeholder lang="de">Playtzhalter für Titel</placeholder>
+                <placeholder lang="en">Placeholder for title</placeholder>
+            </meta>
+
             <tag name="sulu.node.name"/>
             <tag name="sulu.rlp.part" priority="1"/>
         </property>
-        <property name="name" title="sulu.property.name" type="text_line" mandatory="true">
+        <property name="name" type="text_line" mandatory="true">
             <tag name="sulu.rlp.part" priority="2"/>
         </property>
-        <property name="url" title="sulu.property.url" type="resource_locator" mandatory="true">
+        <property name="url" type="resource_locator" mandatory="true">
             <tag name="sulu.rlp.input"/>
         </property>
-        <property name="article" title="sulu.property.article" type="text_editor" mandatory="true"/>
+        <section name="content">
+            <meta>
+                <title lang="de">Inhalt</title>
+                <title lang="en">Content</title>
 
-        <block name="block" title="sulu.property.block" minOccurs="2" maxOccurs="10" mandatory="true">
-        	<types>
-        		<type name="title">
-            		<properties>
-                		<property name="title" title="sulu.property.block.title" type="text_line" mandatory="true">
-             	       		<tag name="sulu.rlp.part" priority="3"/>
-                		</property>
-  	          		</properties>
-  	          	</type>
-        		<type name="title_text">
-            		<properties>
-                		<property name="title" title="sulu.property.block.title" type="text_line" mandatory="true">
-             	       		<tag name="sulu.rlp.part" priority="3"/>
-                		</property>
-	                	<property name="article" title="sulu.property.block.article" type="text_editor" mandatory="true"/>
-  	          		</properties>
-  	          	</type>
-  	     	</types>
-        </block>
+                <info_text lang="de">Der Inhalt wird auf der Webseite dargestellt</info_text>
+                <info_text lang="en">The content will be displayed on the website</info_text>
+            </meta>
+            <properties>
+                <property name="article" type="text_editor" mandatory="true">
+                    <meta>
+                        <title lang="de">Artikel</title>
+                        <title lang="en">Article</title>
+                    </meta>
+                </property>
+
+                <block name="block" default-type="title" minOccurs="2" maxOccurs="10" mandatory="true">
+                    <meta>
+                        <title lang="de">Das ist ein Block</title>
+                        <title lang="en">That´ a Block</title>
+
+                        <info_text lang="de">Der Block kann verwendet werden um Eigenschaften zu gruppieren</info_text>
+                        <info_text lang="en">The block can be used to group properties</info_text>
+                    </meta>
+                    <types>
+                        <type name="title">
+                            <properties>
+                                <property name="title" type="text_line" mandatory="true">
+                                    <meta>
+                                        <title lang="de">Titel</title>
+                                        <title lang="en">Title</title>
+                                    </meta>
+
+                                    <tag name="sulu.rlp.part" priority="3"/>
+                                </property>
+                            </properties>
+                        </type>
+                        <type name="title_text">
+                            <properties>
+                                <property name="title" type="text_line" mandatory="true">
+                                    <meta>
+                                        <title lang="de">Titel</title>
+                                        <title lang="en">Title</title>
+                                    </meta>
+
+                                    <tag name="sulu.rlp.part" priority="3"/>
+                                </property>
+                                <property name="article" type="text_editor" mandatory="true">
+                                    <meta>
+                                        <title lang="de">Artikel</title>
+                                        <title lang="en">Article</title>
+                                    </meta>
+                                </property>
+                            </properties>
+                        </type>
+                    </types>
+                </block>
+            </properties>
+        </section>
     </properties>
 </template>
+
 
 ```
 
@@ -97,7 +144,17 @@ Block Content allows to define Types to define diffrent manifestations. These ty
 
 Each Instance of block have a implicity (hidden property) `type` these holds the name of the type. These type property allows to load the right properties for the instance and read and load data in the right structure.
 
-__TODO IMAGE__
+__TODO Block diagramm__
+
+## Sections
+Secctions are used to visualy group Properties in the backend form.
+
+## Meta
+Each type of properties have a subnode named meta(data) which holds localized metadata like:
+
+* Title (fallback name upper case)
+* Information Text (fallback '')
+* Placeholder (fallback '')
 
 ## Structure Manager
 The structure manager uses the template-reader to retrieve a specific php-class from the cache and returns an object of the requested php-class. When the requested class-file does not exist it will be generated and placed in the specified cache direcotry. The constructor accepts an array with configuration options - the default values can be found below:
