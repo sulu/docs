@@ -5,14 +5,7 @@
 ![Products database diagram](https://raw.github.com/massiveart/sulu-docs/master/detail-specification/images/db/products.png)
 
 ###Description
-The data for the products region is split into multiple bundles. The `SuluProductBaseBundle` contains the most common stuff, which is shared among all the other bundles. This bundle can be considered abstract, as it contains a mapped super class.
-
-The shown `SuluProductAdvancedBundle` introduces suppliers, which is not always required, thus it is in an own bundle.
-
-Later there will also be a `SuluProductSimpleBundle`, which adds some missing fields to the product required for a simple shop without suppliers.
-
-####SuluProductBaseBundle
-This bundle contains the abstract products entity (for the `pr_products`-table shown in the diagram, which is never generated due to its abstractness), holding the most common information like a key, serial numbers, a manufacturer and so on. Additionally it stores the type of the product (`pr_types`). It is also linked to a language dependent table containing the products name and description (`pr_product_translations`).
+The bundle contains the abstract products entity and a concrete implementation of it as well. There the most common information is hold, like a key, serial numbers, a manufacturer and so on. Additionally it stores the type of the product (`pr_types`). It is also linked to a language dependent table containing the products name and description (`pr_product_translations`).
 
 ##### Product attributes
 The `pr_attributes`-table contains all the available attributes in the system together with a unit and a type (enumeration, text, integer, double, ...). The relation to the product is established by the `pr_product_attributes`-table containing the value as well. The `pr_attribute_sets`-table combines some of these attributes, to offer some preconfigured attribute sets to the user for convenience.
@@ -33,9 +26,7 @@ Products can also be linked to other products, which is described in the tables 
 
 Additionaly there is the table `pr_sets`, which is used only for ProductSets, and defines the products which the set consists of.
 
-#### SuluProductAdvancedBundle
-The advanced version of the products introduces suppliers. The suppliers are represented by the `co_accounts`-table from our ContactBundle.
+##### Configureable options
+There are tables lik `pr_delivery_type` or `pr_delivery_status`, which can hold additional information base on the configurations of the bundle.
 
-The advanced product bundle also defines it's own version of the product in `ap_products`, and adds the additional fields, so that our `ProductVariants` from above can be used to create the same Product from different suppliers. The additional information contains the delivery status of the supplier's product (`ap_delivery_status`) and some other fields in the `ap_products`-table, which extends the mapped super class from the SuluProductBaseBundle. 
-
-The pricing is done in the `ap_supplier_product_prices`, where also a minimum quantity for the price is written, which enables the possibility to model different price ranges.
+Another configureable option is the pricing. In addition to the `price`-field in the base entity, you can also save the prices along with a minimum quantity, so that you can offer a discount on high number orders.
