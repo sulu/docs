@@ -58,7 +58,7 @@ Request for other language (fallback choosen by language fallback chooser):
 Example Structure:
 
 ```
-.../page -> sulu_locale:de-title='Titel' sulu_locale:en-title='title' sulu_locale:fr-title-='titre' name='test name'
+.../page -> i18n:de-title='Titel' i18n:en-title='title' i18n:fr-title-='titre' name='test name'
     |-->/sub-page -> ...
     |-->/sub-page-1 -> ...
 ```
@@ -71,9 +71,9 @@ __Example from PHPCR - ODM: Language strategie child__
 
 ```
 .../page -> name='test name'
-    |-->/sulu_locale:de -> title='Titel'
-    |-->/sulu_locale:en -> title='title'
-    |-->/sulu_locale:fr -> title='titre'
+    |-->/i18n:de -> title='Titel'
+    |-->/i18n:en -> title='title'
+    |-->/i18n:fr -> title='titre'
     |-->/sub-page-1
     		   |-->...
     |-->/sub-page-2
