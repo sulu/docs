@@ -24,3 +24,6 @@
 }
 ```
 ```
+#### CGet - Parameters
+The CGet-Action can be filtered with a "parent" parameter, which should contain the id of a parent
+and a "depth" parameter which contains the level for which the categories should be output. (first level depth is 0)
