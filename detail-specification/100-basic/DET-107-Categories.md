@@ -5,6 +5,7 @@
     'id': 1,
     'locale': 'en',
     'name': 'My Category',
+    'parent': 1,
     'meta': [
         {
             'id': 1,
