@@ -136,8 +136,8 @@ The block content is a special property type in template xml structure. This par
 
 __Example (from above -> only block)__:
 
-* sulu_locale:de-article-title = array ( 'Title 1' , 'Title 2' )
-* sulu_locale:de-article-article = array ( 'Article 1' , 'Article 2' )
+* i18n:de-article-title = array ( 'Title 1' , 'Title 2' )
+* i18n:de-article-article = array ( 'Article 1' , 'Article 2' )
 
 ### Types
 Block Content allows to define Types to define diffrent manifestations. These types can have complete diffrent look and feel.
@@ -188,4 +188,7 @@ For URL generation in form there are two needed tags in the tempalte:
 
 * `sulu.rlp.part` : used as input for the gernation, if there are more than one, the parts will ne concated with rising priority
 * `sulu.rlp.input` : the generated url will be placed in this property
+
+## Reserved Property names
+To keep prefixes short we decided to reserve internal names. For special installation, there is the posibility to add a internal prefix in config (```sulu_core.content.internal_prefix```).
 
