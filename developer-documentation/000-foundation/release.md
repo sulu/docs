@@ -13,7 +13,6 @@
   * version property
   * sulu-bundles versions (bsp: 0.4.*)
 1. `git commit`
-1. `git commit`
 1. `git checkout master``
 1. `git merge --no-ff release/<release>`
 1. `git branch -d release/<release>`
