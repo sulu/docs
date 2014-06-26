@@ -9,10 +9,10 @@
 1. `grunt build`
 1. `grunt publish`
 1. Test the bundle manually
-1. `git commit`
 1. Update composer.json version
   * version property
   * sulu-bundles versions (bsp: 0.4.*)
+1. `git commit`
 1. `git commit`
 1. `git checkout master``
 1. `git merge --no-ff release/<release>`
