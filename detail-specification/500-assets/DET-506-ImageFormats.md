@@ -2,10 +2,8 @@
 
 # Image Formats Concept
 
-The image formats for each is configured in an own config.
-
-The themes are in src/Client/WebsiteBundle/Resources/themes.
-
+The image formats for each is configured in an own config.  
+The themes are in src/Client/WebsiteBundle/Resources/themes.  
 Every theme has his own config under theme_name/config called image_formats.xml.
 
 
@@ -30,8 +28,7 @@ A XML could be look like this:
 
 ## Format Reader
 
-In the MediaBundle a service reads all formats from the themes and the internal Sulu formats.
-
+In the MediaBundle a service reads all formats from the themes and the internal Sulu formats.  
 The service outputs the data in this format:
 
 ``` php
@@ -53,16 +50,15 @@ array(
 
 ## Sulu formats
 
-Sulu itself have three formats:
+Sulu itself have three formats:  
  - 50x50 - Preview in Collection
  - 150x100 - Preview for Collection)
  - 170x170 - Content Type
 
-This formats are configured in the SuluMediaBundle.
+This formats are configured in the SuluMediaBundle.  
 
 
 ## Handling Conflicts
 
-If two themes have the same format, the commands and parameters from the first read will be used.
-
+If two themes have the same format, the commands and parameters from the first read will be used.  
 So its important the name of the format reflect what the image converter does.
