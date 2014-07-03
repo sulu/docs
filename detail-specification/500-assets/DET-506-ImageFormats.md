@@ -1,10 +1,10 @@
-##![Assets](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/assets.png)DET-505 Image Formats
+##![Assets](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/assets.png)DET-506 Image Formats
 
 # Image Formats Concept
 
 The image formats for each theme is configured in an own config.  
 The themes are in src/Client/WebsiteBundle/Resources/themes.  
-Every theme has his own config under theme_name/config called image_formats.xml.
+Every theme has his own config under theme_name/config called `image-formats.xml`.
 
 
 A XML could be look like this:
@@ -52,7 +52,7 @@ array(
 
 Sulu itself have three formats:  
  - `50x50` - Preview in Collection
- - `150x100` - Preview for Collection)
+ - `150x100` - Preview for Collection
  - `170x170` - Content Type
 
 This formats are configured in the SuluMediaBundle.  
