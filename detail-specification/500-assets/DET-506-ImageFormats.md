@@ -2,7 +2,7 @@
 
 # Image Formats Concept
 
-The image formats for each is configured in an own config.  
+The image formats for each theme is configured in an own config.  
 The themes are in src/Client/WebsiteBundle/Resources/themes.  
 Every theme has his own config under theme_name/config called image_formats.xml.
 
