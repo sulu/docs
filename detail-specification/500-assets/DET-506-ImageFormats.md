@@ -9,20 +9,20 @@ Every theme should have his own configs under theme_name/config/image_formats.xm
 The formats are defined in PHP in this structure:
 
 ``` php
-    array(
-        array( // one format
-            'name' => '50x50', // name of the format
-            'commands' => array( // commands to execute
-                array(
-                    'action' => 'scale', // command name
-                    'parameters' => array( // command parameter
-                        'x' => '50',
-                        'y' => '50',
-                    )
+array(
+    array( // one format
+        'name' => '50x50', // name of the format
+        'commands' => array( // commands to execute
+            array(
+                'action' => 'scale', // command name
+                'parameters' => array( // command parameter
+                    'x' => '50',
+                    'y' => '50',
                 )
             )
         )
     )
+)
 ```
 
 
