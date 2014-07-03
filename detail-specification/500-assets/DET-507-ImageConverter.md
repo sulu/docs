@@ -17,15 +17,15 @@ Parameters:
  
 Example: 
 ```xml
-    <format>
-        <name>50x50</name>
-        <commands>
-            <command>
-                <action>resize</action>
-                <parameters x="50" y="50" />
-            </command>
-        </commands>
-    </format>
+<format>
+    <name>50x50</name>
+    <commands>
+        <command>
+            <action>resize</action>
+            <parameters x="50" y="50" />
+        </command>
+    </commands>
+</format>
 ```
 
 ### Scale
@@ -38,13 +38,13 @@ Parameters:
  
 Example: 
 ```xml
-    <format>
-        <name>50x50</name>
-        <commands>
-            <command>
-                <action>resize</action>
-                <parameters x="50" y="50" />
-            </command>
-        </commands>
-    </format>
+<format>
+    <name>50x50</name>
+    <commands>
+        <command>
+            <action>scale</action>
+            <parameters x="50" y="50" />
+        </command>
+    </commands>
+</format>
 ```
