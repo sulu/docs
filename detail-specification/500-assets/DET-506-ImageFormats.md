@@ -51,9 +51,9 @@ array(
 ## Sulu formats
 
 Sulu itself have three formats:  
- - 50x50 - Preview in Collection
- - 150x100 - Preview for Collection)
- - 170x170 - Content Type
+ - `50x50` - Preview in Collection
+ - `150x100` - Preview for Collection)
+ - `170x170` - Content Type
 
 This formats are configured in the SuluMediaBundle.  
 
