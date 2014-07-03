@@ -3,7 +3,9 @@
 # Image Formats Concept
 
 The image formats for each is configured in an own config.
+
 The themes are in src/Client/WebsiteBundle/Resources/themes.
+
 Every theme has his own config under theme_name/config called image_formats.xml.
 
 
@@ -29,6 +31,7 @@ A XML could be look like this:
 ## Format Reader
 
 In the MediaBundle a service reads all formats from the themes and the internal Sulu formats.
+
 The service outputs the data in this format:
 
 ``` php
@@ -61,4 +64,5 @@ This formats are configured in the SuluMediaBundle.
 ## Handling Conflicts
 
 If two themes have the same format, the commands and parameters from the first read will be used.
+
 So its important the name of the format reflect what the image converter does.
