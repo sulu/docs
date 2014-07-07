@@ -5,4 +5,4 @@ Tasks are user generated and are the former activities. Activities will be used 
 
 ####Class Diagram
 
-![Contacts tasks diagram](https://raw.github.com/massiveart/sulu-docs/master/detail-specification/images/contacts_tasks.png)
+![Contacts tasks diagram](https://raw.github.com/massiveart/sulu-docs/master/detail-specification/images/diagrams/contacts_tasks.png)
