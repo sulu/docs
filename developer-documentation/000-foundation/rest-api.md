@@ -2,14 +2,28 @@
 * extracts some common rest functionality into a base class
 * heavy usage of callback functions
 * Childclass overwrites `entityName`-property
-* Childclass uses predefined functions from abstract RestController (response* for response-generating functions and process* for functions doing some work without returning response objects)
+* Childclass uses predefined functions from abstract RestController
  * responseGetById
- * responseList
- * processPut
- * responseFields
+ * responseDelete
  * responsePersistSettings
 
-## Example Usage
+# ListBuilder
+* Creates the query and result for the given data with field descriptors
+* Field Descriptors are different for every ListBuilder Implementation
+ * e.g. DoctrineFieldDescriptor also requires information about joins
+* ListBuilder is created with a concrete factory implementation
+ * e.g. DoctrineListBuilderFactory
+* ListBuilder is passed to the `initializeListBuilder`-Method of the `RestHelper`-Service
+ * This method creates sets some values based on the common request parameters
+* afterwards data can be set by methods available by the `ListBuilderInterface`
+* ListRepresentation is used to deliver a list-response
+
+# API Wrapper
+* The `ApiWrapper`-class wraps an entity (e.g. from doctrine)
+* Acts as a kind of a proxy to this entity, but creates it's own getter-methods for the API
+* Data will be serialized by JMSSerializer with the `VirtualProperty`-Annotation
+
+# Example Usage
 ```php
 <?php
 namespace Sulu\Bundle\ExampleBundle\Controller;
@@ -24,23 +38,25 @@ class ExampleController extends RestController implements ClassResourceInterface
 {
      protected $entityName = 'SuluExampleBundle:Example';
      
-     protected $unsortable = array('lft','rgt','depth');
+     /**
+      * @var DoctrineFieldDescriptor[]
+      */
+     protected $fieldDescriptors = array();
      
-     protected $fieldsDefault = array('name');
-     protected $fieldsExcluded = array();
-     protected $fieldsHidden = array('created');
-     protected $fieldsRelations = array();
-     protected $fieldsSortOrder = array();
-     protected $fieldsTranslationKeys = array();
-     protected $bundlePrefix = 'contact.accounts.';
-    
+     public function __construct()
+     {
+        $this->fieldDescriptors['id'] = new DoctrineFieldDescriptor('id', 'id', $this->entityName);
+        $this->fieldDescriptors['code'] = new DoctrineFieldDescriptor('code', 'code', $this->entityName);
+        $this->fieldDescriptors['number'] = new DoctrineFieldDescriptor('number', 'number', $this->entityName);
+     }
+     
      /**
      * returns all fields that can be used by list
      * @Get("accounts/fields")
      * @return mixed
      */
     public function getFieldsAction() {
-        return $this->responseFields();
+        return $this->handleView($this->view(array_values($this->fieldDescriptors)));
     }
 
     /**
@@ -63,9 +79,52 @@ class ExampleController extends RestController implements ClassResourceInterface
         return $this->handleView($view);
     }
 
-    public function listAction()
+    public function cgetAction(Request $request)
     {
-        $view = $this->responseList();
+        $filter = array();
+
+        $status = $request->get('status');
+        if ($status) {
+            $filter['status'] = $status;
+        }
+
+        $type = $request->get('type');
+        if ($type) {
+            $filter['type'] = $type;
+        }
+
+        if ($request->get('flat') == 'true') {
+            /** @var RestHelperInterface $restHelper */
+            $restHelper = $this->get('sulu_core.rest_helper');
+
+            /** @var DoctrineListBuilderFactory $factory */
+            $factory = $this->get('sulu_core.doctrine_list_builder_factory');
+
+            $listBuilder = $factory->create($this->entityName);
+
+            $restHelper->initializeListBuilder($listBuilder, $this->fieldDescriptors);
+
+            foreach ($filter as $key => $value) {
+                $listBuilder->where($this->fieldDescriptors[$key], $value);
+            }
+
+            $list = new ListRepresentation(
+                $listBuilder->execute(),
+                'products',
+                'get_products',
+                $request->query->all(),
+                $listBuilder->getCurrentPage(),
+                $listBuilder->getLimit(),
+                $listBuilder->count()
+            );
+        } else {
+            $list = new CollectionRepresentation(
+                $this->getManager()->findAllByLocale($this->getLocale($request), $filter),
+                'products'
+            );
+        }
+
+        $view = $this->view($list, 200);
         return $this->handleView($view);
     }
 
@@ -83,11 +142,6 @@ class ExampleController extends RestController implements ClassResourceInterface
     }
 }
 ```
-## ResponseList
-ResponseList is usually taken for returning a flat structure of data. Therefore no nested relations are returned. 
-Also, a HAL conform Rest API with useful informations for building a list is returned. 
-
-
 
 ## Fields Actions
 The fields API is designed to return all presentable arguments of an entity (e.g. to display it in a list). To include it into your controller, the following actions have to be set BEFORE the getAction():
