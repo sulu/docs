@@ -24,8 +24,6 @@ __Informations:__
 
 | Q             | A
 | ------------- | ---
-| Bug fix?      | [yes|no]
-| New feature?  | [yes|no]
 | Tests pass?   | [yes|no => <WHY?>]
 | Fixed tickets | [<WHICH?>|none]
 | Doc           | [url to commit|none]
