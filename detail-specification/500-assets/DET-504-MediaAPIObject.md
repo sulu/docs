@@ -125,6 +125,7 @@ GET /api/files/1
     ],
     'name': 'photo.jpeg',
     'url': '/original/filename.jpg',
+    'mimeType': 'image/jpeg',
     'formats': [
       '170x170': '/uploads/sulumedia/150x100/filename.jpg',
       '960x': 'http://www.cdn.com/media/filename.jpg'
@@ -135,5 +136,4 @@ GET /api/files/1
     'created': '2014-01-01 16:00:00'
 }
 ```
-, 
-    
+
