@@ -2,7 +2,7 @@
 
 DefaultController.php
 
-```
+```php
 class DefaultController extends WebsiteController
 {
 	...
@@ -25,7 +25,7 @@ class DefaultController extends WebsiteController
 
 master.html.twig:
 
-```
+```twig
 {% if navigation is defined %}
 	{% include 'ClientWebsiteBundle:Website:navigation.html.twig' %}
 {% endif %}
@@ -33,7 +33,7 @@ master.html.twig:
 
 navigation.html.twig:
 
-```
+```twig
 <ul>
     {% for item in navigation %}
         <li>
