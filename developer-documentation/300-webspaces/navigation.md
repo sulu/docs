@@ -25,7 +25,7 @@ class DefaultController extends WebsiteController
 
 master.html.twig:
 
-```twig
+```jinja
 {% if navigation is defined %}
 	{% include 'ClientWebsiteBundle:Website:navigation.html.twig' %}
 {% endif %}
@@ -33,7 +33,7 @@ master.html.twig:
 
 navigation.html.twig:
 
-```twig
+```jinja
 <ul>
     {% for item in navigation %}
         <li>
