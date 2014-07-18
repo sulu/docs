@@ -57,7 +57,7 @@ class ContactExampleWidget1 implements WidgetInterface
      */
     public function getTemplate()
     {
-        return 'SuluContactBundle:SplitView:example1.html.twig';
+        return 'SuluContactBundle:Widgets:example1.html.twig';
     }
 
     /**
