@@ -1,12 +1,12 @@
-# SplitView
+# Widgets
 
-The Splitview Component enables the developer to develop a widget based overview for example a contact.
+The Widgets feature enables the developer to develop a widget-based overview which can be used, for example, to display further information for a contact.
 
 __Parts:__
 
 * Backend:
   * Controller to handle request
-  * Service for rendering SplitView content
+  * Service for rendering the content of the widgets
   * Private Service for each Widget with a special Tag
   * CompilerPass to compile tags for a service ID
 * Frontend:
@@ -16,31 +16,31 @@ __Parts:__
 
 ### Controller
 
-__/Controller/ContactSplitViewController.php__
+__/Controller/ContactWidgetsController.php__
 
 ```php
-class ContactSplitViewController extends Controller
+class ContactWidgetsController extends Controller
 {
     public function renderAction($id)
     {
-        /** @var SplitViewInterface $view */
-        $view = $this->get('sulu_contact.contact.split_view');
+        /** @var WidgetsInterface $view */
+        $view = $this->get('sulu_contact.contact.widgets');
 
         return new Response($view->render($id));
     }
 }
 ```
 
-### Widgets
+### The widgets themselve
 
-__/SplitView/ContactExampleWidget1.php__
+__/Widgets/ContactExampleWidget1.php__
 
 ```php
 /**
  * example widget for contact controller
- * @package Sulu\Bundle\ContactBundle\SplitView
+ * @package Sulu\Bundle\ContactBundle\Widgets
  */
-class ContactExampleWidget1 implements SplitViewWidgetInterface
+class ContactExampleWidget1 implements WidgetInterface
 {
     /**
      * return name of widget
@@ -74,7 +74,7 @@ class ContactExampleWidget1 implements SplitViewWidgetInterface
 }
 ```
 
-__/Resources/views/SplitView/example1.html.twig__
+__/Resources/views/Widgets/example1.html.twig__
 
 ```html
 <p>Widget: {{ name }} with priority: {{ priority }}</p>
@@ -88,24 +88,24 @@ __/Resources/config/services.yml__
 
 ```yml
 parameters:
-    sulu_contact.contact.split_view.class: Sulu\Bundle\AdminBundle\SplitView\SplitView
-    sulu_contact.contact.split_view.widget1.class: Sulu\Bundle\ContactBundle\SplitView\ContactExampleWidget1
-    sulu_contact.contact.split_view.widget2.class: Sulu\Bundle\ContactBundle\SplitView\ContactExampleWidget2
+    sulu_contact.contact.widgets.class: Sulu\Bundle\AdminBundle\Widgets\WidgetsHandler
+    sulu_contact.contact.widgets.widget1.class: Sulu\Bundle\ContactBundle\Widgets\ContactExampleWidget1
+    sulu_contact.contact.widgets.widget2.class: Sulu\Bundle\ContactBundle\Widgets\ContactExampleWidget2
     
 services:
-    sulu_contact.contact.split_view:
-        class: %sulu_contact.contact.split_view.class%
-        arguments: [@templating, "Contact Split View"]
-    sulu_contact.contact.split_view.widget1:
-        class: %sulu_contact.contact.split_view.widget1.class%
+    sulu_contact.contact.widgets:
+        class: %sulu_contact.contact.widgets.class%
+        arguments: [@templating, "Contact Widgets"]
+    sulu_contact.contact.widgets.widget1:
+        class: %sulu_contact.contact.widgets.widget1.class%
         tags:
-            - {name: sulu.contact.split_view, priority: 5}
-            - {name: sulu.contact.split_view, priority: 10}
-    sulu_contact.contact.split_view.widget2:
-        class: %sulu_contact.contact.split_view.widget2.class%
+            - {name: sulu.contact.widgets, priority: 5}
+            - {name: sulu.contact.widgets, priority: 10}
+    sulu_contact.contact.widgets.widget2:
+        class: %sulu_contact.contact.widgets.widget2.class%
         tags:
-            - {name: sulu.contact.split_view, priority: 20}
-            - {name: sulu.contact.split_view, priority: 1}
+            - {name: sulu.contact.widgets, priority: 20}
+            - {name: sulu.contact.widgets, priority: 1}
 ```
 
 ### CompilerPass
@@ -120,7 +120,7 @@ class SuluContactBundle extends Bundle
         parent::build($container);
 
         $container->addCompilerPass(
-            new Sulu\Bundle\AdminBundle\SplitView\SplitViewCompilerPass('sulu_contact.contact.split_view', 'sulu.contact.split_view')
+            new Sulu\Bundle\AdminBundle\Widgets\WidgetsCompilerPass('sulu_contact.contact.widgets', 'sulu.contact.widgets')
         );
     }
 }
@@ -129,9 +129,9 @@ class SuluContactBundle extends Bundle
 ### Result
 
 ```html
-<div id="split-view">
+<div id="widgets">
     <div class="header">
-        <h1>Contact Split View</h1>
+        <h1>Contact Widgets</h1>
     </div>
 
     <div class="content">
