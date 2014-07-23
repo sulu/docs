@@ -165,4 +165,7 @@ TODO
 
 
 ## Widget Toolbar
-![image](http://https://github.com/sulu-cmf/docs/blob/master/detail-specification/images/diagrams/WidgetToolbarItem.png)
+
+Basic idea behind the handling of the toolbar items:
+
+![image](https://raw.githubusercontent.com/sulu-cmf/docs/master/detail-specification/images/diagrams/WidgetToolbarItem.png)
