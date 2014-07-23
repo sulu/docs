@@ -162,3 +162,7 @@ class SuluContactBundle extends Bundle
 ## Frontend
 
 TODO
+
+
+## Widget Toolbar
+![image](http://https://github.com/sulu-cmf/docs/blob/master/detail-specification/images/diagrams/WidgetToolbarItem.png)
