@@ -19,7 +19,10 @@ A XML could be look like this:
         <commands>
             <command>
                 <action>scale</action>
-                <parameters x="50" y="50" />
+                <parameters>
+                    <parameter name="x">50</parameter>
+                    <parameter name="y">50</parameter>
+                </parameters>
             </command>
         </commands>
     </format>
@@ -60,17 +63,21 @@ XML Schema
     </xs:complexType>
 
     <xs:complexType name="parametersType">
-        <xs:attribute name="x" type="xs:integer"/>
-        <xs:attribute name="y" type="xs:integer"/>
-        <xs:attribute name="geometry" type="xs:string"/>
-        <xs:attribute name="retina" type="xs:string"/>
-        <xs:attribute name="color" type="xs:string"/>
-        <xs:attribute name="watermark" type="xs:string"/>
+        <xs:sequence>
+            <xs:element type="parameterType" name="parameter" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="parameterType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="name"/>
+            </xs:extension>
+        </xs:simpleContent>
     </xs:complexType>
 
     <xs:element name="formats" type="formatsType"/>
 </xs:schema>
-
 ```
 
 ## Format Reader
