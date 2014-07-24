@@ -158,14 +158,35 @@ class SuluContactBundle extends Bundle
     </div>
 </div>
 ```
+```
 
-## Frontend
+##Frontend
 
 TODO
 
 
-## Widget Toolbar
+##Widget Toolbar
 
 Basic idea behind the handling of the toolbar items:
+
+###WidgetToolbarItemService
+A WidgetToolbarItemService should implement the WidgetToolbarItemServiceInterface and provides WidgetToolbarItems for the toolbar in the sidebar. Each WidgetToolbaritemPass will be collected by the WidgetToolbarItemPass when it has the `sulu.widget.toolbar_item` tag.
+
+###WidgetToolbarItemPass
+The WidgetToolbarItemPass will collect the tagged WidgetToolbarItemServices and add them to the WidgetToolbarItemManager.
+
+###WidgetToolbarItemManager
+The WidgetToolbarItemManager holds a set of WidgetToolbarItemServices and will delegate the getWidgetToolbarItems method call to each service.
+
+```
+sulu_admin.widgets_toolbar_item_manager:
+	class: %sulu_admin.widgets_toolbar_item_manager.class%
+```
+
+###WidgetToolbarContext
+This object is just a container for the current context.
+
+###WidgetToolbarItem
+This object is just a container which holds all information needed for the toolbar to render a icon.
 
 ![image](https://raw.githubusercontent.com/sulu-cmf/docs/master/detail-specification/images/diagrams/WidgetToolbarItem.png)
