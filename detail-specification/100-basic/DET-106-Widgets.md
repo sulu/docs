@@ -110,10 +110,10 @@ services:
 
 ### CompilerPass
 
-__/SuluContactBundle.php__
+__/SuluAdminBundle.php__
 
 ```php
-class SuluContactBundle extends Bundle
+class SuluAdminBundle extends Bundle
 {
     public function build(ContainerBuilder $container)
     {
