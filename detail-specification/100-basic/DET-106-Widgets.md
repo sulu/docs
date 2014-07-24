@@ -169,7 +169,7 @@ TODO
 Basic idea behind the handling of the toolbar items:
 
 ###WidgetToolbarItemService
-A WidgetToolbarItemService should implement the WidgetToolbarItemServiceInterface and provides WidgetToolbarItems for the toolbar in the sidebar. Each WidgetToolbaritemPass will be collected by the WidgetToolbarItemPass when it has the `sulu.widget.toolbar_item` tag.
+A WidgetToolbarItemService should implement the WidgetToolbarItemServiceInterface and provides WidgetToolbarItems for the toolbar in the sidebar. Each WidgetToolbaritemPass will be collected by the WidgetToolbarItemPass when it has the `sulu.widget.toolbar_items` tag.
 
 ###WidgetToolbarItemPass
 The WidgetToolbarItemPass will collect the tagged WidgetToolbarItemServices and add them to the WidgetToolbarItemManager.
