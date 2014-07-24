@@ -158,7 +158,6 @@ class SuluAdminBundle extends Bundle
     </div>
 </div>
 ```
-```
 
 ##Frontend
 
