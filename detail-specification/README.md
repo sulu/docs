@@ -18,7 +18,7 @@
 
 ![800 DASHBOARD](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/dashboard.png)[800 DASHBOARD](https://github.com/massiveart/sulu-docs/tree/master/detail-specification/800-dashboard "800 DASHBOARD")
 
-![900 SALES](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/shop.png)[900 SALES](https://github.com/sulu-cmf/docs/tree/master/detail-specification/900-sales "900 SALES")
+![S900 SALES](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/shop.png)[S900 SALES](https://github.com/sulu-cmf/docs/tree/master/detail-specification/S900-sales "S900 SALES")
 
 ####Purpose
 The purpose of this online documentation is to present a definition of the system specification of Sulu 2.0. It contains the major detail specification documents. This documentation is intended for the development team.
