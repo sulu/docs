@@ -11,5 +11,4 @@ tr_codes contains all the translation keys, which are available in our system. A
 ####Console commands
 
 #####Import
-
-Basic command: sulu:translate:import <<locale>>
+Basic command: sulu:translate:import << locale >>
