@@ -192,3 +192,5 @@ For URL generation in form there are two needed tags in the tempalte:
 ## Reserved Property names
 To keep prefixes short we decided to reserve internal names. For special installation, there is the posibility to add a internal prefix in config (```sulu_core.content.internal_prefix```).
 
+## Internal structures
+Internal structures are used for hide specific Structures in the UI. Internal structures are for example `internal-link`. These structures can be used to generate forms for system functionalities (link internal node settings).
