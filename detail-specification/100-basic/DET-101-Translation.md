@@ -29,3 +29,14 @@ Options:
 Examples:
 - sulu:translate:import en (Imports all translations from all bundles with the en locale)
 - sulu:translate:import -f path/to/your/translation/file.xlf en (Imports a single file to a new package with the locale en)
+
+#####Export
+Basic command: <strong>sulu:translate:export</strong> << locale >> << fileformat >>
+
+Description: The above command exports all translations from all packages with a given locale. The translations get exportet to a file in web/js/translations and are therefore immediately publicly available. The fileformat can be xlf or json
+
+Options:
+- (--package|-p) The id of a package, if you only want to export the translations from a package.
+- (--location|-l) Lets you export only translations which have a given location.
+- (--path) The path to which the translations should be exported.
+- (--filename) The name of the exported file. << filename >>.<< locale >>.<< fileformat >>
