@@ -42,7 +42,7 @@ Basically there are two ways of defining new global javascript variables for you
           - type : 'basic'
             test : bla
         tags:
-        - { name: sulu.jsconfig }
+        - { name: sulu.js_config }
 	```
         
 ###define your own JsConfig file
