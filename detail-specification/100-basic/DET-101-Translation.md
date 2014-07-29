@@ -40,3 +40,7 @@ Options:
 - (--location|-l) Lets you export only translations which have a given location.
 - (--path) The path to which the translations should be exported.
 - (--filename) The name of the exported file. << filename >>.<< locale >>.<< fileformat >>
+
+Examples:
+- sulu:translate:export en json (Exports all en-translations to a json file)
+- sulu:translate:export -p 1 de xlf (Exports the de-translations from the package with the id 1 to a xlf file)
