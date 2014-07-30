@@ -1,12 +1,14 @@
 # How to create a Pull Request
 
 * Create the pull request as soon as possible.
+* Add a prefix ([FEATURE], [BUGFIX, [HOTFIX], [ENHANCEMENT]
 * Mark the PR with [WIP] in the title when you work on it.
 * Remove the [WIP] when you finished open tasks and the PR will be able to merge.
 * Template is devided in two parts: Tasks (for developer), Informations (for reviewer)
 * Tasks list can be extended for developer tasks
 * Informations: Tests => if tests fail, add reason
 * Informations: Fixed Tickets => Tickets to close after merge
+* Informations: BC Breaks
 
 ## Structure
 ```
@@ -26,6 +28,7 @@ __Informations:__
 | ------------- | ---
 | Tests pass?   | [yes|no => <WHY?>]
 | Fixed tickets | [<WHICH?>|none]
+| BC Breaks     | [description]
 | Doc           | [url to commit|none]
 ```
 
