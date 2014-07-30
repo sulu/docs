@@ -16,6 +16,7 @@
     'title': 'Media Title',
     'description: 'Media Description',
     'size': 12412512,
+    'downloadCounter': 1,
     'contentLanguages': [
         'en-gb',
         'de-at'
@@ -56,6 +57,7 @@ GET /api/media/1
 {
     'id': 1,
     'type': 'image', 
+    'downloadCounter': 1,
     'files': [
         {
             'id': 1,
@@ -109,6 +111,7 @@ GET /api/files/1
         'en-gb',
         'de-at'
     ],
+    'downloadCounter': 1,
     'publishLanguages': [
         'en-gb',
         'de-at'
