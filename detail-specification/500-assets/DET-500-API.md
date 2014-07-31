@@ -1,7 +1,7 @@
 Collection API:
 ===============
 
-Type: RestController
+Type: RestController  
 URL: /api/collections
 
 ### GET Params
@@ -14,7 +14,7 @@ URL: /api/collections
 Media API:
 ===========
 
-Type: RestController
+Type: RestController  
 URL: /api/media
 
 ### GET Params
