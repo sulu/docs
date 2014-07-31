@@ -1,7 +1,8 @@
 # How to create a Pull Request
 
+* __Use a meaningfull name for the Pull Request__
 * Create the pull request as soon as possible.
-* Add a prefix ([FEATURE], [BUGFIX, [HOTFIX], [ENHANCEMENT]
+* Add a prefix ([FEATURE], [BUGFIX, [HOTFIX], [ENHANCEMENT])
 * Mark the PR with [WIP] in the title when you work on it.
 * Remove the [WIP] when you finished open tasks and the PR will be able to merge.
 * Template is devided in two parts: Tasks (for developer), Informations (for reviewer)
