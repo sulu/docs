@@ -16,6 +16,7 @@ Basic command: <strong>sulu:translate:import</strong> << locale >>
 Description: The above command imports translation files from all bundles. In every bundle it looks for the Resources/translations/sulu folder and imports the translation files in it. Per bundle and locale a backend file (backend.<< locale >>.xlf) and a frontend file (frontend.<< locale >>.xlf) get imported. The translations from the backend file are then available in the backend, the translations from the frontend file in the frontend. For each bundle an own package gets created which gets the same name as its corresponding bundle (if not already exists).
 
 Options:
+- (--reset|-r) Deletes all translations and packages from the DB before importing.
 - (--file|-f) The path to the file to import. This is to import a single file
 - (--packageId|-p) The id of the package to import the translations into. This can be used when you import a single file.
 - (--path) Only important if you don't import a single file. Relative path from the bundle root to the translation folder
