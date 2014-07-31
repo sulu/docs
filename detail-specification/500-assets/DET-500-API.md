@@ -4,7 +4,7 @@ Collection API:
 Type: RestController
 URL: /api/collections
 
-## GET Params
+### GET Params
 |Name|Description|Parameter|Multiple|Example|
 |---|---|---|---|---|
 |parent|filter collection for parent|any id of an collection|false|/api/collection?parent=1|
@@ -17,7 +17,7 @@ Media API:
 Type: RestController
 URL: /api/media
 
-## GET Params
+### GET Params
 |Name|Description|Parameter|Multiple|Example|
 |---|---|---|---|---|
 |ids|filter for specific ids|any id of a media|true|/api/media?ids?1,3,4|
