@@ -54,6 +54,26 @@ To read the data it iterrates over properties of structure. This properties will
 * __saveStartPage__: Saves data to a indexpage of given webspace
 	* $partialUpdate: True to ignore missing properties
 
+## Copy / Move
+
+The copy / move relocating data in phpcr.
+
+### Move / Copy Data
+
+PHPCR interface provides a move / copy functionality so the process only calls this methods with the correct source and destination path. The destination path is generated from the parent path and the `sulu.node.name` cleaned up and make this name unique under the parent path.
+
+If the node has a resource locator it would be adopted automatically like:
+
+* copy: create a new resourcelocator with a generated (Strategy) url
+* move: move the resourcelocator to a new generated RL (history is build autmatically)
+
+To generate a new RL the last part of the old RL (or the `sulu.node.name`) will be used.
+
+### Interface
+
+* __move__: move node
+* __copy__: copy node
+
 ## ContentTypes
 
 ContentTypes are implemented as service to keep the coupling as minimum as possible. The IDS are prefixed with: `sulu.content.type.<<name>>`. To control the flow of save there are two types of ContentTypes POST_SAVE (executed after save), PRE_SAVE (executed before save).
