@@ -35,7 +35,7 @@ The template-reader works according to the structure defined in the template.xsd
 You can find an example for a template that the template reader can parse below:
 
 
-```
+```xml
 <?xml version="1.0" ?>
 <template xmlns="http://schemas.sulu.io/template/template"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -46,7 +46,12 @@ You can find an example for a template that the template reader can parse below:
     <view>page.html.twig</view>
     <controller>SuluContentBundle:Default:index</controller>
     <cacheLifetime>2400</cacheLifetime>
-
+    
+    <meta>
+        <title lang="de">Übersicht</title>
+        <title lang="en">Overview</title>
+    </meta>
+    
     <properties>
         <property name="title" type="text_line" mandatory="true">
             <meta>
@@ -159,7 +164,7 @@ Each type of properties have a subnode named meta(data) which holds localized me
 ## Structure Manager
 The structure manager uses the template-reader to retrieve a specific php-class from the cache and returns an object of the requested php-class. When the requested class-file does not exist it will be generated and placed in the specified cache direcotry. The constructor accepts an array with configuration options - the default values can be found below:
 
-```
+```php
 $this->options = array(
     'template_dir' => null,
     'cache_dir' => null,
