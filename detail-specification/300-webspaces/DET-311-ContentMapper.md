@@ -74,6 +74,11 @@ To generate a new RL the last part of the old RL (or the `sulu.node.name`) will 
 * __move__: move node
 * __copy__: copy node
 
+
+## Navigation Contexts
+
+`navContexts` in data used to describe in which navigatio the content appears.
+
 ## ContentTypes
 
 ContentTypes are implemented as service to keep the coupling as minimum as possible. The IDS are prefixed with: `sulu.content.type.<<name>>`. To control the flow of save there are two types of ContentTypes POST_SAVE (executed after save), PRE_SAVE (executed before save).
