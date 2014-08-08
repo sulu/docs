@@ -74,6 +74,13 @@ To generate a new RL the last part of the old RL (or the `sulu.node.name`) will 
 * __move__: move node
 * __copy__: copy node
 
+## Reorder
+
+Orders phpcr nodes in a layer. Uses phpcr: `node->orderBefore()` method.
+
+### Interface
+
+* __orderBefore__: order given uuid befor th orth uuid (beforeUuid)
 
 ## Navigation Contexts
 
