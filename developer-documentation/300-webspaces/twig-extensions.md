@@ -35,6 +35,20 @@ __BreadcrumbItemInterface__ contains:
 * uuid
 * depth
 
+__Example__:
+
+```twig
+{% set nav = navigation(content) %}
+<ul class="nav nav-justified">
+    {% for item in nav %}
+        <li>
+            <a href="{{ content_path(item) }}" title="{{ item.title }}">{{ item.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+
+```
+
 ## ContactBundle
 
 TODO
