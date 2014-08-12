@@ -25,9 +25,15 @@ Returns navigation for content node at given level (in breadcrumb) or (if level 
 
  `breadcrumb(content)`
  
- Returns breadcrumb for given content node
+ Returns breadcrumb (BreadcrumbItemInterface[]) for given content node.
  
  * content (StructureInterface): breadcrumb from root to this node (including)
+
+BreadcrumbItemInterface contains:
+
+ * title
+ * uuid
+ * depth
 
 ## ContactBundle
 
