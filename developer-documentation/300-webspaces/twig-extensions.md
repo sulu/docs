@@ -23,17 +23,17 @@ Returns navigation for content node at given level (in breadcrumb) or (if level 
 * depth (integer): depth of generated navigation
 * level (integer): level in breadcrumb 
 
- `breadcrumb(content)`
- 
- Returns breadcrumb (BreadcrumbItemInterface[]) for given content node.
- 
- * content (StructureInterface): breadcrumb from root to this node (including)
+`breadcrumb(content)`
 
-BreadcrumbItemInterface contains:
+Returns breadcrumb (BreadcrumbItemInterface[]) for given content node.
 
- * title
- * uuid
- * depth
+* content (StructureInterface): breadcrumb from root to this node (including)
+
+__BreadcrumbItemInterface__ contains:
+
+* title
+* uuid
+* depth
 
 ## ContactBundle
 
