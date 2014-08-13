@@ -3,10 +3,10 @@ To integrate Content Tabs into your application you first need to implement a co
 
 #### Table of Contents
 
-[I. Content Navigation Integration in the Backend](#backend)<br />
-... [ 1. create a content navigation in your bundle](#backend-create)<br />
-... [ 2. extend an existing content navigation of another bundle](#backend-extend)<br />
-[II. Content Tabs Integration into the Frontend](#frontend)<br />
+*[Content Navigation Integration in the Backend](#backend)
+  *[create a content navigation in your bundle](#backend-create)
+  *[extend an existing content navigation of another bundle](#backend-extend)
+*[Content Tabs Integration into the Frontend](#frontend)
 
 ##<a name="backend"></a> I. Content Navigation Integration in the Backend
 
@@ -28,8 +28,8 @@ Create a file called AcmeContentNavigation in /Admin
 ```    
 namespace Acme\Bundle\ContactBundle\Admin;
 
-use Sulu\Bundle\AdminBundle\Admin\ContentNavigation;
-use Sulu\Bundle\AdminBundle\Navigation\NavigationItem;
+use Sulu\Bundle\AdminBundle\Navigation\ContentNavigation;
+use Sulu\Bundle\AdminBundle\Navigation\ContentNavigationItem;
 
 class AcmeContactContentNavigation extends ContentNavigation
 {
@@ -39,12 +39,12 @@ class AcmeContactContentNavigation extends ContentNavigation
         parent::__construct();
 
 		// define content-tabs
-        $details = new NavigationItem('Details');
+        $details = new ContentNavigationItem('Details');
         $details->setAction('details');
-        $details->setContentType('contact');
+        $details->setGroups(array('contact'));
         // define which component has to be called
-        $details->setContentComponent('contacts@acmecontact');
-        $details->setContentComponentOptions(array('display'=>'form'));
+        $details->setComponent('contacts@acmecontact');
+        $details->setComponentOptions(array('display'=>'form'));
         $this->addNavigationItem($details);
     }
 }
@@ -53,10 +53,10 @@ class AcmeContactContentNavigation extends ContentNavigation
 
 The following NavigationItem options are important for creating a content item:
 * setAction - the url to be called (either relative or absolute by providing '/')
-* setContentType - used to group content tabs
-* setContentDisplay - array which defines when tabs are shown (either 'new' or 'edit')
-* setContentComponent - defines which component is called when clicking tab
-* setContentComponentOption - array of options
+* setGroups - used to group content tabs
+* setDisplay - array which defines when tabs are shown (either 'new' or 'edit')
+* setComponent - defines which component is called when clicking tab
+* setComponentOption - array of options
 
 And add service to Resources/config/services.yml (or xml):
 
@@ -142,7 +142,7 @@ class NavigationController extends Controller
             $contentNavigation = $this->get(self::SERVICE_NAME);
         }
 
-        return new Response(json_encode($contentNavigation->toArray('contact')));
+        return new JsonResponse($contentNavigation->toArray('contact'));
     }
 }
 ```
