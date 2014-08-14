@@ -11,6 +11,7 @@
 1. Test the bundle manually
 1. `git commit`
 1. `git checkout master``
+1. `git pull origin master`
 1. `git merge --no-ff release/<release>`
 1. Update composer.json version
   * version property
