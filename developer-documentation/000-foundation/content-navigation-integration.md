@@ -3,10 +3,10 @@ To integrate Content Tabs into your application you first need to implement a co
 
 #### Table of Contents
 
-*[Content Navigation Integration in the Backend](#backend)
-  *[create a content navigation in your bundle](#backend-create)
-  *[extend an existing content navigation of another bundle](#backend-extend)
-*[Content Tabs Integration into the Frontend](#frontend)
+* [Content Navigation Integration in the Backend](#backend)
+  * [create a content navigation in your bundle](#backend-create)
+  * [extend an existing content navigation of another bundle](#backend-extend)
+* [Content Tabs Integration into the Frontend](#frontend)
 
 ##<a name="backend"></a> I. Content Navigation Integration in the Backend
 
@@ -57,6 +57,9 @@ The following NavigationItem options are important for creating a content item:
 * setDisplay - array which defines when tabs are shown (either 'new' or 'edit')
 * setComponent - defines which component is called when clicking tab
 * setComponentOption - array of options
+ 
+Please note that the relevant options from the surrounding tab component will be passed to next component.
+The Tab-Component also automatically adds another DOM element, to which the component will be attached.
 
 And add service to Resources/config/services.yml (or xml):
 
@@ -176,10 +179,10 @@ class AcmePermissionContentNavigation implements ContentNavigationInterface
     {
         $permissions = new NavigationItem('Permissions');
         $permissions->setAction('permissions');
-        $permissions->setContentType('contact');
-        $permissions->setContentDisplay(array('edit'));
-        $permissions->setContentComponent('permissions@acmepermission');
-        $permissions->setContentComponentOptions(array('display'=>'permissions');
+        $permissions->setGroupds(array'contact'));
+        $permissions->setDisplay(array('edit'));
+        $permissions->setComponent('permissions@acmepermission');
+        $permissions->setComponentOptions(array('display'=>'permissions');
         
         $this->navigation[] = $permissions;
     }
@@ -233,7 +236,7 @@ But before we are done, you will need to open / create your bundles main.js file
             route: 'contacts/contacts/edit::id/:content',
             callback: function(id, content){
                 this.html(
-                    '<div data-aura-component="contacts/components/content@acmecontact" data-aura-content="'+content+'" data-aura-id="' +id + '"/>'
+                    '<div data-aura-component="contacts@acmecontact" data-aura-content="'+content+'" data-aura-id="' +id + '"/>'
                 );
             }
         });
