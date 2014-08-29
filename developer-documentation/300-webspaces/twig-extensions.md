@@ -15,19 +15,23 @@ Returns url for root node
 
 ### NavigationTwigExtension
 
-`navigation(content, depth, layer)`
+`navigation(uuid, webspaceKey, localization, depth, layer)`
 
 Returns navigation for content node at given level (in breadcrumb) or (if level null) sub-navigation of page
  
-* content (StructureInterface): content node to generate navigation
+* uuid (string): The uuid of the current content
+* webspaceKey (string): The key for the current webspace
+* localization (string): The localization code for the translation
 * depth (integer): depth of generated navigation
 * level (integer): level in breadcrumb 
 
-`breadcrumb(content)`
+`breadcrumb(uuid, webspaceKey, localization)`
 
 Returns breadcrumb (BreadcrumbItemInterface[]) for given content node.
 
-* content (StructureInterface): breadcrumb from root to this node (including)
+* uuid (string): The uuid of the current content
+* webspaceKey (string): The key for the current webspace
+* localization (string): The localization code for the translation
 
 __BreadcrumbItemInterface__ contains:
 
@@ -38,7 +42,7 @@ __BreadcrumbItemInterface__ contains:
 __Example__:
 
 ```twig
-{% set nav = navigation(content) %}
+{% set nav = navigation(uuid, webspaceKey, localization) %}
 <ul class="nav nav-justified">
     {% for item in nav %}
         <li>
