@@ -8,3 +8,7 @@
 | webspaceKey | Contains the key for the current webspace
 | locale      | Contains the locale for the current request
 | uuid        | Contains the uuid of the currently display page
+| creator     | Contains the id of the creator of the current page
+| changer     | Contains the id of the last changer of the current page
+| created     | Contains the timestamp of the creation time
+| changed     | Contains the timestamp of the latest change
