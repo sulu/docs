@@ -43,7 +43,7 @@ You can find an example for a template that the template reader can parse below:
 
     <key>overview</key>
 
-    <view>page.html.twig</view>
+    <view>page.{_format}.twig</view>
     <controller>SuluContentBundle:Default:index</controller>
     <cacheLifetime>2400</cacheLifetime>
     
@@ -132,8 +132,6 @@ You can find an example for a template that the template reader can parse below:
         </section>
     </properties>
 </template>
-
-
 ```
 
 ## Block Content
@@ -199,3 +197,63 @@ To keep prefixes short we decided to reserve internal names. For special install
 
 ## Internal structures
 Internal structures are used for hide specific Structures in the UI. Internal structures are for example `internal-link`. These structures can be used to generate forms for system functionalities (link internal node settings).
+
+## Twig-Template
+To render a content you can define which twig template is used. in the definition in `<view>overview.{_format}.twig</view>` you can use the `{_format}` placeholder. the controller will place the requested format automatically in the template name (default is html).
+
+Example:
+`````
+URL: http://sulu.lo/en
+TWIG: overview.html.twig
+---
+URL: http://sulu.lo/en.html
+TWIG: overview.html.twig
+---
+URL: http://sulu.lo/en.xml
+TWIG: overview.xml.twig
+````
+
+### Preview
+For preview rfa tags have to be used:
+
+__Normal Property__
+```
+<h1 property="title">{{ content.title }}</h1>
+```
+
+__Block Property__
+```
+<div class="row" property="block" typeof="collection">
+   {% for block in content.block %}
+       <div class="col-lg-4" rel="block">
+           {% if block.type == 'editor' %}
+               <h2 property="title">{{ block.title|default('') }}</h2>
+
+               <b>{{ block.type }}</b>
+               {% autoescape false %}
+               <div property="article">{{ block.article|default('') }}</div>
+               {% endautoescape %}
+           {% elseif block.type == 'title_only' %}
+               <h1 property="title">{{ block.title|default('') }}</h1>
+               <b>{{ block.type }}</b>
+           {% endif %}
+       </div>
+   {% endfor %}
+</div>
+```
+
+__Smart-Content__
+```
+<div property="smartcontent">
+    {% for page in content.smartcontent %}
+        <div class="col-lg-4">
+            <h2>
+                <a href="{{ content_path(page.webspaceKey, page.languageCode) }}">{{ page.title }}</a>
+            </h2>
+            {% autoescape false %}
+            {{ page.article|slice(0, 50) }}
+            {% endautoescape %}
+        </div>
+    {% endfor %}
+</div>
+```
