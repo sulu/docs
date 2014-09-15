@@ -120,7 +120,14 @@ So its important the name of the format reflect what the image converter does.
 
 ## Format Commands
 
-### Resize / Scale
+### Resize
+
+#### Parameters
+ - x = width
+ - y = height
+ - retina (auto 2x 'x' and 'y')
+
+### Scale
 
 #### Parameters
  - x = width
