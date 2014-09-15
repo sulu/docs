@@ -116,3 +116,23 @@ This formats are configured in the SuluMediaBundle.
 
 If two themes have the same format, the commands and parameters from the first read will be used.  
 So its important the name of the format reflect what the image converter does.
+
+
+## Format Commands
+
+### Resize / Scale
+
+#### Parameters
+ - x = width
+ - y = height
+ - retina (auto 2x 'x' and 'y')
+ - mode (Imagine Thumbnail mode ('inset' or 'outbound'))
+ 
+### Crop
+
+#### Parameters
+ - x = startpoint X
+ - y = startpoint Y
+ - w = width
+ - h = height
+ - retina (auto 2x 'x' and 'y')
