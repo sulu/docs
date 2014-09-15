@@ -3,8 +3,9 @@
 
 | Variable    | Description
 | ----------- | --------------------------------------------------------------------
-| content     | Contains only the content of the page
-| view        | Contains all the additional information provided by the content type
+| content.<property_name>     | Contains only the content of the page
+| view.<property_name>        | Contains all the additional information provided by the content type
+| extension.<property_name>        | Contains all the extension data (seo, excerpt ...)
 | request.webspaceKey | Contains the key for the current webspace
 | request.locale      | Contains the locale for the current request
 | request.portalUrl | Contains the root URL to the current portal
