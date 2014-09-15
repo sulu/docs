@@ -135,4 +135,3 @@ So its important the name of the format reflect what the image converter does.
  - y = startpoint Y
  - w = width
  - h = height
- - retina (auto 2x 'x' and 'y')
