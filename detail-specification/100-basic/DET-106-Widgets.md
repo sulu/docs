@@ -5,31 +5,13 @@ The Widgets feature enables the developer to develop a widget-based overview whi
 __Parts:__
 
 * Backend:
-  * Controller to handle request
-  * Service for rendering the content of the widgets
-  * Private Service for each Widget with a special Tag
-  * CompilerPass to compile tags for a service ID
+  * Register widgets as services
+  * Build widget groups in application config
 * Frontend:
   * Aura Component get a url and a parameter to request the content
   
 ## Backend
 
-### Controller
-
-__/Controller/ContactWidgetsController.php__
-
-```php
-class ContactWidgetsController extends Controller
-{
-    public function renderAction($id)
-    {
-        /** @var WidgetsInterface $view */
-        $view = $this->get('sulu_contact.contact.widgets');
-
-        return new Response($view->render($id));
-    }
-}
-```
 
 ### The widgets themselve
 
@@ -100,24 +82,6 @@ services:
         class: %sulu_contact.contact.widgets.widget2.class%
         tags:
             - {name: sulu.widget, alias: sulu-contact-contact-info}
-```
-
-### CompilerPass
-
-__/SuluAdminBundle.php__
-
-```php
-class SuluAdminBundle extends Bundle
-{
-    public function build(ContainerBuilder $container)
-    {
-        parent::build($container);
-
-        $container->addCompilerPass(
-            new Sulu\Bundle\AdminBundle\Widgets\WidgetsCompilerPass('sulu_contact.contact.widgets', 'sulu.contact.widgets')
-        );
-    }
-}
 ```
 
 ### Result
