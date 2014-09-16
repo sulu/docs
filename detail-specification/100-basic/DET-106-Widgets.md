@@ -88,24 +88,18 @@ __/Resources/config/services.yml__
 
 ```yml
 parameters:
-    sulu_contact.contact.widgets.class: Sulu\Bundle\AdminBundle\Widgets\WidgetsHandler
     sulu_contact.contact.widgets.widget1.class: Sulu\Bundle\ContactBundle\Widgets\ContactExampleWidget1
     sulu_contact.contact.widgets.widget2.class: Sulu\Bundle\ContactBundle\Widgets\ContactExampleWidget2
     
 services:
-    sulu_contact.contact.widgets:
-        class: %sulu_contact.contact.widgets.class%
-        arguments: [@templating, "Contact Widgets"]
     sulu_contact.contact.widgets.widget1:
         class: %sulu_contact.contact.widgets.widget1.class%
         tags:
-            - {name: sulu.contact.widgets, priority: 5}
-            - {name: sulu.contact.widgets, priority: 10}
+            - {name: sulu.widget, alias: sulu-contact-account-info}
     sulu_contact.contact.widgets.widget2:
         class: %sulu_contact.contact.widgets.widget2.class%
         tags:
-            - {name: sulu.contact.widgets, priority: 20}
-            - {name: sulu.contact.widgets, priority: 1}
+            - {name: sulu.widget, alias: sulu-contact-contact-info}
 ```
 
 ### CompilerPass
