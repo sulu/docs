@@ -29,4 +29,3 @@ Additionaly there is the table `pr_sets`, which is used only for ProductSets, an
 ##### Configureable options
 There are tables lik `pr_delivery_type` or `pr_delivery_status`, which can hold additional information base on the configurations of the bundle.
 
-Another configureable option is the pricing. In addition to the `price`-field in the base entity, you can also save the prices along with a minimum quantity, so that you can offer a discount on high number orders.
