@@ -3,9 +3,9 @@
 ## WebsiteBundle
 
 ### ContentPathTwigExtension
-`content_path(item)`
+`content_path(url)`
 
-Returns URL for given item
+Returns absolute URL
 
 * item (NavigationItem|StructureInterface|array): Item to generate URL
 
@@ -15,7 +15,15 @@ Returns url for root node
 
 ### NavigationTwigExtension
 
-`navigation(uuid, webspaceKey, localization, depth, layer)`
+`navigation_root_flat([context = null], [depth = 1], [loadExcerpt = false])`
+
+Returns navigation from root
+
+* context (string) - optional: context to filter navigation
+* depth (integer) - optional: depth to load (1 - childs, 2 - childs and child of childs, ...)
+* loadExcerpt (boolean) - optional ...
+
+
 
 Returns navigation for content node at given level (in breadcrumb) or (if level null) sub-navigation of page
  
@@ -25,13 +33,13 @@ Returns navigation for content node at given level (in breadcrumb) or (if level 
 * depth (integer): depth of generated navigation
 * level (integer): level in breadcrumb 
 
-`breadcrumb(uuid, webspaceKey, localization)`
+`breadcrumb(uuid, [webspaceKey], [localization])`
 
 Returns breadcrumb (BreadcrumbItemInterface[]) for given content node.
 
 * uuid (string): The uuid of the current content
-* webspaceKey (string): The key for the current webspace
-* localization (string): The localization code for the translation
+* webspaceKey (string) - optional: The key for the current webspace
+* localization (string) - optional: The localization code for the translation
 
 __BreadcrumbItemInterface__ contains:
 
@@ -42,7 +50,7 @@ __BreadcrumbItemInterface__ contains:
 __Example__:
 
 ```twig
-{% set nav = navigation(uuid, webspaceKey, localization) %}
+{% set nav = navigation_tree(uuid) %}
 <ul class="nav nav-justified">
     {% for item in nav %}
         <li>
