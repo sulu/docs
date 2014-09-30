@@ -33,7 +33,7 @@ __Remarks:__
 * `excerpt.title` - is a property of the `excerpt` structure extension withthe name `title`
 
 __Usage:__
-```twig
+```html
 {% for page in content.pages %}
     <div class="col-lg-4">
         <h2>
