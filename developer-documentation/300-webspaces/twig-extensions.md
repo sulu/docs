@@ -8,7 +8,9 @@
 
 Returns absolute URL
 
-* item (NavigationItem|StructureInterface|array): Item to generate URL
+* Parameter
+  * item (NavigationItem|StructureInterface|array): Item to generate URL
+* Returns: `string`
 
 `content_root_path()`
 
@@ -20,36 +22,82 @@ Returns url for root node
 
 Returns navigation from root in a flat list data-structure.
 
-* context (string) - optional: context to filter navigation
-* depth (integer) - optional: depth to load (1 - childs, 2 - childs and child of childs, ...)
-* loadExcerpt (boolean) - optional: load data from excerpt tab
+* Parameter
+ * context (string) - optional: context to filter navigation
+ * depth (integer) - optional: depth to load (1 - childs, 2 - childs and child of childs, ...)
+ * loadExcerpt (boolean) - optional: load data from excerpt tab
+* Returns: `array`
+ * uuid
+ * title
+ * url
+ * template
+ * changed / changer / created / creator
+ * template
+ * nodeType
+ * path
+ * excerpt.* (if load-excerpt is true)
 
 `navigation_root_tree([context = null], [depth = 1], [loadExcerpt = false])`
 
 Returns navigation from root in a tree data-structure (each item has `children`).
 
-* context (string) - optional: context to filter navigation
-* depth (integer) - optional: depth to load (1 - childs, 2 - childs and child of childs, ...)
-* loadExcerpt (boolean) - optional: load data from excerpt tab
+* Parameter
+ * context (string) - optional: context to filter navigation
+ * depth (integer) - optional: depth to load (1 - childs, 2 - childs and child of childs, ...)
+ * loadExcerpt (boolean) - optional: load data from excerpt tab
+* Returns: `array`
+ * uuid
+ * title
+ * url
+ * template
+ * changed / changer / created / creator
+ * template
+ * nodeType
+ * path
+ * children
+ * excerpt.* (if load-excerpt is true)
  
 `navigation_flat(uuid, [context = null], [depth = 1], [loadExcerpt = false], [level = null])`
 
 Returns navigation for content node (uuid) at given level (in breadcrumb) or (if level null) sub-navigation of page. In a Tree flat list data-structure.
  
-* uuid (string): The uuid of the current content
-* depth (integer) - optional: depth of generated navigation
-* loadExcerpt (boolean) - optional: load data from excerpt tab
-* level (integer) - optional: level in breadcrumb
+* Parameter
+ * uuid (string): The uuid of the current content
+ * depth (integer) - optional: depth of generated navigation
+ * loadExcerpt (boolean) - optional: load data from excerpt tab
+ * level (integer) - optional: level in breadcrumb
+* Returns: `array`
+ * uuid
+ * title
+ * url
+ * template
+ * changed / changer / created / creator
+ * template
+ * nodeType
+ * path
+ * excerpt.* (if load-excerpt is true)
  
 `navigation_tree(uuid, [context = null], [depth = 1], [loadExcerpt = false], [level = null])`
 
 Returns navigation for content node (uuid) at given level (in breadcrumb) or (if level null) sub-navigation of page. In a Tree data-structure (each item has `children`).
 
-* uuid (string): The uuid of the current content
-* depth (integer) - optional: depth of generated navigation
-* loadExcerpt (boolean) - optional: load data from excerpt tab
-* level (integer) - optional: level in breadcrumb 
-
+* Parameter
+ * uuid (string): The uuid of the current content
+ * depth (integer) - optional: depth of generated navigation
+ * loadExcerpt (boolean) - optional: load data from excerpt tab
+ * level (integer) - optional: level in breadcrumb 
+* Returns: `array`
+ * uuid
+ * title
+ * url
+ * template
+ * changed / changer / created / creator
+ * template
+ * nodeType
+ * path
+ * children
+ * excerpt.* (if load-excerpt is true)
+ 
 `breadcrumb(uuid)`
 
 Returns breadcrumb (BreadcrumbItemInterface[]) for given content node.
