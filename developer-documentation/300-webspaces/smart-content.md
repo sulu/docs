@@ -9,6 +9,7 @@ Loaded data contains default following values:
 * changed / changer / created / creator
 * nodeType
 * path
+* template
 
 It is posible to configure loaded data over xml-template
 
