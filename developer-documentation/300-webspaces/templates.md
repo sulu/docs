@@ -12,6 +12,7 @@
 | request.resourceLocatorPrefix | Contains the prefix for the current portal, useful for building relative links
 | request.resourceLocator | Contains the resourcelocator to the current page
 | uuid        | Contains the uuid of the currently display page
+| template    | Contains the template key of the currently display page
 | creator     | Contains the id of the creator of the current page
 | changer     | Contains the id of the last changer of the current page
 | created     | Contains the timestamp of the creation time
