@@ -32,6 +32,18 @@ Returns content array for given uuid.
   * content
   * view
 
+`content_load_parent(uuid)`
+
+Returns content array for given uuid.
+
+* Parameter
+  * uuid (string): The uuid the child of requested content node
+* Returns: `array`
+  * uuid
+  * changed / changer / created / creator
+  * content
+  * view
+
 ### NavigationTwigExtension
 
 `navigation_root_flat([context = null], [depth = 1], [loadExcerpt = false])`
