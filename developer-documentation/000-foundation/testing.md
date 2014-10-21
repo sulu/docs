@@ -1,68 +1,131 @@
 # Testing
 
+## Running tests
+
+Most bundles require that the test environment be initialized before running the
+tests. You can see what to do by looking in the bundles `.travis.yml` file.
+
+The most important step would be to run this script, changing the argument as
+you see it in the travis file:
+
+````
+./vendor/sulu/test-bundle/Sulu/Bundle/TestBundle/Resources/bin/travis.sh dbal
+````
+
 ## Enable testing support
-The `SuluTestBundle` has to be installed in the current bundle or app. This is done with the adding the following line to the `require-dev`-attribute of the corresponding `composer.json`:
+
+The `SuluTestBundle` has to be installed in the current bundle or app. This is
+done with the adding the following line to the `require-dev`-attribute of the
+corresponding `composer.json`:
 
 ```
 "sulu/test-bundle": "dev-develop"
 ```
-Afterwards the `SuluTestBundle` can be installed with the command `composer update`. The last step is to add an instance of the `SuluTestBundle` in the AppKernel. In a standalone bundle it can be added to the `bundles`-array in `Tests/Resources/app/AppKernel.php` and in a full application it should be added only in the dev-environment.
 
-It's also very important to be sure that the security and testing-bundle are configured correctly, as both of them deliver the same services (although the one responsible for testing does it in a much easier way).
+Afterwards the `SuluTestBundle` can be installed with the command `composer
+update`. The last step is to add an instance of the `SuluTestBundle` in the
+AppKernel. In a standalone bundle it can be added to the `bundles`-array in
+`Tests/Resources/app/AppKernel.php` and in a full application it should be
+added only in the dev-environment.
 
-## DatabaseTestCase
-The DatabaseTestCase is the abstract base class for functional tests. It provides a member variable to the entity manager from doctrine and creates an instance of the SchemaTool, for resetting the database after every test run.
+It's also very important to be sure that the security and testing-bundle are
+configured correctly, as both of them deliver the same services (although the
+one responsible for testing does it in a much easier way).
 
-The usual test methods can be used, and although you should consider following the here described schema:
+The Sulu testing practices are roughly based on the practices used by the
+Symfony CMF. Be sure to check out the
+[documentation](http://symfony.com/doc/current/cmf/components/testing.html) for
+the Symfony testing component.
 
-```php
-<?php
+## Test directory structure
 
-namespace Sulu\Bundle\ExampleBundle\Tests\Functional\Controller;
+See the CMF testing documentation above, but briefly:
 
-use Doctrine\ORM\Tools\SchemaTool;
+````
+/Tests
+    Unit/         # Tests which use mocks and nothing else
+    Functional/   # Tests which test services and extend SuluTestCase
+    WebTest/      # Tests which use the BrowserKit web client
+````
 
-class TagControllerTest extends DatabaseTestCase
+## SuluTestCase
+
+The `SuluTestCase` allows you to run tests within the context of your application. It extends
+[CMF Testing](http://symfony.com/doc/current/cmf/components/testing.html) components
+[BaseTestCase](https://github.com/symfony-cmf/Testing/blob/master/src/Functional/BaseTestCase.php).
+
+It should be used whenever you need to test something which **requires a database/phpcr**
+or when you do BrowserClient tests. It **must not** be used for Unit Tests.
+
+A typical test might look like the following
+
+````php
+/*
+ * This file is part of the Sulu CMS.
+ *
+ * (c) MASSIVE ART WebServices GmbH
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
+namespace Sulu\Bundle\SecurityBundle\Tests\Functional\Controller;
+
+use Sulu\Bundle\TestBundle\Testing\SuluTestCase;
+
+class GroupControllerTest extends SuluTestCase
 {
-    /**
-     * @var array
-     */
-    protected static $entities;
-
     public function setUp()
     {
-        $this->setUpSchema();
+        // retreve the entity manager
+        $this->em = $this->db('ORM')->getOm();
 
-        // your setup code
+        // purge the database
+        $this->purgeDatabase();
+
+
+        // load some fixtures
+        $role1 = new Role();
+        $role1->setName('Sulu Administrator');
+        $role1->setSystem('Sulu');
+        $role1->setCreated($datetime);
+        $role1->setChanged($datetime);
+        $this->em->persist($role1);
+        $this->role1 = $role1;
+
+        // ...
+
+        $this->em->flush();
     }
 
-    public function setUpSchema()
+    public function testList()
     {
-        self::$tool = new SchemaTool(self::$em);
+        $client = $this->createAuthenticatedClient();
+        $client->request('GET', '/api/groups?flat=true');
 
-        self::$entities = array(
-            self::$em->getClassMetadata('Sulu\Bundle\ExampleBundle\Entity\Example'),
-            // and probably more ClassMetaData loaded like the line above
-        );
+        $response = json_decode($client->getResponse()->getContent());
 
-        self::$tool->dropSchema(self::$entities);
-        self::$tool->createSchema(self::$entities);
+        $this->assertEquals(2, $response->total);
+        $this->assertEquals('Group1', $response->_embedded->groups[0]->name);
+        $this->assertEquals('Group2', $response->_embedded->groups[1]->name);
     }
+````
 
-    public function tearDown()
-    {
-        parent::tearDown();
-        self::$tool->dropSchema(self::$entities);
-    }
+Note the following methods are available when you extend `SuluTestCase`:
 
-    // test methods
-}
+- **getContainer**: Return the container for the test application.
+- **db($type)**: Return the DB manager (either `ORM` or `PHPCR` - see the CMF testing documentation)
+- **getAuthenticatedClient**: Return a Symfony BrowserKit client has been configured with authentication credentials (see below)
+- **purgeDatabase**: Remove all the records from the database (you should call this before creating fixtures)
+- **initPhpcr**: Remove all the records in the content repository and then reinitialize the Sulu environemnt.
 
-```
 
 ## Security
-The testing environment must be set up to grant access to everybody. For this there are Test-Implementations of the Security-classes.
-Use these classes and the http_basic authentication methods in the test configuration. This can be done with the following lines in `Tests/Resources/app/config/config.yml`:
+
+The testing environment must be set up to grant access to everybody. For this
+there are Test-Implementations of the Security-classes.  Use these classes and
+the http_basic authentication methods in the test configuration. This can be
+done with the following lines in `Tests/Resources/app/config/config.yml`:
 
 ```yml
 # Configuration file for security in the test environment
@@ -85,17 +148,7 @@ security:
             http_basic:
 ```
 
-In the tests the client of the symfony framework can handle the http_basic authentication method. Just passt the username `test` and the password `test` as credentials:
-
-```php
-$client = $this->createClient(
-    array(),
-    array(
-        'PHP_AUTH_USER' => 'test',
-        'PHP_AUTH_PW' => 'test',
-    )
-);
-```
+When you need to access the secured back office, use the `SuluTestCase#createAuthenticatedClient` method.
 
 If the user gets persisted in the system under test, it will be stored in the `co_testusers`-table, with the following data:
 
