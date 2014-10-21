@@ -16,6 +16,22 @@ Returns absolute URL
 
 Returns url for root node
 
+* Returns: `string`
+
+### ContentTwigExtension
+
+`content_load(uuid)`
+
+Returns content array for given uuid.
+
+* Parameter
+  * uuid (string): The uuid of requested content
+* Returns: `array`
+  * uuid
+  * changed / changer / created / creator
+  * content
+  * view
+
 ### NavigationTwigExtension
 
 `navigation_root_flat([context = null], [depth = 1], [loadExcerpt = false])`
