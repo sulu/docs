@@ -1,8 +1,8 @@
 # VirtualHosts Example
 
 
-## ApacheConf
-``` xml
+## Apache
+``` ApacheConf
 <VirtualHost *:80>
     DocumentRoot "/var/www/sulu.lo/web"
     ServerName sulu.lo
