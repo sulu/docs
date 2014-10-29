@@ -4,13 +4,26 @@
 
 ### ContentPathTwigExtension
 
-`content_path(url)`
+`content_path(url, [webspaceKey = current])`
 
 Returns absolute URL
 
 * Parameter
-  * item (NavigationItem|StructureInterface|array): Item to generate URL
+  * url (string): Url to get path
+  * webspaceKey (string) - optional: If item is not in the same webspace as current content
 * Returns: `string`
+
+__Example__:
+
+```twig
+<ul class="nav nav-justified">
+    {% for item in content.snippets[0].internalLinks %}
+        <li>
+            <a href="{{ content_path(item.url, item.webspaceKey) }}" title="{{ item.title }}">{{ item.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+```
 
 `content_root_path()`
 
@@ -161,6 +174,21 @@ Returns url for given Webspace and locale.
 * url (string): The uuid of the current content
 * locale (string) - optional: locale for determine url
 * webspaceKey (string) - optional: webspace for determine url
+
+## SnippetBundle
+
+`snippet_load(uuid, [locale = current])`
+
+Returns content array for given uuid.
+
+* Parameter
+  * uuid (string): The uuid of requested content
+  * locale (string) - optional: Locale to load snippet
+* Returns: `array`
+  * uuid
+  * changed / changer / created / creator
+  * content
+  * view
 
 ## ContactBundle
 
