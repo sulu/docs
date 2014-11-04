@@ -5,6 +5,7 @@ Loaded data contains default following values:
 * uuid
 * title
 * url
+* urls
 * nodeType
 * changed / changer / created / creator
 * nodeType
