@@ -1,45 +1,20 @@
 # Navigation
 
-DefaultController.php
-
-```php
-class DefaultController extends WebsiteController
-{
-	...
-    public function indexAction(StructureInterface $structure, $preview = false, $partial = false)
-    {
-        $response = $this->renderStructure(
-            $structure,
-            array(
-                'navigation' => $this->getMainNavigation($structure, null, $preview)
-            ),
-            $preview,
-            $partial
-        );
-        return $response;
-    }
-	...
-}
-
-```
-
 master.html.twig:
 
-```jinja
-{% if navigation is defined %}
-	{% include 'ClientWebsiteBundle:Website:navigation.html.twig' %}
-{% endif %}
+```html
+{% include 'ClientWebsiteBundle:Website:navigation.html.twig' with {items:navigation_root_tree('main')}%}
 ```
 
 navigation.html.twig:
 
-```jinja
+```html
 <ul>
-    {% for item in navigation %}
+    {% for item in items %}
         <li>
-            <a href="{{ item.url }}" title="{{ item.title }}">{{ item.content.title }}</a>
+            <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
             {% if item.children|length > 0 %}
-                {% include 'ClientWebsiteBundle:Website:navigation.html.twig' with {navigation: item.children} %}
+                {% include 'ClientWebsiteBundle:Website:navigation.html.twig' with {items: item.children} %}
             {% endif %}
         </li>
     {% endfor %}
@@ -48,6 +23,14 @@ navigation.html.twig:
 
 __API__
 
-* title: title attribute
-* url: url to this page
-* content: content structure
+* uuid
+* title
+* url
+* urls
+* nodeType
+* changed / changer / created / creator
+* nodeType
+* path
+* template
+* children (optional)
+
