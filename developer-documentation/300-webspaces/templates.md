@@ -17,3 +17,5 @@
 | changer     | Contains the id of the last changer of the current page
 | created     | Contains the timestamp of the creation time
 | changed     | Contains the timestamp of the latest change
+| urls     | Contains urls for all languages or null if no url exists for current page
+
