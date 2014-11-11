@@ -2,9 +2,14 @@
 
 * __Use a meaningfull name for the Pull Request__
 * Create the pull request as soon as possible.
-* Add a prefix ([FEATURE], [BUGFIX, [HOTFIX], [ENHANCEMENT])
-* Mark the PR with [WIP] in the title when you work on it.
-* Remove the [WIP] when you finished open tasks and the PR will be able to merge.
+* Name the branch after the following format: (feature|bugfix|hotfix|enhancement)/[issue-number]-<description>
+  * the issue number is optional, but should always be provided if there is an issue
+* Add a label for the type of the PR (Feature, Bugfix, Hotfix, Enhancement)
+* Add a label for the state of the PR
+  * in progress if you are still working on the PR
+  * review when it is reviewable
+  * feedback if you have reviewed someone else's PR
+  * alternatively you can also use the [waffle board](https://waffle.io/sulu-cmf/sulu)
 * Template is devided in two parts: Tasks (for developer), Informations (for reviewer)
 * Tasks list can be extended for developer tasks
 * Informations: Tests => if tests fail, add reason
