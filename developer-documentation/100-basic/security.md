@@ -23,3 +23,14 @@ $this->get('security.context')->isGranted(array(
     'locale' => 'Your locale' //this one is optional
 ), 'Your security context');
 ```
+
+## SecurityListener
+There is also a SecurityListener, which checks the security for every action on a controller implementing the 
+`SecuredContollerInterface`. All the Controller has to do is to implement the two methods. `getSecurityContext``
+should return the name of the SecurityContext used by this controller, and a `getLocale`-method, which gets
+the `Request`-object, and should determine the locale. Usually this one has not to be implemented, because
+the abstract `RestController` already does.
+
+The listener automatically checks the correct permission type based on the HTTP method. Please consider that
+the Controller has also to implement the `ClassResourceInterface` from the `FOSRestBundle`, otherwise this
+will not work correctly for business logic encapsulated in a `POST`.
