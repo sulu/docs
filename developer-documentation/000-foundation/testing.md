@@ -2,17 +2,44 @@
 
 ## Running tests
 
-Most bundles require that the test environment be initialized before running the
-tests. You can see what to do by looking in the bundles `.travis.yml` file.
-
-The most important step would be to run this script, changing the argument as
-you see it in the travis file:
+You can run all the tests from `sulu/sulu` using the following command:
 
 ````
-./vendor/sulu/test-bundle/Sulu/Bundle/TestBundle/Resources/bin/travis.sh dbal
+$ ./bin/runtests.sh
 ````
 
-## Enable testing support
+You can execute tests for a specific bundle:
+
+````
+$ ./bin/runtests.sh ContentBundle
+````
+
+You will also want to execute tests directly with PHPUnit:
+
+````
+$ cd src/Sulu/Bundle/SearchBundle
+$ phpunit
+````
+
+Note that you will need to launch the `runtests` script before running
+the phpunit tests if you have tests which depend on the database.
+
+## Debugging
+
+
+### Launching the test console
+
+The easiest way to launch the Symfony console in the test envionment (when
+you have functional tests with an AppKernel) is to install this script:
+
+    https://gist.github.com/dantleech/406197bae17a63c2c58b
+
+You can then run `testconsole` from the base directory of any Sulu component.
+
+## Implementing
+
+
+### Adding tests
 
 The `SuluTestBundle` has to be installed in the current bundle or app. This is
 done with the adding the following line to the `require-dev`-attribute of the
@@ -119,8 +146,30 @@ Note the following methods are available when you extend `SuluTestCase`:
 - **purgeDatabase**: Remove all the records from the database (you should call this before creating fixtures)
 - **initPhpcr**: Remove all the records in the content repository and then reinitialize the Sulu environemnt.
 
+### Initializing the environment
 
-## Security
+You may need to do things such as update the database schema or start services before your test suite runs.
+
+The test runner will automatically execute scripts in the following locations before starting the test run:
+
+````
+/path/to/bundle/Tests/Resources/app/testinit.sh
+/path/to/bundle/Tests/app/testinit.sh
+````
+
+The script will be passed the kernel directory and the variable representing the console command as
+illustrated in the following example:
+
+````bash
+#!/bin/bash
+
+echo $KERNEL_DIR
+echo $CONSOLE_COMMAND
+
+$CONSOLE_COMMAND doctrine:schema:update
+````
+
+### Security
 
 The testing environment must be set up to grant access to everybody. For this
 there are Test-Implementations of the Security-classes.  Use these classes and
