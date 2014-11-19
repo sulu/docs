@@ -56,6 +56,7 @@ define(['router'], function (Router) {
 * Initializes navigation entries for bundle
 * Initializes commands for app/console
 * returns the folder for the js bundle, if this method is not provided there will no javascript file be delivered
+* Also use the [SecurityChecker](https://github.com/sulu-cmf/docs/blob/master/developer-documentation/100-basic/security.md#authorization) to display navigation items only when the user is allowed to see them (usually the `view`-permission)
 
 ```php
 <?php
