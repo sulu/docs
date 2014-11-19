@@ -24,6 +24,18 @@ $this->get('security.context')->isGranted(array(
 ), 'Your security context');
 ```
 
+For making this easier, there is our own `SecurityChecker`, which can be accessed like this (result would be the same as above):
+
+```php
+$this->get('sulu_security.security_checker')->hasPermission(
+    'Your security context',
+    'view|add|edit|delete|archive|live|security',
+    'Your locale'
+);
+```
+
+Alternatively you can use the `checkPermission` method, which will throw an exception if the operation is not granted.
+
 ## SecurityListener
 There is also a SecurityListener, which checks the security for every action on a controller implementing the 
 `SecuredContollerInterface`. All the Controller has to do is to implement the two methods. `getSecurityContext``
