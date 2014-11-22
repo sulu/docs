@@ -10,7 +10,7 @@ The Preview Service is the central component of Preview. It handles:
 After starting preview the serice creates a cache entry with user id and content uuid. there the content structure + changes wil be stored. When the form will call an update, the preview will update the cached structure, render the content partial (only content twig block) and extract the part wich the property has impact (with the rdfa property attribute). The Cache Component is a standard doctrine component, which can be injected.
 
 
-![Comunication Concept](https://raw2.github.com/sulu-cmf/docs/master/detail-specification/images/Live-Preview.png)
+![Comunication Concept](https://raw.github.com/sulu-cmf/docs/master/detail-specification/images/Live-Preview.png)
 
 As Communication channel, there are two possibilities:
 
