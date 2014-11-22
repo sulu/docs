@@ -11,6 +11,7 @@
 | request.portalUrl | Contains the root URL to the current portal
 | request.resourceLocatorPrefix | Contains the prefix for the current portal, useful for building relative links
 | request.resourceLocator | Contains the resourcelocator to the current page
+| request.analyticsKey | Contains the analytics-key for the current url
 | uuid        | Contains the uuid of the currently display page
 | template    | Contains the template key of the currently display page
 | creator     | Contains the id of the creator of the current page
