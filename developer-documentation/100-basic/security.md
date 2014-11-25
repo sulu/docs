@@ -38,7 +38,7 @@ Alternatively you can use the `checkPermission` method, which will throw an exce
 
 ## SecurityListener
 There is also a SecurityListener, which checks the security for every action on a controller implementing the 
-`SecuredContollerInterface`. All the Controller has to do is to implement the two methods. `getSecurityContext``
+`SecuredContollerInterface`. All the Controller has to do is to implement the two methods. `getSecurityContext`
 should return the name of the SecurityContext used by this controller, and a `getLocale`-method, which gets
 the `Request`-object, and should determine the locale. Usually this one has not to be implemented, because
 the abstract `RestController` already does.
