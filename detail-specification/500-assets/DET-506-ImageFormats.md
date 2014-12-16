@@ -15,16 +15,21 @@ A XML could be look like this:
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://schemas.sulu.io/media/formats http://schemas.sulu.io/media/formats-1.0.xsd">
     <format>
-        <name>50x50</name>
+        <name>640x480</name>
         <commands>
             <command>
-                <action>scale</action>
+                <action>resize</action>
                 <parameters>
-                    <parameter name="x">50</parameter>
-                    <parameter name="y">50</parameter>
+                    <parameter name="x">640</parameter>
+                    <parameter name="y">480</parameter>
                 </parameters>
             </command>
         </commands>
+
+        <options>
+            <option name="jpeg_quality">80</option>
+            <option name="png_compression_level">6</option>
+        </options>
     </format>
 </formats>
 ```
@@ -45,7 +50,9 @@ XML Schema
     <xs:complexType name="formatType">
         <xs:sequence>
             <xs:element type="xs:string" name="name"/>
-            <xs:element type="commandsType" name="commands" maxOccurs="unbounded" minOccurs="1"/>
+
+            <xs:element type="commandsType" name="commands" minOccurs="0" maxOccurs="1"/>
+            <xs:element type="optionsType" name="options" minOccurs="0" maxOccurs="1"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -68,6 +75,12 @@ XML Schema
         </xs:sequence>
     </xs:complexType>
 
+    <xs:complexType name="optionsType">
+        <xs:sequence>
+            <xs:element type="parameterType" name="option" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
     <xs:complexType name="parameterType">
         <xs:simpleContent>
             <xs:extension base="xs:string">
@@ -87,16 +100,20 @@ The service outputs the data in this format:
 
 ``` php
 array(
-    array( // one format
-        'name' => '50x50', // name of the format
+    '640x480' => array( // one format
+        'name' => '', // name of the format
         'commands' => array( // commands to execute
             array(
                 'action' => 'scale', // command name
                 'parameters' => array( // command parameter
-                    'x' => '50',
-                    'y' => '50',
+                    'x' => '640',
+                    'y' => '480',
                 )
             )
+        ),
+        'options' => array(
+             'jpeg_quality' => 100,
+             'png_compression_level' => 100
         )
     )
 )
@@ -111,6 +128,24 @@ Sulu itself have three formats:
 
 This formats are configured in the SuluMediaBundle.  
 
+## Format Options
+
+The options of a format will be redirected to the imagine library see the documentation. The following options are tested and they work properly with sulu.
+
+* `jpeg_quality`: Quality of jpg-image output
+* `png_compression_level`: Compression level of png images (higher value smaller images => slower rendering, lower value bigger images => faster rendering)
+
+The default values of the options can be set in the app config:
+
+```yml
+sulu_media:
+    format_manager:
+        default_imagine_options:
+            jpeg_quality: 80
+            png_compression_level: 6
+```
+
+This is optional, if this is not set the default values of the library will be used.
 
 ## Handling Conflicts
 
