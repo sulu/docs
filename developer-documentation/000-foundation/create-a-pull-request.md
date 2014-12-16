@@ -25,6 +25,7 @@ __Tasks:__
 - [ ] test coverage
 - [ ] gather feedback for my changes
 - [ ] submit changes to the documentation
+- [ ] added changelog line
 - [ ] ... <add your own tasks>
 
 
@@ -48,6 +49,7 @@ __Tasks:__
 - [ ] gather feedback for my changes
 - [ ] submit changes to the documentation
 - [ ] remove Request defaults
+- [ ] added changelog line
 - [ ] fix #1
 
 
