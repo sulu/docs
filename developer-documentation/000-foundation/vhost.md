@@ -65,13 +65,6 @@ server {
 
     # expire 
     location ~* \.(?:ico|css|js|gif|jpe?g|png)$ {
-        access_log off;
-        expires 30d;
-        add_header Pragma public;
-        add_header Cache-Control "public";
-    }
-
-    location /uploads/media  {
         try_files $uri /website.php/$1;
         access_log off;
         expires 30d;
