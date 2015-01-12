@@ -56,3 +56,49 @@ define(['websocket-manager'], function(WebsocketManager) {
   socket.onerror = function() { ... };
 });
 ```
+
+## Create App
+
+### Normal Websocket:
+
+```php
+class TestMessageComponent extends AbstractWebsocketApp implements MessageComponentInterface
+{
+  protected $name = 'test';
+    
+ public function onOpen(ConnectionInterface $conn)
+ {
+   parent::onOpen($conn);
+   ...
+ }
+ public function onMessage(ConnectionInterface $conn)
+ {
+   ...
+ }
+ public function onClose(ConnectionInterface $conn)
+ {
+   parent::onClose($conn);
+   ...
+ }
+ public function onError(ConnectionInterface $conn, \Exception $e)
+ {
+   ...
+ }
+}
+```
+
+```xml
+ <service id="websocket.component" class="TestMessageComponent">
+     <tag name="sulu.websocket.app" route="/test" />
+ </service>
+```
+
+```js
+define(['websocket-manager'], function(WebsocketManager) {
+  var socket = WebsocketManager.getClient('test');
+  
+  socket.onopen = function() { ... };
+  socket.onmessage = function() { ... };
+  socket.onerror = function() { ... };
+});
+```
