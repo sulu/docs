@@ -1,6 +1,6 @@
 # Websocket Component
 
-TODO diagram
+[Look for a basic model here ...](https://github.com/sulu-cmf/docs/blob/master/developer-documentation/models/uml/websocket-component.vpp)
 
 The component was buil to add simple new websocket applications. It encapsules the routing of applications, running and create connections.
 
