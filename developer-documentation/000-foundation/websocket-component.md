@@ -57,6 +57,10 @@ define(['websocket-manager'], function(WebsocketManager) {
 });
 ```
 
+## Context
+
+TODO
+
 ## Create App
 
 ### Normal Websocket:
