@@ -105,3 +105,8 @@ parameter as follows:
     </properties>
 </template>
 ````
+
+Every snippet type have his own node before you can use a snippet you need to run the following command to create the snippet parent nodes:   
+``` bash
+app/console sulu:webspaces:init
+```
