@@ -21,6 +21,7 @@ The following meta information shall be provided:
 * Keywords
 * Canonical URL
 * No index / no follow
+* Hide in sitemap
 
 ####FR-7102 SERP Preview 
 
