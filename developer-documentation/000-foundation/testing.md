@@ -171,35 +171,9 @@ $CONSOLE_COMMAND doctrine:schema:update
 
 ### Security
 
-The testing environment must be set up to grant access to everybody. For this
-there are Test-Implementations of the Security-classes.  Use these classes and
-the http_basic authentication methods in the test configuration. This can be
-done with the following lines in `Tests/Resources/app/config/config.yml`:
-
-```yml
-# Configuration file for security in the test environment
-# Grants access to every User
-# DO NOT USE IN PRODUCTION ENVIRONMENT
-
-security:
-    access_decision_manager:
-        strategy: affirmative
-
-    encoders:
-        Sulu\Bundle\TestBundle\Entity\TestUser: plaintext
-
-    providers:
-        testprovider:
-            id: test_user_provider
-
-    firewalls:
-        test:
-            http_basic:
-```
-
 When you need to access the secured back office, use the `SuluTestCase#createAuthenticatedClient` method.
 
-If the user gets persisted in the system under test, it will be stored in the `co_testusers`-table, with the following data:
+For the tests a test user and contact will be created. You have to take that into account, because these classes will also be returned in the system's API calls.
 
 field | value
 --- | ---
