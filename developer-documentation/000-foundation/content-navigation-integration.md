@@ -72,7 +72,7 @@ services:
         class: %acme_contact.admin.content_navigation.class%
 ```
     	
-#### Create Compiler Pass (optional)
+#### Create Compiler Pass (required if extandable)
 
 This step has only to be done, if you'd like to extend your content navigation by another bundle (see 2.).
 
