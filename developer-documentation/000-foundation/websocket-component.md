@@ -49,17 +49,30 @@ The frontend component creates connections for applications
 
 ```js
 define(['websocket-manager'], function(WebsocketManager) {
-  var socket = WebsocketManager.getClient('sulu_content.preview');
+  var socket = WebsocketManager.getClient('admin');
   
-  socket.onopen = function() { ... };
-  socket.onmessage = function() { ... };
-  socket.onerror = function() { ... };
+  // all messages (polling currently not implemented in fallback)
+  socket.onMessage(function(handler, message) { ... });
+  
+  // messages for a specific handler (polling currently not implemented in fallback)
+  socket.addHandler('sulu_content.preview.frontend', function(handler, message)
+  
+  // direct return from message handler
+  socket.send('sulu_content.preview', {test: 'test'}).then(function(handler, message) { ... });
 });
 ```
 
 ## Context
 
-TODO
+Each connection has a context for the whole session, it is identified by the session id, so it can be switched between websocket and fallback without reinitializing.
+
+```php
+// set a parameter
+$context->set('test', 'test');
+
+//get a parameter
+$param = $context->get('test');
+```
 
 ## Create App
 
@@ -68,7 +81,7 @@ TODO
 ```php
 class TestMessageComponent extends AbstractWebsocketApp implements MessageComponentInterface
 {
-  protected $name = 'test';
+ protected $name = 'test';
     
  public function onOpen(ConnectionInterface $conn)
  {
@@ -77,7 +90,9 @@ class TestMessageComponent extends AbstractWebsocketApp implements MessageCompon
  }
  public function onMessage(ConnectionInterface $conn)
  {
+   $context = $this->getContext($from);
    ...
+   $this->saveContext($context);
  }
  public function onClose(ConnectionInterface $conn)
  {
@@ -101,8 +116,13 @@ class TestMessageComponent extends AbstractWebsocketApp implements MessageCompon
 define(['websocket-manager'], function(WebsocketManager) {
   var socket = WebsocketManager.getClient('test');
   
-  socket.onopen = function() { ... };
-  socket.onmessage = function() { ... };
-  socket.onerror = function() { ... };
+  // all messages (polling currently not implemented in fallback)
+  socket.onMessage(function(handler, message) { ... });
+  
+  // messages for a specific handler (polling currently not implemented in fallback)
+  socket.addHandler('NOT IN USE', function(handler, message)
+  
+  // direct return from message handler
+  socket.send('NOT IN USE', {test: 'test'}).then(function(handler, message) { ... });
 });
 ```
