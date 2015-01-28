@@ -18,12 +18,12 @@ Composed of AppManager, Commands, BasicApp class.
 
 ### AppManager
 
-Used to add apps adnd run server. The standard implementation uses [Ratchet Websocket](http://socketo.me/docs/) library.
+Used to add apps and run server. The standard implementation uses [Ratchet Websocket](http://socketo.me/docs/) library.
 
 ### Commands
 
 ```bash
-$ app/console sf sulu:websocket:dump
+$ app/console sulu:websocket:dump
 +----------------------+------------------+-----------------+-----------+
 | App-Name             | Route            | Allowed-Origins | Host-Name |
 +----------------------+------------------+-----------------+-----------+
