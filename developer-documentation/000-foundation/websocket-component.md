@@ -16,7 +16,7 @@ There are two parts of it:
 
 Composed of AppManager, Commands, BasicApp class.
 
-### AppManaer
+### AppManager
 
 Used to add apps adnd run server. The standard implementation uses [Ratchet Websocket](http://socketo.me/docs/) library.
 
