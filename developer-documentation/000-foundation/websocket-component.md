@@ -126,3 +126,35 @@ define(['websocket-manager'], function(WebsocketManager) {
   socket.send('NOT IN USE', {test: 'test'}).then(function(handler, message) { ... });
 });
 ```
+
+### MessageHandler for admin websocket
+
+```php
+class PreviewMessageHandler implements MessageHandlerInterface
+{
+  /**
+  * {@inheritdoc}
+  */
+  public function handle(ConnectionInterface $conn, array $message, MessageHandlerContext $context)
+  {
+    return array('data' => strtoupper($message['data']);
+  }
+}
+```
+
+```xml
+ <service id="test" class="%test.class%">
+     <tag name="sulu.websocket.message.handler" dispatcher="admin" alias="test" />
+ </service>
+```
+
+```javascript
+define(['websocket-manager'], function(WebsocketManager) {
+ var client = WebsocketManager.getClient('admin');
+ this.client.send('test', { data: 'testdata' }).then(function(handler, message) { console.log('Result: ' + message.data); });
+});
+```
+
+```
+Result: TESTDATA
+```
