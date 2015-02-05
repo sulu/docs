@@ -71,6 +71,25 @@ You can find an example for a template that the template reader can parse below:
         <property name="url" type="resource_locator" mandatory="true">
             <tag name="sulu.rlp.input"/>
         </property>
+        <property name="children" type="smart_content" mandatory="true">
+            <params>
+                <param name="max_per_page" value="5"/>
+                <param name="properties" type="collection">
+                    <param name="title" value="title"/>
+                </param>
+                <param name="display_as" type="collection">
+                    <param name="two">
+                        <meta>
+                            <title lang="de">Zwei Spalten</title>
+                            <title lang="en">Two columns</title>
+
+                            <info_text lang="de">Die Seiten werden in zwei Spalten dargestellt</info_text>
+                            <info_text lang="en">The pages would be displayed in two columns</info_text>
+                        </meta>
+                    </param>
+                </param>
+            </params>
+        </property>
         <section name="content">
             <meta>
                 <title lang="de">Inhalt</title>
@@ -123,6 +142,12 @@ You can find an example for a template that the template reader can parse below:
                                         <title lang="de">Artikel</title>
                                         <title lang="en">Article</title>
                                     </meta>
+                                    
+                                    <params>
+                                        <param name="links" value="true"/>
+                                        <param name="tables" value="true"/>
+                                        <param name="pasteFromWord" value="true"/>
+                                    </params>
                                 </property>
                             </properties>
                         </type>
@@ -212,6 +237,54 @@ TWIG: overview.html.twig
 URL: http://sulu.lo/en.xml
 TWIG: overview.xml.twig
 ````
+
+## Parameters
+
+Parameters are used to configure the content type from the xml template. Parameters is a nestable and translatable key-value store.
+
+```xml
+<params>
+    <param name="max_per_page" value="5"/>
+    <param name="properties" type="collection">
+        <param name="title" value="title"/>
+    </param>
+    <param name="display_as" type="collection">
+        <param name="two">
+            <meta>
+                <title lang="de">Zwei Spalten</title>
+                <title lang="en">Two columns</title>
+
+                <info_text lang="de">Die Seiten werden in zwei Spalten dargestellt</info_text>
+                <info_text lang="en">The pages would be displayed in two columns</info_text>
+            </meta>
+        </param>
+    </param>
+</params>
+```
+
+__Usage:__
+
+Form twig template:
+```twig
+As String:
+{{ params.my_var }}
+
+As Array or boolean:
+{{ params.my_var.value }}
+
+Get translated title:
+{{ params.getTitle('de') }}
+```
+
+In the content type:
+```php
+$params = array_merge(
+    $this->getDefaultParams(),
+    $property->getParams()
+);
+
+echo $params['my_var'];
+```
 
 ### Preview
 For preview rfa tags have to be used:
