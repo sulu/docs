@@ -33,11 +33,8 @@
   * bottom (default: true)
   * rightBottom (default: true)
  
-## Get displayOption on Website Template
+## View Parameters
 
-``` twig
-{{ view.images.displayOption }}
-{# or for multiple blocks #}
-{{ view.block[key].images.displayOption }}
-``` 
-
+|Parameter|Example|
+|---|---|
+| displayOption | `view.images.displayOption` or `view.block[key].images.displayOption`|
