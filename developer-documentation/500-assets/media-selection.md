@@ -32,3 +32,12 @@
   * leftBottom (default: true)
   * bottom (default: true)
   * rightBottom (default: true)
+ 
+## Get displayOption on Website Template
+
+``` twig
+{{ view.images.displayOption }}
+{# or for multiple blocks #}
+{{ view.block[key] images.displayOption }}
+``` 
+
