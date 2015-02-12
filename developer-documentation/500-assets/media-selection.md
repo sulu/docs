@@ -38,6 +38,6 @@
 ``` twig
 {{ view.images.displayOption }}
 {# or for multiple blocks #}
-{{ view.block[key] images.displayOption }}
+{{ view.block[key].images.displayOption }}
 ``` 
 
