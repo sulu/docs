@@ -35,6 +35,6 @@
  
 ## View Parameters
 
-|Parameter|Example|
-|---|---|
-| displayOption | `view.images.displayOption` or `view.block[key].images.displayOption`|
+|   Parameter   | Example                                                               |
+|---------------|-----------------------------------------------------------------------|
+| displayOption | `view.images.displayOption` or `view.block[key].images.displayOption` |
