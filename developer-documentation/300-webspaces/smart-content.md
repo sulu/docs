@@ -58,3 +58,34 @@ __Usage:__
 {% endfor %}
 ```
 
+## View variables in Twig-Template
+
+Following vars will be passed to the twig template view var:
+
+* dataSource ... uuid of data source
+* includeSubFolders ... if subfolders will be crawled
+* category ... selected categories
+* tags ... selected tags
+* sortBy ... sort column
+* sortMethod ... ASC or DESC
+* presentAs ... selected present as value
+* limitResult ... limit for result
+* page ... current page number
+* hasNextPage ... boolean that indicates if there is a next page
+
+__Example:__
+
+```twig
+<div property="smartcontent" class="row">
+    {% for smartcontent in content.smartcontent %}
+        <div class="col-lg-{{ view.smartcontent.presentAs == 'two' ? '6' : '12' }}">
+            <h2><a href="{{ content_path(smartcontent.url) }}">{{ smartcontent.title }}</a></h2>
+            {% if smartcontent.article is defined %}
+                {% autoescape false %}
+                {{ smartcontent.article }}
+                {% endautoescape %}
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
+```
