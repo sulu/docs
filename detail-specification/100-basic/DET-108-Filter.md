@@ -1,6 +1,8 @@
 # Filters
 The basic idea behind the filters is that one can filter a collection of an entity according to the userdefined filter criteria. This filter logic can be applied to all lists (products, ...) as well as special distribuition lists in the CRM bundle containing contacts or accounts.
 
+![Filter Diagramm](https://raw.githubusercontent.com/sulu-cmf/docs/master/detail-specification/images/diagrams/filter.png)
+
 ## The FilterController
 This controller should be a typical rest controller and provide an api to create, update and delete filters as well as an api to get a single or a list of filters (by the entity name). It is an abstract class and should be used by the concrete filter controlleres e.g. a ContactFilterController. A filter controller will process the request and delegate the work to the filter manager. Each FilterController instance should provide the an array of FieldDescriptors which is used to display the list of entities (filterListFieldDescriptors) and another array of FieldDescriptors which are used to define/restrict the possible filterable columns and relations.
 
