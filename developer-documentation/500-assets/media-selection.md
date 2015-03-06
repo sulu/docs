@@ -32,3 +32,9 @@
   * leftBottom (default: true)
   * bottom (default: true)
   * rightBottom (default: true)
+ 
+## View Parameters
+
+|   Parameter   | Example                                                               |
+|---------------|-----------------------------------------------------------------------|
+| displayOption | `view.images.displayOption` or `view.block[key].images.displayOption` |
