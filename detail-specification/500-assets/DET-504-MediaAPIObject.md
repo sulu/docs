@@ -13,6 +13,11 @@
         2,
         3
     ],
+    'versionUrls': {
+        1: '/media/1/download/media.jpg?v=1',
+        2: '/media/1/download/media.jpg?v=2',
+        3: '/media/1/download/media.jpg?v=3'
+    },
     'title': 'Media Title',
     'description: 'Media Description',
     'size': 12412512,
