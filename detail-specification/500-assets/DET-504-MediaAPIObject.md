@@ -8,15 +8,22 @@
     'locale': 'en-gb',
     'collection': 1,
     'version': 3,
-    'versions': [
-        1,
-        2,
-        3
-    ],
-    'versionUrls': {
-        1: '/media/1/download/media.jpg?v=1',
-        2: '/media/1/download/media.jpg?v=2',
-        3: '/media/1/download/media.jpg?v=3'
+    'versions': {
+        1: {
+            'version': 1,
+            'url': '/media/1/download/media.jpg?v=1',
+            'created': '1985-01-22 00:00'
+        },
+        2: {
+            'version': 2,
+            'url': '/media/1/download/media.jpg?v=2',
+            'created': '1990-03-06 00:00'
+        },
+        3: {
+            'version': 3,
+            'url': '/media/1/download/media.jpg?v=3',
+            'created': '1991-09-23 00:00'
+        },
     },
     'title': 'Media Title',
     'description: 'Media Description',
