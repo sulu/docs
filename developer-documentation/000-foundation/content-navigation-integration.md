@@ -93,8 +93,8 @@ class AddContentNavigationPass extends ContentNavigationPass
 
     public function __construct()
     {
-        self::$tag = 'acme.content.admin.content_navigation';
-        self::$serviceName = 'acme_content.admin.content_navigation';
+        $this->tag = 'acme.content.admin.content_navigation';
+        $this->serviceName = 'acme_content.admin.content_navigation';
     }
 
 }
@@ -177,9 +177,9 @@ class AcmePermissionContentNavigation implements ContentNavigationInterface
 
     public function __construct()
     {
-        $permissions = new NavigationItem('Permissions');
+        $permissions = new ContentNavigationItem('Permissions');
         $permissions->setAction('permissions');
-        $permissions->setGroupds(array'contact'));
+        $permissions->setGroups(array'contact'));
         $permissions->setDisplay(array('edit'));
         $permissions->setComponent('permissions@acmepermission');
         $permissions->setComponentOptions(array('display'=>'permissions');
