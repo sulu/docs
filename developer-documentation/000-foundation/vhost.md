@@ -7,29 +7,32 @@
     DocumentRoot "/var/www/sulu.lo/web"
     ServerName sulu.lo
     <Directory "/var/www/sulu.lo/web">
-        Options Indexes +FollowSymlinks
+        Options Indexes FollowSymLinks
         AllowOverride All
         Order allow,deny
         Allow from all
+        
+        <IfModule mod_expires.c>
+            ExpiresActive On
+            ExpiresDefault "access plus 1 month"
+            ExpiresByType image/gif "access plus 1 month"
+            ExpiresByType image/png "access plus 1 month"
+            ExpiresByType image/jpeg "access plus 1 month"
+            ExpiresByType image/jpg "access plus 1 month"
+            ExpiresByType text/javascript "access plus 1 month"
+            ExpiresByType text/css "access plus 1 month"
+        </IfModule>
 
-        ExpiresActive On
-        ExpiresDefault "access plus 1 month"
-        ExpiresByType image/gif "access plus 1 month"
-        ExpiresByType image/png "access plus 1 month"
-        ExpiresByType image/jpeg "access plus 1 month"
-        ExpiresByType image/jpg "access plus 1 month"
-        ExpiresByType text/javascript "access plus 1 month"
-        ExpiresByType text/css "access plus 1 month"
+        <IfModule mod_deflate.c>
+            SetOutputFilter DEFLATE
+            SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+            SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
+            SetEnvIfNoCase Request_URI \.pdf$ no-gzip dont-vary
 
-        SetOutputFilter DEFLATE
-        SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
-        SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
-        SetEnvIfNoCase Request_URI \.pdf$ no-gzip dont-vary
-
-        BrowserMatch ^Mozilla/4 gzip-only-text/html
-        BrowserMatch ^Mozilla/4\.0[678] no-gzip
-        BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
-
+            BrowserMatch ^Mozilla/4 gzip-only-text/html
+            BrowserMatch ^Mozilla/4\.0[678] no-gzip
+            BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+        </IfModule>
     </Directory>
 </VirtualHost>
 ``` 
