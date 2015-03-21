@@ -84,7 +84,7 @@ server {
         fastcgi_buffer_size 32k;
         fastcgi_split_path_info ^(.+\.php)(/.*)$;
         fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;
-        fastcgi_param  APP_ENV dev;
+        fastcgi_param  SYMFONY_ENV dev;
         fastcgi_param  HTTPS off;
     }
 }
