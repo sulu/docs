@@ -4,9 +4,9 @@
 ## Apache
 ``` ApacheConf
 <VirtualHost *:80>
-    DocumentRoot "/var/www/sulu/web"
+    DocumentRoot "/var/www/sulu.lo/web"
     ServerName sulu.lo
-    <Directory "/var/www/sulu/web">
+    <Directory "/var/www/sulu.lo/web">
         Options Indexes FollowSymLinks
         AllowOverride All
         Order allow,deny
