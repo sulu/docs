@@ -5,7 +5,7 @@
 ``` ApacheConf
 <VirtualHost *:80>
     DocumentRoot "/var/www/sulu/web"
-    ServerName sulu-new.lo
+    ServerName sulu.lo
     <Directory "/var/www/sulu/web">
         Options Indexes FollowSymLinks
         AllowOverride All
