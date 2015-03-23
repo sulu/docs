@@ -12,17 +12,20 @@
         1: {
             'version': 1,
             'url': '/media/1/download/media.jpg?v=1',
-            'created': '1985-01-22 00:00'
+            'created': "2015-01-16T07:54:30+0100",
+            'changed': "2015-01-16T07:54:30+0100"
         },
         2: {
             'version': 2,
             'url': '/media/1/download/media.jpg?v=2',
-            'created': '1990-03-06 00:00'
+            'created': "2015-01-16T07:54:30+0100",
+            'changed': "2015-01-16T07:54:30+0100"
         },
         3: {
             'version': 3,
             'url': '/media/1/download/media.jpg?v=3',
-            'created': '1991-09-23 00:00'
+            'created': "2015-01-16T07:54:30+0100",
+            'changed': "2015-01-16T07:54:30+0100"
         },
     },
     'title': 'Media Title',
