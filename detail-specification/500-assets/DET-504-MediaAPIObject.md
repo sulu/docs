@@ -8,11 +8,26 @@
     'locale': 'en-gb',
     'collection': 1,
     'version': 3,
-    'versions': [
-        1,
-        2,
-        3
-    ],
+    'versions': {
+        1: {
+            'version': 1,
+            'url': '/media/1/download/media.jpg?v=1',
+            'created': "2015-01-16T07:54:30+0100",
+            'changed': "2015-01-16T07:54:30+0100"
+        },
+        2: {
+            'version': 2,
+            'url': '/media/1/download/media.jpg?v=2',
+            'created': "2015-01-16T07:54:30+0100",
+            'changed': "2015-01-16T07:54:30+0100"
+        },
+        3: {
+            'version': 3,
+            'url': '/media/1/download/media.jpg?v=3',
+            'created': "2015-01-16T07:54:30+0100",
+            'changed': "2015-01-16T07:54:30+0100"
+        },
+    },
     'title': 'Media Title',
     'description: 'Media Description',
     'size': 12412512,
