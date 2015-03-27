@@ -11,10 +11,12 @@ Look at [Image Formats](DET-506-ImageFormats.md "Image Formats") to define a new
 
 Resize the image into a specific format. If you don't want distort the image use `scale`.
 
-Parameters:
- - x: width in Pixel
- - y: height in Pixel
- 
+| Parameter  |   Type        |    Unit    |
+|------------|---------------|------------|
+| x          | integer       |   Pixel    |
+| y          | integer       |   Pixel    |
+| retina     | StringBoolean | true/false |
+
 Example: 
 ```xml
 <format>
@@ -32,9 +34,12 @@ Example:
 
 Resize and crop an image into a specific format.
 
-Parameters:
- - x: width in Pixel
- - y: height in Pixel
+| Parameter  |   Type        |    Unit    |
+|------------|---------------|------------|
+| x          | integer       |   Pixel    |
+| y          | integer       |   Pixel    |
+| retina     | StringBoolean | true/false |
+| forceRatio | StringBoolean | true/false |
  
 Example: 
 ```xml
@@ -59,6 +64,13 @@ Parameters:
  - y: y-Coordinate to start crop
  - w: width of the image
  - h: height of the image
+ 
+| Parameter  |   Type        |    Unit    |
+|------------|---------------|------------|
+| x          | integer       |   Pixel    |
+| y          | integer       |   Pixel    |
+| w          | integer       |   Pixel    |
+| h          | integer       |   Pixel    |
  
 Example: 
 ```xml
