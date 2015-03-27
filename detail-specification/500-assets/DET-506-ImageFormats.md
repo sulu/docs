@@ -1,6 +1,6 @@
 ##![Assets](https://raw.github.com/massiveart/sulu-docs/master/system-requirements/images/assets.png)DET-506 Image Formats
 
-# Image Formats Concept
+# Image Formats
 
 The image formats for each theme is configured in an own config.  
 The themes are in src/Client/WebsiteBundle/Resources/themes.  
@@ -177,3 +177,16 @@ So its important the name of the format reflect what the image converter does.
  - y = startpoint Y
  - w = width
  - h = height
+
+## Change Path to Formats XML
+
+For every theme you can change the path to the image-formats.xml relative to its theme path:
+
+``` yml
+# SULU Media configuration
+sulu_media:
+    format_manager:
+        config_files:
+            default: 'config/image-formats.xml'
+            mytheme: 'config/sulu/formats.xml'
+``` 
