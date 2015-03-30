@@ -24,9 +24,11 @@ Example:
     <commands>
         <command>
             <action>resize</action>
-            <parameters name="x">50</parameters>
-            <parameters name="y">50</parameters>
-            <parameters name="retina">true</parameters>
+            <parameters>
+                <parameter name="x">50</parameter>
+                <parameter name="y">50</parameter>
+                <parameter name="retina">true</parameter>
+            </parameters>
         </command>
     </commands>
 </format>
@@ -50,10 +52,12 @@ Example:
     <commands>
         <command>
             <action>scale</action>
-            <parameters name="x">50</parameters>
-            <parameters name="y">50</parameters>
-            <parameters name="retina">true</parameters>
-            <parameters name="forceRatio">true</parameters>
+            <parameters>
+                <parameter name="x">50</parameter>
+                <parameter name="y">50</parameter>
+                <parameter name="retina">true</parameter>
+                <parameter name="forceRatio">true</parameter>
+            </parameters>
         </command>
     </commands>
 </format>
@@ -84,10 +88,12 @@ Example:
     <commands>
         <command>
             <action>scale</action>
-            <parameters name="x">50</parameters>
-            <parameters name="y">50</parameters>
-            <parameters name="w">100</parameters>
-            <parameters name="h">100</parameters>
+            <parameters>
+                <parameter name="x">50</parameter>
+                <parameter name="y">50</parameter>
+                <parameter name="w">100</parameter>
+                <parameter name="h">100</parameter>
+            </parameters>
         </command>
     </commands>
 </format>
