@@ -11,11 +11,11 @@ Look at [Image Formats](DET-506-ImageFormats.md "Image Formats") to define a new
 
 Resize the image into a specific format. If you don't want distort the image use `scale`.
 
-| Parameter  |   Type        |    Unit    |
-|------------|---------------|------------|
-| x          | integer       |   Pixel    |
-| y          | integer       |   Pixel    |
-| retina     | StringBoolean | true/false |
+| Parameter  |   Type        |    Unit      | Description                |
+|------------|---------------|--------------|----------------------------|
+| x          | integer       |   Pixel      | Image width                |
+| y          | integer       |   Pixel      | Image height               |
+| retina     | StringBoolean | true/`false` | Multiplied width/height x2 |
 
 Example: 
 ```xml
@@ -34,12 +34,12 @@ Example:
 
 Resize and crop an image into a specific format.
 
-| Parameter  |   Type        |    Unit    |
-|------------|---------------|------------|
-| x          | integer       |   Pixel    |
-| y          | integer       |   Pixel    |
-| retina     | StringBoolean | true/false |
-| forceRatio | StringBoolean | true/false |
+| Parameter  |   Type        |    Unit      | Description                                    |
+|------------|---------------|--------------|------------------------------------------------|
+| x          | integer       |   Pixel      | Image width                                    |
+| y          | integer       |   Pixel      | Image height                                   |
+| retina     | StringBoolean | true/`false` | Multiplied width/height x2                     |
+| forceRatio | StringBoolean | `true`/false | Keep image ratio when image is smaller         |
  
 Example: 
 ```xml
@@ -65,12 +65,12 @@ Parameters:
  - w: width of the image
  - h: height of the image
  
-| Parameter  |   Type        |    Unit    |
-|------------|---------------|------------|
-| x          | integer       |   Pixel    |
-| y          | integer       |   Pixel    |
-| w          | integer       |   Pixel    |
-| h          | integer       |   Pixel    |
+| Parameter  |   Type        |    Unit    | Description                                    |
+|------------|---------------|------------|------------------------------------------------|
+| x          | integer       |   Pixel    | Start position left for crop                   |
+| y          | integer       |   Pixel    | Start position top for crop                    |
+| w          | integer       |   Pixel    | Image width                                    |
+| h          | integer       |   Pixel    | Image height                                   |
  
 Example: 
 ```xml
