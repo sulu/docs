@@ -155,28 +155,7 @@ So its important the name of the format reflect what the image converter does.
 
 ## Format Commands
 
-### Resize
-
-#### Parameters
- - x = width
- - y = height
- - retina (auto 2x 'x' and 'y')
-
-### Scale
-
-#### Parameters
- - x = width
- - y = height
- - retina (auto 2x 'x' and 'y')
- - mode (Imagine Thumbnail mode ('inset' or 'outbound'))
- 
-### Crop
-
-#### Parameters
- - x = startpoint X
- - y = startpoint Y
- - w = width
- - h = height
+All converter commands are listed here https://github.com/sulu-io/docs/blob/master/detail-specification/500-assets/DET-507-ImageConverter.md#image-converter-commands
 
 ## Change Path to Formats XML
 
