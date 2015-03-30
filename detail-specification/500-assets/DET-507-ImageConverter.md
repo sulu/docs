@@ -24,7 +24,9 @@ Example:
     <commands>
         <command>
             <action>resize</action>
-            <parameters x="50" y="50" />
+            <parameters name="x">50</parameters>
+            <parameters name="y">50</parameters>
+            <parameters name="retina">true</parameters>
         </command>
     </commands>
 </format>
@@ -39,7 +41,7 @@ Resize and crop an image into a specific format.
 | x          | integer       |   Pixel      | Image width                                    |
 | y          | integer       |   Pixel      | Image height                                   |
 | retina     | StringBoolean | true/`false` | Multiplied width/height x2                     |
-| forceRatio | StringBoolean | `true`/false | Keep image ratio when image is smaller         |
+| forceRatio | StringBoolean | `true`/false | Force image ratio when image is smaller        |
  
 Example: 
 ```xml
@@ -48,7 +50,10 @@ Example:
     <commands>
         <command>
             <action>scale</action>
-            <parameters x="50" y="50" />
+            <parameters name="x">50</parameters>
+            <parameters name="y">50</parameters>
+            <parameters name="retina">true</parameters>
+            <parameters name="forceRatio">true</parameters>
         </command>
     </commands>
 </format>
@@ -79,7 +84,10 @@ Example:
     <commands>
         <command>
             <action>scale</action>
-            <parameters x="50" y="50" w="100" h="100"  />
+            <parameters name="x">50</parameters>
+            <parameters name="y">50</parameters>
+            <parameters name="w">100</parameters>
+            <parameters name="h">100</parameters>
         </command>
     </commands>
 </format>
