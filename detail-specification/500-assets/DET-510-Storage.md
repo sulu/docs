@@ -20,7 +20,7 @@ sulu_media:
 
 Coming soon!
 
-## Custom
+## Create your own Storage
 
 You need define your own sulu_media.storage service.  
 Define a service based on the StorageInterface.
@@ -28,8 +28,28 @@ Define a service based on the StorageInterface.
 # Format Cache
 The Format Cache save thumbnail images is different formats.
 Based on the installation it can return thumbnails for none image formats like PDFs.
-Which service is used can be defined in app/config/media/format_cache.yml
-There are currently 3 available types for storage:
+
+There are currently 2 available types for storage:
  - local (thumbnails are saved local)
  - reverse_proxy (proxy requested the media controller which return the image in the right format)
- - custom (you need define your own sulu_media.format_cache service based on the FormatCacheInterface)
+
+## Local
+
+Local format cache save the converted images under the public folder. If your public folder is not symfony standard `web` you can change it in your config.yml
+
+**Config Parameters** 
+
+``` yml
+sulu_media:
+    format_cache:
+        public_folder: web
+```
+
+## Reverse Proxy
+
+Coming soon!
+
+## Create your own Format Cache
+
+You need define your own sulu_media.format_cache service.  
+Define a service based on the FormatCacheInterface.
