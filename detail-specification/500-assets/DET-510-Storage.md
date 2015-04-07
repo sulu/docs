@@ -8,7 +8,7 @@ There are currently 3 available types for storage:
 
 ## Local Storage
 
-Parameters:
+**Config Parameters:**
 
 ``` yml
 sulu_media:
