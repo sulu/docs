@@ -57,6 +57,7 @@ Example:
                 <parameter name="x">50</parameter>
                 <parameter name="y">50</parameter>
                 <parameter name="retina">true</parameter>
+                <parameter name="mode">inset</parameter>
                 <parameter name="forceRatio">true</parameter>
             </parameters>
         </command>
