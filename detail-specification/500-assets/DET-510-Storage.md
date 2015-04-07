@@ -1,9 +1,22 @@
 # Storage
-The Media Storage save all documents. Which service is used can be defined in app/config/media/storage.yml
+The Media Storage save all documents.
 There are currently 3 available types for storage:
  - local (documents are saved local)
  - s3 (documents are saved on s3 storage)
  - custom (you need define your own sulu_media.storage service based on the StorageInterface)
+
+
+## Local Storage
+
+Parameters:
+
+``` yml
+sulu_media:
+    storage:
+        local:
+            path: "%kernel.root_dir%/../uploads/media" # path where the documents will be saved
+            segments: 10 # folder segmentation size
+```
 
 # Format Cache
 The Format Cache save thumbnail images is different formats.
