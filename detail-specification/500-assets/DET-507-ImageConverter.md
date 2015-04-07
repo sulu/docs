@@ -38,12 +38,13 @@ Example:
 
 Resize and crop an image into a specific format.
 
-| Parameter  |   Type        |    Unit      | Description                                    |
-|------------|---------------|--------------|------------------------------------------------|
-| x          | integer       |   Pixel      | Image width                                    |
-| y          | integer       |   Pixel      | Image height                                   |
-| retina     | StringBoolean | true/`false` | Multiplied width/height x2                     |
-| forceRatio | StringBoolean | `true`/false | Force image ratio when image is smaller        |
+| Parameter  |   Type        |    Unit          | Description                                    |
+|------------|---------------|------------------|------------------------------------------------|
+| x          | integer       |     Pixel        | Image width                                    |
+| y          | integer       |     Pixel        | Image height                                   |
+| mode       | String        | inset/`outbound` | The image scale mode                           |
+| retina     | StringBoolean | true/`false`     | Multiplied width/height x2                     |
+| forceRatio | StringBoolean | `true`/false     | Force image ratio when image is smaller        |
  
 Example: 
 ```xml
