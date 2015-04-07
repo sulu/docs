@@ -35,14 +35,16 @@ There are currently 2 available types for storage:
 
 ## Local
 
-Local format cache save the converted images under the public folder. If your public folder is not symfony standard `web` you can change it in your config.yml
+Local format cache save the converted images under the public folder.
 
 **Config Parameters** 
 
 ``` yml
 sulu_media:
     format_cache:
-        public_folder: web
+        save_image: true # if true the image is saved and not converted for every request default is `true`
+        segments: 20 # folder segmentation used for the image default is `10`
+        path: '%kernel.root_dir%/../web/uploads/media' # where the images are saved in the public folder default is `%assetic.write_to%/uploads/media`
 ```
 
 ## Reverse Proxy
