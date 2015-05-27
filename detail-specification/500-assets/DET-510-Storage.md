@@ -47,6 +47,17 @@ sulu_media:
         path: '%kernel.root_dir%/../web/uploads/media' # where the images are saved in the public folder default is `%assetic.write_to%/uploads/media`
 ```
 
+**Download**
+
+Download from Local Storage supports 2 different Content-Disposition Types: attachment and inline.
+If you want inline you need to add `inline` parameter to the url.
+
+e.g.: `http://sulu.lo/media/1/download/media.jpg?v=1&inline=1`
+
+Also you can download without increase the Downloadcounter by adding `no-count` parameter to the download url.
+
+e.g.: `http://sulu.lo/media/1/download/media.jpg?v=1&no-count=1`
+
 ## Reverse Proxy
 
 Coming soon!
