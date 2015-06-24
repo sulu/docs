@@ -4,7 +4,7 @@
 
 ### ContentPathTwigExtension
 
-`content_path(url, [webspaceKey = current])`
+`sulu_content_path(url, [webspaceKey = current])`
 
 Returns absolute URL
 
@@ -19,13 +19,13 @@ __Example__:
 <ul class="nav nav-justified">
     {% for item in content.snippets[0].internalLinks %}
         <li>
-            <a href="{{ content_path(item.url, item.webspaceKey) }}" title="{{ item.title }}">{{ item.title }}</a>
+            <a href="{{ sulu_content_path(item.url, item.webspaceKey) }}" title="{{ item.title }}">{{ item.title }}</a>
         </li>
     {% endfor %}
 </ul>
 ```
 
-`content_root_path()`
+`sulu_content_root_path()`
 
 Returns url for root node
 
@@ -33,7 +33,7 @@ Returns url for root node
 
 ### ContentTwigExtension
 
-`content_load(uuid)`
+`sulu_content_load(uuid)`
 
 Returns content array for given uuid.
 
@@ -45,7 +45,7 @@ Returns content array for given uuid.
   * content
   * view
 
-`content_load_parent(uuid)`
+`sulu_content_load_parent(uuid)`
 
 Returns content array for given uuid.
 
@@ -59,7 +59,7 @@ Returns content array for given uuid.
 
 ### NavigationTwigExtension
 
-`navigation_root_flat([context = null], [depth = 1], [loadExcerpt = false])`
+`sulu_navigation_root_flat([context = null], [depth = 1], [loadExcerpt = false])`
 
 Returns navigation from root in a flat list data-structure.
 
@@ -78,7 +78,7 @@ Returns navigation from root in a flat list data-structure.
  * path
  * excerpt.* (if load-excerpt is true)
 
-`navigation_root_tree([context = null], [depth = 1], [loadExcerpt = false])`
+`sulu_navigation_root_tree([context = null], [depth = 1], [loadExcerpt = false])`
 
 Returns navigation from root in a tree data-structure (each item has `children`).
 
@@ -98,7 +98,7 @@ Returns navigation from root in a tree data-structure (each item has `children`)
  * children
  * excerpt.* (if load-excerpt is true)
  
-`navigation_flat(uuid, [context = null], [depth = 1], [loadExcerpt = false], [level = null])`
+`sulu_navigation_flat(uuid, [context = null], [depth = 1], [loadExcerpt = false], [level = null])`
 
 Returns navigation for content node (uuid) at given level (in breadcrumb) or (if level null) sub-navigation of page. In a Tree flat list data-structure.
  
@@ -118,7 +118,7 @@ Returns navigation for content node (uuid) at given level (in breadcrumb) or (if
  * path
  * excerpt.* (if load-excerpt is true)
  
-`navigation_tree(uuid, [context = null], [depth = 1], [loadExcerpt = false], [level = null])`
+`sulu_navigation_tree(uuid, [context = null], [depth = 1], [loadExcerpt = false], [level = null])`
 
 Returns navigation for content node (uuid) at given level (in breadcrumb) or (if level null) sub-navigation of page. In a Tree data-structure (each item has `children`).
 
@@ -138,8 +138,21 @@ Returns navigation for content node (uuid) at given level (in breadcrumb) or (if
  * path
  * children
  * excerpt.* (if load-excerpt is true)
+
+__Example__:
+
+```twig
+{% set nav = sulu_navigation_tree(uuid) %}
+<ul class="nav nav-justified">
+    {% for item in nav %}
+        <li>
+            <a href="{{ sulu_content_path(item.url) }}" title="{{ item.title }}">{{ item.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
+```
  
-`breadcrumb(uuid)`
+`sulu_breadcrumb(uuid)`
 
 Returns breadcrumb (BreadcrumbItemInterface[]) for given content node.
 
@@ -148,11 +161,11 @@ Returns breadcrumb (BreadcrumbItemInterface[]) for given content node.
 __Example__:
 
 ```twig
-{% set nav = navigation_tree(uuid) %}
+{% set nav = sulu_breadcrumb(uuid) %}
 <ul class="nav nav-justified">
     {% for item in nav %}
         <li>
-            <a href="{{ content_path(item.url) }}" title="{{ item.title }}">{{ item.title }}</a>
+            <a href="{{ sulu_content_path(item.url) }}" title="{{ item.title }}">{{ item.title }}</a>
         </li>
     {% endfor %}
 </ul>
@@ -160,14 +173,14 @@ __Example__:
 
 ### SitemapTwigExtension
 
-`sitemap([locale = current], [webspaceKey = current])`
+`sulu_sitemap([locale = current], [webspaceKey = current])`
 
 Returns sitemap for given Webspace and Locale (or default is the current locale and webspace).
 
 * locale (string) - optional: locale for determine sitemap
 * webspaceKey (string) - optional: webspace for determine sitemap
 
-`sitemap_url(url, [locale = current], [webspaceKey = current])`
+`sulu_sitemap_url(url, [locale = current], [webspaceKey = current])`
 
 Returns url for given Webspace and locale.
 
