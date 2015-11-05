@@ -1,37 +1,85 @@
 # Storage
+
 The Media Storage save all documents.
-There are currently 2 available types for storage:
+There are 2 available types for storage:
  - local (documents are saved local)
- - s3 (documents are saved on s3 storage)
+ - flysystem (documents are saved in a flysystem adapter)
 
-## Local Storage
-
-**Config Parameters:**
+**Default Configuration:**
 
 ``` yml
 sulu_media:
     storage:
-        local:
-            path: "%kernel.root_dir%/../uploads/media" # path where the documents will be saved
-            segments: 10 # folder segmentation size
+        default: local
+        adapters:
+            local:
+                type: local
+                segments: 10
+                uploadPath: %kernel.root_dir%/../uploads/media
 ```
 
-## S3
+## Using Flysystem
 
-Coming soon!
+Sulu support flysystem over the [OneupFlysystemBundle](https://github.com/1up-lab/OneupFlysystemBundle). You need to [install](https://github.com/1up-lab/OneupFlysystemBundle/blob/master/Resources/doc/index.md) the Bundle first and add it to the AbstractKernel. 
 
-## Create your own Storage
+**Configuration (app/config/config.yml)**
 
-You need define your own sulu_media.storage service.  
-Define a service based on the StorageInterface.
+``` yml
+sulu_media:
+    storage:
+        adapters:
+            default: my_custom
+            my_custom:
+                type: flysystem
+                fileSystem: my_mount_name
+                
+oneup_flysystem:
+    adapters:
+        my_adapter:
+            local:
+                directory: %kernel.root_dir%/cache/media
+    filesystems:
+        my:
+            adapter: my_adapter
+            mount: my_mount_name
+ ```
+ 
+## Create your own Storage Adapter
+
+First check if there is no [flysystem adapter](https://github.com/1up-lab/OneupFlysystemBundle/blob/master/Resources/doc/index.md) you can use, else you can define your own service based on the `StorageInterface` and tag it with `sulu_media.storage_adapter` and an alias or create an own flysystem adapter.
+
+## Multiple Storages
+
+You can configured multiple storage adapters. It is possible to set the default storage adapter foreach collection.
+
+Example Config:
+
+``` yml
+sulu_media:
+    storage:
+        adapters:
+            local:
+                type: local
+                segments: 10
+                uploadPath: %kernel.root_dir%/../uploads/media
+            dropbox:
+                type: flysystem
+                fileSystem: my_mount_name
+
+oneup_flysystem:
+    adapters:
+        my_adapter:
+            local:
+                directory: %kernel.root_dir%/cache/media
+    filesystems:
+        my:
+            adapter: my_adapter
+            mount: my_mount_name
+```
 
 # Format Cache
 The Format Cache save thumbnail images is different formats.
 Based on the installation it can return thumbnails for none image formats like PDFs.
-
-There are currently 2 available types for storage:
- - local (thumbnails are saved local)
- - reverse_proxy (proxy requested the media controller which return the image in the right format)
 
 ## Local
 
@@ -60,9 +108,23 @@ e.g.: `http://sulu.lo/media/1/download/media.jpg?v=1&no-count=1`
 
 ## Reverse Proxy
 
-Coming soon!
+If you use a reverse proxy cdn you can turn of image save:
+
+``` yml
+sulu_media:
+    format_cache:
+        save_image: false
+```
+
+Configurate the CDN domain for your production environment (app/config/website/config_prod.yml):
+
+```  yml
+framework:
+    templating:
+        assets_base_urls:
+            http: ['http://cdn.sulu.io']
+```
 
 ## Create your own Format Cache
 
-You need define your own sulu_media.format_cache service.  
-Define a service based on the FormatCacheInterface.
+You need define your own `sulu_media.format_cache` based on the `FormatCacheInterface`.
