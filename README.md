@@ -8,3 +8,5 @@ By maximizing work efficiency of content management processes the system will me
 * [System Requirements](https://github.com/massiveart/sulu-docs/tree/master/system-requirements/ "Index of System Requirements")
 * [Use Cases](https://github.com/massiveart/sulu-docs/tree/master/use-cases/ "Index of Use Cases")
 * [Detail Specification](https://github.com/massiveart/sulu-docs/tree/master/detail-specification/ "Index of Detail Specification")
+
+We use [Visual Paradigm](http://www.visual-paradigm.com/) for creating the diagrams in this documentation.
