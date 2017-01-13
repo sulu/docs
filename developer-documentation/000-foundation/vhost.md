@@ -68,7 +68,7 @@ server {
 
     # expire 
     location ~* \.(?:ico|css|js|gif|jpe?g|png)$ {
-        try_files $uri /website.php/$1;
+        try_files $uri /website.php/$1?$query_string;
         access_log off;
         expires 30d;
         add_header Pragma public;
